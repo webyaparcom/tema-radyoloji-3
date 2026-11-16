@@ -1,0 +1,29 @@
+{
+  "name": "Lumen Radyoloji",
+  "short_name": "Lumen Radyol",
+  "description": "Lumen Radyoloji: Ankara Çankaya’da MR, tomografi, röntgen, ultrason, mamografi ve kemik yoğunluğu; rapor süresi, bekleme ve kalite kontrol sayılarını açıkça paylaşan görüntüleme merkezi. Demo site; içerik kurgusaldır.",
+  "start_url": "/tr/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#E8A33D",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "/img/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "pmrs2t3zw3",
+  "name": {
+    "tr": "Tetkikler",
+    "en": "Scans",
+    "ar": "الفحوص"
+  },
+  "description": {
+    "tr": "Bölüme göre tetkikler, hazırlık maddeleri ve kısa sorular.",
+    "en": "Scans by section, preparation points and short answers.",
+    "ar": "الفحوص حسب القسم وبنود التحضير وإجابات قصيرة."
+  },
+  "keyword": {
+    "tr": "tetkik, hazırlık",
+    "en": "scan, preparation",
+    "ar": "فحص، تحضير"
+  },
+  "path": "hizmetler",
+  "icon": "radiology",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "83jgzn",
+      "i18twx",
+      "n7hi8r"
+    ],
+    "footer": []
+  },
+  "index": 0,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Tetkikler",
+    "en": "Scans",
+    "ar": "الفحوص"
+  },
+  "date": "2026-11-16T20:27:31.842Z",
+  "update": "2026-11-16T20:31:12.785Z"
+}
