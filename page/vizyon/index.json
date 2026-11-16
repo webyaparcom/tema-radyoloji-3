@@ -1,0 +1,46 @@
+{
+  "id": "vizyon",
+  "name": {
+    "tr": "Vizyon",
+    "en": "Vision",
+    "ar": "الرؤية"
+  },
+  "description": {
+    "tr": "Vizyonumuz",
+    "en": "Our vision",
+    "ar": "رؤيتنا"
+  },
+  "keyword": {
+    "tr": "Vizyon",
+    "en": "vision, our vision, goals",
+    "ar": "الرؤية, رؤيتنا, الأهداف"
+  },
+  "path": "vizyon",
+  "icon": "visibility",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [],
+    "footer": []
+  },
+  "index": 1,
+  "url": "",
+  "text": {
+    "tr": "<h2>Vizyonumuz</h2>\n<p>Ankara’da rapor süresini ve bekleme süresini düzenli yayımlayan bir görüntüleme merkezi olmak.</p>",
+    "en": "<h2>Our vision</h2>\n<p>To be an imaging centre in Ankara that regularly publishes its report and waiting times.</p>",
+    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون مركز تصوير في أنقرة ينشر بانتظام مدة التقارير وأوقات الانتظار.</p>"
+  },
+  "title": {
+    "tr": "Vizyon",
+    "en": "Vision",
+    "ar": "الرؤية"
+  },
+  "date": "2026-11-16T20:27:31.682Z",
+  "update": "2026-11-16T20:31:12.804Z",
+  "sablonIzi": "c3ebee5f049bdfb4",
+  "sablonIziDil": {
+    "en": "67bb554c6c4d5984",
+    "ar": "7e4e23377d70548a"
+  }
+}

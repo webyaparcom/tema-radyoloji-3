@@ -1,0 +1,121 @@
+<section class="modulex-hizmet-bolum-suz{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-hizmet-bolum-suz-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* hizmet-bolum-suz — Bölüme göre süzme + metin araması: hizmet-sekmeli bir panelde tek hizmet, hizmet-yan-dizin çapa ile atlar; burada çok bölümlü kurum (poliklinik, veteriner) tüm hizmetleri tek ızgarada tutar ve çip/arama ile daraltır — kart köşesinde bölüm şeridi. */
+  .modulex-hizmet-bolum-suz { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-hizmet-bolum-suz *, .modulex-hizmet-bolum-suz *::before, .modulex-hizmet-bolum-suz *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-hizmet-bolum-suz :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-hizmet-bolum-suz :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-hizmet-bolum-suz :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-hizmet-bolum-suz :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-hizmet-bolum-suz img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-hizmet-bolum-suz) img { height: auto; }
+  .modulex-hizmet-bolum-suz [hidden] { display: none !important; }
+  .modulex-hizmet-bolum-suz :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-hizmet-bolum-suz :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-hizmet-bolum-suz-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-hizmet-bolum-suz-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-hizmet-bolum-suz--bassiz .modulex-hizmet-bolum-suz-bas { display: none; }
+  .modulex-hizmet-bolum-suz-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-hizmet-bolum-suz-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-hizmet-bolum-suz-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-hizmet-bolum-suz-bas { max-width: 760px; }
+  .modulex-hizmet-bolum-suz-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-hizmet-bolum-suz-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-hizmet-bolum-suz-dugme:hover { transform: translateY(-2px); }
+  .modulex-hizmet-bolum-suz-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-hizmet-bolum-suz-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-hizmet-bolum-suz-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-hizmet-bolum-suz-cubuk { position: sticky; inset-block-start: 12px; z-index: 3; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; margin-block-end: 24px; padding: 10px; border: 1px solid --cizgi--; border-radius: calc(--yuvarlak-- + 6px); background: color-mix(in srgb, --bg-- 92%, transparent); backdrop-filter: blur(8px); }
+  .modulex-hizmet-bolum-suz:not(.modulex-hizmet-bolum-suz--js) .modulex-hizmet-bolum-suz-cubuk { display: none; }
+  .modulex-hizmet-bolum-suz-cipler { display: flex; flex-wrap: wrap; gap: 6px; }
+  .modulex-hizmet-bolum-suz-cip { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding-block: 6px; padding-inline: 14px 8px; border: 0; border-radius: 10px; background: --kartBg--; color: --text--; font: inherit; font-size: 0.9rem; font-weight: 650; transition: background-color 0.25s ease, color 0.25s ease; }
+  .modulex-hizmet-bolum-suz-cip:hover { background: color-mix(in srgb, --accent-- 14%, --kartBg--); }
+  .modulex-hizmet-bolum-suz-cip[aria-pressed="true"] { background: --text--; color: --bg--; }
+  .modulex-hizmet-bolum-suz-csay { min-width: 24px; padding: 1px 7px; border-radius: 6px; background: color-mix(in srgb, currentColor 16%, transparent); font-size: 0.76rem; text-align: center; font-variant-numeric: tabular-nums; }
+  .modulex-hizmet-bolum-suz-ara { display: flex; align-items: center; gap: 8px; flex: 1 1 220px; max-width: 320px; min-height: 42px; padding-inline: 12px; border: 1px solid --cizgi--; border-radius: 10px; background: --bg--; color: --muted--; transition: border-color 0.25s ease; }
+  .modulex-hizmet-bolum-suz-ara:focus-within { border-color: --accent--; }
+  .modulex-hizmet-bolum-suz-ara input { flex: 1; min-width: 0; height: 40px; border: 0; background: transparent; color: --text--; font: inherit; font-size: 0.95rem; outline: none; }
+  .modulex-hizmet-bolum-suz-izgara { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); gap: 16px; }
+  .modulex-hizmet-bolum-suz-kart { display: grid; align-content: start; gap: 10px; padding: 22px 20px 20px; overflow: hidden; border: 1px solid --cizgi--; border-radius: --yuvarlak--; background: --bg--; transition: border-color 0.3s ease, box-shadow 0.3s ease; }
+  .modulex-hizmet-bolum-suz-kart:hover { border-color: --accent--; box-shadow: 0 14px 30px -24px color-mix(in srgb, --text-- 60%, transparent); }
+  .modulex-hizmet-bolum-suz--gel { animation: modulex-hizmet-bolum-suz-gel 0.35s ease both; animation-delay: calc(var(--s, 0) * 35ms); }
+  @keyframes modulex-hizmet-bolum-suz-gel { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  .modulex-hizmet-bolum-suz-tepe { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; min-height: 28px; }
+  .modulex-hizmet-bolum-suz-serit { margin-block-start: -22px; margin-inline-start: -20px; padding: 5px 14px; border-end-end-radius: 12px; background: --vurguBg--; color: --vurguText--; font-size: 0.74rem; font-weight: 750; letter-spacing: 0.06em; text-transform: uppercase; }
+  .modulex-hizmet-bolum-suz-ikon { margin-inline-start: auto; color: --accentInk--; font-size: 28px; transition: transform 0.3s ease; }
+  .modulex-hizmet-bolum-suz-kart:hover .modulex-hizmet-bolum-suz-ikon { transform: rotate(-8deg) scale(1.1); }
+  .modulex-hizmet-bolum-suz-kbaslik { font-size: 1.08rem; font-weight: 750; line-height: 1.3; }
+  .modulex-hizmet-bolum-suz-kmetin { color: --muted--; font-size: 0.92rem; }
+  .modulex-hizmet-bolum-suz-alt { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin-block-start: 6px; padding-block-start: 12px; border-block-start: 1px dashed --cizgi--; }
+  .modulex-hizmet-bolum-suz-bos { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 36px 16px; color: --muted--; font-weight: 650; }
+  @media (max-width: 768px) {
+    .modulex-hizmet-bolum-suz-cubuk { position: static; display: grid; }
+    .modulex-hizmet-bolum-suz-cipler { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+    .modulex-hizmet-bolum-suz-cip { flex: none; }
+    .modulex-hizmet-bolum-suz-ara { max-width: none; }
+    .modulex-hizmet-bolum-suz-izgara { grid-template-columns: minmax(0, 1fr); }
+  }
+  .modulex-hizmet-bolum-suz-git { position: relative; display: inline-flex; align-items: center; gap: 6px; width: fit-content; color: --accentInk--; font-weight: 700; text-decoration: none; transition: gap 0.25s ease; }
+  .modulex-hizmet-bolum-suz-git:hover { gap: 10px; }
+  .modulex-hizmet-bolum-suz-git .material-symbols-outlined { font-size: 18px; }
+  .modulex-hizmet-bolum-suz-maddeler { display: grid; gap: 6px; }
+  .modulex-hizmet-bolum-suz-maddeler li { display: flex; align-items: flex-start; gap: 8px; font-size: 0.93rem; }
+  .modulex-hizmet-bolum-suz-maddeler .material-symbols-outlined { flex: none; margin-block-start: 1px; color: --accentInk--; font-size: 18px; }
+  .modulex-hizmet-bolum-suz-fiyat { color: --accentInk--; font-weight: 800; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-hizmet-bolum-suz :is(.modulex-hizmet-bolum-suz-baslik, .modulex-hizmet-bolum-suz-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-hizmet-bolum-suz-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-hizmet-bolum-suz { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-hizmet-bolum-suz *, .modulex-hizmet-bolum-suz *::before, .modulex-hizmet-bolum-suz *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-hizmet-bolum-suz";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const bolumSuz = (s, P, az) => {
+        const c = [...s.querySelectorAll("[data-bsuz]")];
+        const k = [...s.querySelectorAll("[data-bolum]")];
+        const ara = s.querySelector("[data-bara]");
+        if (!k.length || (c.length < 2 && !ara)) return;
+        s.classList.add(P + "--js");
+        const bos = s.querySelector("[data-bbos]");
+        const dl = document.documentElement.lang || undefined;
+        const kucuk = (x) => { try { return String(x || "").toLocaleLowerCase(dl); } catch (e) { return String(x || "").toLowerCase(); } };
+        let v = "";
+        const yenile = (oynat) => {
+          const q = ara ? kucuk(ara.value.trim()) : "";
+          let n = 0;
+          k.forEach((x) => {
+            const gor = (!v || x.dataset.bolum === v) && (!q || kucuk(x.textContent).includes(q));
+            x.hidden = !gor;
+            x.classList.remove(P + "--gel");
+            if (gor) { n++; x.style.setProperty("--s", String(n)); if (oynat && !az) { void x.offsetWidth; x.classList.add(P + "--gel"); } }
+          });
+          c.forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.bsuz === v)));
+          if (bos) bos.hidden = n > 0;
+        };
+        c.forEach((x) => x.addEventListener("click", () => { v = x.dataset.bsuz; yenile(true); }));
+        if (ara) ara.addEventListener("input", () => yenile(false));
+        yenile(false);
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      bolumSuz(s, P, az);
+    });
+  })();
+</script>

@@ -1,0 +1,54 @@
+{
+  "order": false,
+  "user": false,
+  "description": {
+    "tr": "Lumen Radyoloji: Ankara Çankaya’da MR, tomografi, röntgen, ultrason, mamografi ve kemik yoğunluğu; rapor süresi, bekleme ve kalite kontrol sayılarını açıkça paylaşan görüntüleme merkezi. Demo site; içerik kurgusaldır.",
+    "en": "Lumen Radiology: MRI, CT, X-ray, ultrasound, mammography and bone density in Cankaya, Ankara; an imaging centre that openly shares its report times, waiting times and quality-control figures. Demo site; content is fictional.",
+    "ar": "لومن للأشعة: رنين مغناطيسي وأشعة مقطعية وسينية وموجات فوق صوتية وماموغرام وكثافة العظام في تشانكايا بأنقرة؛ مركز تصوير يشارك علنًا أرقام مدة التقارير والانتظار وضبط الجودة. موقع تجريبي؛ المحتوى افتراضي."
+  },
+  "keyword": {
+    "tr": "radyoloji, MR, tomografi, röntgen, ultrason, mamografi, kemik yoğunluğu, Çankaya, Ankara",
+    "en": "radiology, MRI, CT, X-ray, ultrasound, mammography, bone density, Cankaya, Ankara",
+    "ar": "أشعة، رنين مغناطيسي، أشعة مقطعية، أشعة سينية، موجات فوق صوتية، ماموغرام، كثافة العظام، أنقرة"
+  },
+  "category": "Kurumsal",
+  "name": "Lumen Radyoloji",
+  "domain": "radyoloji-3.webyapar.com",
+  "langs": {
+    "tr": true,
+    "en": true,
+    "ar": true,
+    "de": false,
+    "ru": false,
+    "es": false,
+    "fr": false,
+    "it": false,
+    "ja": false,
+    "zh": false,
+    "ko": false,
+    "pt": false
+  },
+  "logo": "logo.png",
+  "multi": false,
+  "publishMode": "static",
+  "font": {
+    "body": "source-sans-3",
+    "heading": "barlow-condensed",
+    "ar": {
+      "body": "ibm-plex-sans-arabic",
+      "heading": "noto-kufi-arabic"
+    }
+  },
+  "colorScheme": "auto",
+  "theme_color": "#E8A33D",
+  "seo": {
+    "noindex": true
+  },
+  "cssTokens": {
+    "--mx-radius-sm": "2px",
+    "--mx-radius-md": "4px",
+    "--mx-radius-lg": "6px",
+    "--mx-radius-xl": "8px"
+  },
+  "icon": "icon.png"
+}

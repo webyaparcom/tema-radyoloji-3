@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "id": "pmrs2t3zw3",
+      "name": {
+        "tr": "Tetkikler",
+        "en": "Scans",
+        "ar": "الفحوص"
+      },
+      "description": {
+        "tr": "Bölüme göre tetkikler, hazırlık maddeleri ve kısa sorular.",
+        "en": "Scans by section, preparation points and short answers.",
+        "ar": "الفحوص حسب القسم وبنود التحضير وإجابات قصيرة."
+      },
+      "path": "hizmetler",
+      "icon": "radiology",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "83jgzn",
+          "i18twx",
+          "n7hi8r"
+        ],
+        "footer": []
+      },
+      "index": 0
+    },
+    {
+      "name": {
+        "tr": "Merkez",
+        "en": "Centre",
+        "ar": "المركز"
+      },
+      "status": "play",
+      "id": "hakkimizda",
+      "path": "hakkimizda",
+      "category": "",
+      "url": "",
+      "index": 1,
+      "icon": "info",
+      "desing": {
+        "header": [],
+        "body": [
+          "h9ppaa",
+          "lu15z1",
+          "qj40da"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Sayılar, hekim kadrosu ve tetkik günü (kurgusal).",
+        "en": "Figures, the medical team and the scan day (fictional).",
+        "ar": "الأرقام والفريق الطبي ويوم الفحص (افتراضي)."
+      }
+    },
+    {
+      "id": "clo4hnkkzp",
+      "name": {
+        "tr": "Randevu",
+        "en": "Booking",
+        "ar": "الحجز"
+      },
+      "description": {
+        "tr": "Hekim takvimiyle tetkik randevusu talebi (demo).",
+        "en": "Scan booking request with the doctors’ calendar (demo).",
+        "ar": "طلب موعد فحص عبر تقويم الأطباء (تجريبي)."
+      },
+      "path": "teklif-al",
+      "icon": "event",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "6zmmmm"
+        ],
+        "footer": []
+      },
+      "index": 2
+    },
+    {
+      "name": {
+        "tr": "İletişim",
+        "en": "Contact",
+        "ar": "اتصل بنا"
+      },
+      "status": "play",
+      "id": "iletisim",
+      "path": "iletisim",
+      "category": "",
+      "url": "",
+      "index": 3,
+      "icon": "call",
+      "desing": {
+        "header": [],
+        "body": [
+          "v1ubmt",
+          "k8mp01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Adres, telefon ve çalışma saatleri.",
+        "en": "Address, phone and opening hours.",
+        "ar": "العنوان والهاتف وساعات العمل."
+      }
+    }
+  ],
+  "desc": []
+}

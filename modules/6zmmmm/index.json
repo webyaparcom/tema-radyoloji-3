@@ -1,0 +1,51 @@
+{
+  "name": "Randevu Hekim + Takvim — hekim listesi ve aylık takvim iki panel",
+  "description": "İki panel: solda fotoğraflı/baş harfli hekim satırları (ad · unvan, seçilince işaret) ve hizmet listesi; sağda aylık takvim ızgarası (gün başlıkları sayfa dilinde, kapalı ve sınır dışı günler soluk, önceki/sonraki ay, ok tuşlarıyla gezinme), tarih alanı, saat çipleri, hasta bilgileri, KVKK ve gönder. Hekim listesi yoksa sol panelde hizmetler satır olarak seçilir. JS yokken takvim yerine yerel tarih alanı. randevu-uzman-kart uzmanları kart ızgarası yapıp alanları alta dizer, randevu-gun-serit / randevu-ajanda yatay/dikey gün şeridi kullanır; bu modül gerçek aylık takvim ızgarası (ayTakvim parçası, kapalı gün + ön/azami gün sınırı) ile hekim listesini yan yana iki panelde birleştirir. Sunucusuz gönderim (formAction JSON POST › WhatsApp › .ics › mailto), kapalı gün denetimi, KVKK onayı. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Gönderim yolu yoksa blok basılmaz.",
+  "version": "1.0.0",
+  "icon": "stethoscope",
+  "category": "randevu",
+  "subCategory": "doctor-calendar",
+  "tags": [
+    "randevu",
+    "doctor",
+    "calendar",
+    "month-grid",
+    "two-panel",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "1240px",
+    "bosluk": "clamp(56px, 8vw, 104px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "bg": "var(--mx-site-bg, #ffffff)",
+    "text": "var(--mx-site-text, #111318)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+    "kartBg": "var(--mx-site-surface, #f6f7f9)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+    "vurguBg": "var(--mx-site-primary, #2563eb)",
+    "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+    "bgcolor": "var(--mx-site-bg, #ffffff)",
+    "color": "var(--mx-site-text, #111318)"
+  },
+  "data": [],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing",
+    "alanlar": {
+      "ad": "hizmet adı (dil sözlüğü, zorunlu) — eski `services[].name`",
+      "sure": "dakika — eski `duration`",
+      "fiyat": "sayı (sayfa diliyle biçimlenir) — eski `price`",
+      "ikon": "Material Symbols adı",
+      "metin": "kısa açıklama (dil sözlüğü)",
+      "img": "görsel (destekleyen yerleşimde)"
+    }
+  }
+}

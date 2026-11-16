@@ -1,0 +1,55 @@
+{
+  "name": "SSS Kısaca — tek satır cevap, isteğe bağlı ayrıntı",
+  "description": "Her soru numaralı bir kart: cevabın ilk satırı «Kısaca» rozetiyle büyük puntolu hızlı cevap olarak hep görünür; kalan satırlar «Devamı» hap düğmesinin altında (yerel <details>) açılır. Tek satırlı cevapta düğme basılmaz. Rozet yazısı desing `kisaAd`. Mevcut akordeonlar (sss-iki-sutun, sss-cerceve …) soruyu, açık modüller (sss-tablo, sss-gazete) tüm cevabı gösterir; bu modülde soru ve kısa cevap hep açık, yalnız ayrıntı katlanır — iki katmanlı cevap (TL;DR + ayrıntı), açılır öğe cevabın içinde. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Açılırlar yerel <details> (JS'siz). Veri yoksa blok basılmaz.",
+  "version": "1.0.0",
+  "icon": "short_text",
+  "category": "faq",
+  "subCategory": "tldr",
+  "tags": [
+    "faq",
+    "tldr",
+    "short-answer",
+    "details",
+    "two-level",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "1200px",
+    "bosluk": "clamp(56px, 8vw, 104px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "tekAcik": "",
+    "ilkAcik": "",
+    "cta_ad": "",
+    "cta_url": "",
+    "bg": "var(--mx-site-bg, #ffffff)",
+    "text": "var(--mx-site-text, #111318)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+    "kartBg": "var(--mx-site-surface, #f6f7f9)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+    "vurguBg": "var(--mx-site-primary, #2563eb)",
+    "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+    "kisaAd": "",
+    "bgcolor": "var(--mx-site-bg, #ffffff)",
+    "color": "var(--mx-site-text, #111318)"
+  },
+  "data": [],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "data",
+    "alanlar": {
+      "soru": "dil sözlüğü (zorunlu; eski `question`)",
+      "cevap": "dil sözlüğü (eski `answer`)",
+      "kategori": "grup adı, dil sözlüğü (gruplayan yerleşimde)",
+      "ikon": "Material Symbols adı (destekleyen yerleşimde)",
+      "url": "«Devamı» bağlantısı (iç slug ya da tam URL)"
+    }
+  }
+}

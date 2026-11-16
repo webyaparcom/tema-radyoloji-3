@@ -1,0 +1,53 @@
+{
+  "name": "Zaman Çift Kulvar — iki paralel şeritte aynı yıla hizalanan olaylar",
+  "description": "İki adlandırılmış kulvar (ör. «Şirketimiz» · «Sektörde», «Anne» · «Bebek») ve ortada yıl ekseni: aynı yıla düşen olaylar aynı satırda iki yana hizalanır, kulvarı boş kalan yılda kesik nokta izi kalır; kulvar başlıkları kaydırırken yapışkan, kartlar eksene kesik çizgiyle bağlanır. Mobilde tek sütun, her kartta kulvar çipi. Veride `kol` (1/2) yoksa olaylar sırayla iki kulvara dağılır. timeline-2 olayları tek eksenin iki yanına sırayla (zikzak) dizer; zaman-cift-kulvar karşılaştırmalı iki paralel anlatıdır: adlandırılmış yapışkan kulvar başlıkları, aynı yıla düşen olayların aynı satırda hizalanması, boş kulvar izi ve kulvar çipleri — «biz ve dünya», «anne ve bebek» gibi çift hikâye. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+  "version": "1.0.0",
+  "icon": "compare_arrows",
+  "category": "timeline",
+  "subCategory": "dual-lane",
+  "tags": [
+    "timeline",
+    "dual-lane",
+    "compare",
+    "aligned",
+    "sticky",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "1200px",
+    "bosluk": "clamp(56px, 8vw, 104px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "bg": "var(--mx-site-bg, #ffffff)",
+    "text": "var(--mx-site-text, #111318)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+    "kartBg": "var(--mx-site-surface, #f6f7f9)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+    "vurguBg": "var(--mx-site-primary, #2563eb)",
+    "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+    "kol1": "",
+    "kol2": "",
+    "bgcolor": "var(--mx-site-bg, #ffffff)",
+    "color": "var(--mx-site-text, #111318)"
+  },
+  "data": [],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "data",
+    "alanlar": {
+      "etiket": "yıl / tarih / dönem (dil sözlüğü ya da düz metin)",
+      "baslik": "dil sözlüğü (zorunlu)",
+      "metin": "dil sözlüğü",
+      "ikon": "Material Symbols adı",
+      "img": "görsel yolu (destekleyen yerleşimde)",
+      "url": "iç/dış bağlantı"
+    }
+  }
+}

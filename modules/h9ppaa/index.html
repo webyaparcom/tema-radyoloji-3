@@ -1,0 +1,125 @@
+<section class="modulex-sayac-nabiz-monitor{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-sayac-nabiz-monitor-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* sayac-nabiz-monitor — sayac-kronometre kadran + tur listesi, sayac-sube-harita akan güzergâh çizer; bu modül cihaz ekranı iskeletidir — ızgaralı dalga şeridi + renk kodlu vital karolar + çentikli sinyal göstergesi (tıbbi monitör dili). */
+  .modulex-sayac-nabiz-monitor { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-sayac-nabiz-monitor *, .modulex-sayac-nabiz-monitor *::before, .modulex-sayac-nabiz-monitor *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-sayac-nabiz-monitor :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-sayac-nabiz-monitor :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-sayac-nabiz-monitor :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-sayac-nabiz-monitor :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-sayac-nabiz-monitor img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-sayac-nabiz-monitor) img { height: auto; }
+  .modulex-sayac-nabiz-monitor [hidden] { display: none !important; }
+  .modulex-sayac-nabiz-monitor :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-sayac-nabiz-monitor :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-sayac-nabiz-monitor-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-sayac-nabiz-monitor-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-sayac-nabiz-monitor--bassiz .modulex-sayac-nabiz-monitor-bas { display: none; }
+  .modulex-sayac-nabiz-monitor-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-sayac-nabiz-monitor-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-sayac-nabiz-monitor-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-sayac-nabiz-monitor-bas { max-width: 760px; }
+  .modulex-sayac-nabiz-monitor-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-sayac-nabiz-monitor-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-sayac-nabiz-monitor-dugme:hover { transform: translateY(-2px); }
+  .modulex-sayac-nabiz-monitor-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-sayac-nabiz-monitor-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-sayac-nabiz-monitor-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-sayac-nabiz-monitor-cihaz { overflow: hidden; border: 1px solid --cizgi--; border-radius: --yuvarlak--; background: color-mix(in srgb, --bg-- 88%, --accent--); box-shadow: inset 0 0 0 6px color-mix(in srgb, --text-- 5%, transparent), 0 40px 80px -50px color-mix(in srgb, --accent-- 60%, transparent); }
+  .modulex-sayac-nabiz-monitor-dalga { position: relative; height: clamp(96px, 12vw, 136px); padding-block: 12px; padding-inline: 16px 64px; border-block-end: 1px solid --cizgi--; background: linear-gradient(90deg, color-mix(in srgb, --text-- 7%, transparent) 1px, transparent 1px) 0 0 / 24px 24px, linear-gradient(180deg, color-mix(in srgb, --text-- 7%, transparent) 1px, transparent 1px) 0 0 / 24px 24px; }
+  .modulex-sayac-nabiz-monitor-dalga svg { display: block; width: 100%; height: 100%; overflow: visible; }
+  .modulex-sayac-nabiz-monitor-ritim-iz { fill: none; stroke: color-mix(in srgb, --accent-- 22%, transparent); stroke-width: 2; }
+  .modulex-sayac-nabiz-monitor-ritim { fill: none; stroke: --accent--; stroke-width: 2.5; stroke-linejoin: round; stroke-dasharray: 100; stroke-dashoffset: 0; filter: drop-shadow(0 0 5px --accent--); }
+  .modulex-sayac-nabiz-monitor--hazir:not(.modulex-sayac-nabiz-monitor--gor) .modulex-sayac-nabiz-monitor-ritim { stroke-dashoffset: 100; }
+  .modulex-sayac-nabiz-monitor--gor .modulex-sayac-nabiz-monitor-ritim { animation: modulex-sayac-nabiz-monitor-tara 2.4s linear 2; }
+  @keyframes modulex-sayac-nabiz-monitor-tara { from { stroke-dashoffset: 100; } to { stroke-dashoffset: 0; } }
+  .modulex-sayac-nabiz-monitor-kalp { position: absolute; inset-block-start: 14px; inset-inline-end: 18px; color: --accent--; animation: modulex-sayac-nabiz-monitor-atis 0.8s ease-in-out 5; }
+  .modulex-sayac-nabiz-monitor-kalp .material-symbols-outlined { font-size: 30px; font-variation-settings: "FILL" 1; }
+  @keyframes modulex-sayac-nabiz-monitor-atis { 0%, 100% { transform: scale(1); } 30% { transform: scale(1.25); } }
+  .modulex-sayac-nabiz-monitor-vitaller { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); }
+  .modulex-sayac-nabiz-monitor-vital { --renk: --accent--; display: grid; align-content: start; gap: 8px; padding: clamp(18px, 2.6vw, 28px); border-inline-end: 1px solid --cizgi--; border-block-end: 1px solid --cizgi--; transition: background 0.3s ease; }
+  .modulex-sayac-nabiz-monitor-vital:hover { background: color-mix(in srgb, --text-- 5%, transparent); }
+  .modulex-sayac-nabiz-monitor-vital--1 { --renk: color-mix(in srgb, --accent-- 45%, --text--); }
+  .modulex-sayac-nabiz-monitor-vital--2 { --renk: color-mix(in srgb, --text-- 82%, --accent--); }
+  .modulex-sayac-nabiz-monitor-vital--3 { --renk: --accentInk--; }
+  .modulex-sayac-nabiz-monitor-vital-bas { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .modulex-sayac-nabiz-monitor-etiket { color: --muted--; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; line-height: 1.3; text-transform: uppercase; }
+  .modulex-sayac-nabiz-monitor-ikon { color: var(--renk); font-size: 20px; }
+  .modulex-sayac-nabiz-monitor-sayi { color: var(--renk); font-family: var(--mx-font-mono, ui-monospace, monospace); font-size: clamp(2.4rem, 4.4vw, 3.4rem); font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1; }
+  .modulex-sayac-nabiz-monitor-ek { font-size: 0.45em; }
+  .modulex-sayac-nabiz-monitor-sinyal { display: block; height: 10px; background: repeating-linear-gradient(90deg, color-mix(in srgb, --text-- 14%, transparent) 0 5px, transparent 5px 8px); }
+  .modulex-sayac-nabiz-monitor-sinyal span { display: block; width: calc(var(--o) * 100%); height: 100%; background: repeating-linear-gradient(90deg, var(--renk) 0 5px, transparent 5px 8px); transition: width 1.4s steps(12); }
+  .modulex-sayac-nabiz-monitor--hazir:not(.modulex-sayac-nabiz-monitor--gor) .modulex-sayac-nabiz-monitor-sinyal span { width: 0; }
+  .modulex-sayac-nabiz-monitor-not { color: --muted--; font-size: 0.88rem; }
+  @media (max-width: 768px) {
+    .modulex-sayac-nabiz-monitor-vitaller { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .modulex-sayac-nabiz-monitor-vital { padding: 16px 14px; }
+    .modulex-sayac-nabiz-monitor-sayi { font-size: 1.9rem; }
+    .modulex-sayac-nabiz-monitor-dalga { padding-inline: 10px 44px; }
+    .modulex-sayac-nabiz-monitor-etiket { letter-spacing: 0.05em; }
+  }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-sayac-nabiz-monitor :is(.modulex-sayac-nabiz-monitor-baslik, .modulex-sayac-nabiz-monitor-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-sayac-nabiz-monitor-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-sayac-nabiz-monitor { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-sayac-nabiz-monitor *, .modulex-sayac-nabiz-monitor *::before, .modulex-sayac-nabiz-monitor *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-sayac-nabiz-monitor";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const gozlem = (s, P, az) => {
+        const gor = () => s.classList.add(P + "--gor");
+        s.classList.add(P + "--hazir");
+        if (az || !("IntersectionObserver" in window)) { gor(); return; }
+        const io = new IntersectionObserver((gs) => {
+          gs.forEach((g) => { if (g.isIntersecting) { gor(); io.disconnect(); } });
+        }, { threshold: 0.15 });
+        io.observe(s);
+      };
+    const sayac = (s, P, az) => {
+        const el = [...s.querySelectorAll("[data-hedef]")];
+        if (!el.length || az || !("IntersectionObserver" in window)) return;
+        const dl = document.documentElement.lang || undefined;
+        const oynat = () => el.forEach((e) => {
+          const h = Number(e.dataset.hedef);
+          const od = Number(e.dataset.ondalik) || 0;
+          const son = e.textContent;
+          if (!Number.isFinite(h)) return;
+          let f;
+          try { f = new Intl.NumberFormat(dl, { minimumFractionDigits: od, maximumFractionDigits: od }); } catch (x) { return; }
+          const t0 = performance.now();
+          const adim = (t) => {
+            const p = Math.min(1, (t - t0) / 1300);
+            e.textContent = p < 1 ? f.format(h * (1 - Math.pow(1 - p, 3))) : son;
+            if (p < 1) requestAnimationFrame(adim);
+          };
+          requestAnimationFrame(adim);
+        });
+        const io = new IntersectionObserver((gs) => {
+          gs.forEach((g) => { if (g.isIntersecting) { oynat(); io.disconnect(); } });
+        }, { threshold: 0.3 });
+        io.observe(s);
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      gozlem(s, P, az);
+      sayac(s, P, az);
+    });
+  })();
+</script>

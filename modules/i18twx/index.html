@@ -1,0 +1,121 @@
+<section class="modulex-ozellik-isaret-gorsel{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-ozellik-isaret-gorsel-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* ozellik-isaret-gorsel — ozellik-merkez-gorsel özellikleri görselin iki yanına dizer, ozellik-sekme-gorsel sekmeyle görsel değiştirir; bu modülde özellikler görselin TAM üzerinde konumlu etkileşimli işaretlerdir (hotspot) — baloncuk + liste eşleşmesi, işaret konumu veriden. */
+  .modulex-ozellik-isaret-gorsel { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-ozellik-isaret-gorsel *, .modulex-ozellik-isaret-gorsel *::before, .modulex-ozellik-isaret-gorsel *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-ozellik-isaret-gorsel :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-ozellik-isaret-gorsel :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-ozellik-isaret-gorsel :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-ozellik-isaret-gorsel :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-ozellik-isaret-gorsel img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-ozellik-isaret-gorsel) img { height: auto; }
+  .modulex-ozellik-isaret-gorsel [hidden] { display: none !important; }
+  .modulex-ozellik-isaret-gorsel :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-ozellik-isaret-gorsel :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-ozellik-isaret-gorsel-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-ozellik-isaret-gorsel-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-ozellik-isaret-gorsel--bassiz .modulex-ozellik-isaret-gorsel-bas { display: none; }
+  .modulex-ozellik-isaret-gorsel-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-ozellik-isaret-gorsel-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-ozellik-isaret-gorsel-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-ozellik-isaret-gorsel-bas { max-width: 760px; }
+  .modulex-ozellik-isaret-gorsel-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-ozellik-isaret-gorsel-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-ozellik-isaret-gorsel-dugme:hover { transform: translateY(-2px); }
+  .modulex-ozellik-isaret-gorsel-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-ozellik-isaret-gorsel-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-ozellik-isaret-gorsel-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-ozellik-isaret-gorsel-vitrin { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 56px); align-items: center; }
+  .modulex-ozellik-isaret-gorsel-vitrin--tek { grid-template-columns: minmax(0, 1fr); max-width: 760px; }
+  .modulex-ozellik-isaret-gorsel-sahne { position: relative; border-radius: --yuvarlak--; }
+  .modulex-ozellik-isaret-gorsel-foto { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: --yuvarlak--; }
+  /* işaret konumu görsele göre fizikseldir (görsel RTL'de aynalanmaz) — inset kısaltması: üst sağ alt sol */
+  .modulex-ozellik-isaret-gorsel-nokta { position: absolute; inset: var(--y) auto auto var(--x); z-index: 4; display: grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 3px solid --bg--; border-radius: 50%; background: --accent--; color: --accentText--; font: inherit; font-weight: 800; translate: -50% -50%; box-shadow: 0 6px 16px -6px color-mix(in srgb, --text-- 70%, transparent); transition: transform 0.25s ease, background-color 0.25s ease; }
+  .modulex-ozellik-isaret-gorsel-nokta::after { content: ""; position: absolute; inset: -9px; border: 2px solid --accent--; border-radius: 50%; pointer-events: none; animation: modulex-ozellik-isaret-gorsel-nabiz 2.4s ease-out infinite; }
+  .modulex-ozellik-isaret-gorsel-nokta:hover, .modulex-ozellik-isaret-gorsel-nokta--on { transform: scale(1.18); }
+  .modulex-ozellik-isaret-gorsel-nokta[aria-expanded="true"] { background-color: --text--; color: --bg--; }
+  .modulex-ozellik-isaret-gorsel-nsay { font-size: 0.95rem; font-variant-numeric: tabular-nums; }
+  .modulex-ozellik-isaret-gorsel-gizli { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .modulex-ozellik-isaret-gorsel-balon { position: absolute; inset: calc(var(--y) + 30px) auto auto clamp(8px, calc(var(--x) - 40px), calc(100% - 288px)); z-index: 3; width: min(280px, calc(100% - 16px)); padding: 16px 18px; border-radius: 14px; background: --bg--; color: --text--; box-shadow: 0 22px 40px -18px color-mix(in srgb, --text-- 55%, transparent); animation: modulex-ozellik-isaret-gorsel-balon 0.3s ease both; }
+  .modulex-ozellik-isaret-gorsel-balon--sag { inset: calc(var(--y) + 30px) auto auto clamp(8px, calc(var(--x) - 240px), calc(100% - 288px)); }
+  .modulex-ozellik-isaret-gorsel-balon .modulex-ozellik-isaret-gorsel-nyazi { display: grid; gap: 6px; }
+  .modulex-ozellik-isaret-gorsel-balon .modulex-ozellik-isaret-gorsel-kbaslik { font-size: 1.05rem; font-weight: 800; }
+  .modulex-ozellik-isaret-gorsel-balon .modulex-ozellik-isaret-gorsel-kmetin { color: --muted--; font-size: 0.9rem; }
+  .modulex-ozellik-isaret-gorsel-notlar { display: grid; gap: 4px; }
+  .modulex-ozellik-isaret-gorsel-not { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 14px; align-items: start; padding: 14px 16px; border-inline-start: 3px solid transparent; border-start-end-radius: 12px; border-end-end-radius: 12px; background-color: transparent; transition: background-color 0.25s ease, border-color 0.25s ease; }
+  .modulex-ozellik-isaret-gorsel-not:hover, .modulex-ozellik-isaret-gorsel-not--etkin { border-inline-start-color: --accent--; background-color: --kartBg--; }
+  .modulex-ozellik-isaret-gorsel-nsira { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: color-mix(in srgb, --accent-- 14%, --bg--); color: --accentInk--; font-weight: 800; font-variant-numeric: tabular-nums; }
+  .modulex-ozellik-isaret-gorsel-not--etkin .modulex-ozellik-isaret-gorsel-nsira { background: --accent--; color: --accentText--; }
+  .modulex-ozellik-isaret-gorsel-notlar .modulex-ozellik-isaret-gorsel-nyazi { display: grid; gap: 4px; }
+  .modulex-ozellik-isaret-gorsel-notlar .modulex-ozellik-isaret-gorsel-kbaslik { font-size: 1.08rem; font-weight: 750; }
+  .modulex-ozellik-isaret-gorsel-notlar .modulex-ozellik-isaret-gorsel-kmetin { color: --muted--; font-size: 0.93rem; }
+  @keyframes modulex-ozellik-isaret-gorsel-nabiz { from { transform: scale(0.85); opacity: 1; } to { transform: scale(1.4); opacity: 0; } }
+  @keyframes modulex-ozellik-isaret-gorsel-balon { from { transform: translateY(6px); } to { transform: none; } }
+  @media (max-width: 1024px) { .modulex-ozellik-isaret-gorsel-vitrin { grid-template-columns: minmax(0, 1fr); } }
+  @media (max-width: 768px) {
+    .modulex-ozellik-isaret-gorsel-nokta { width: 34px; height: 34px; border-width: 2px; }
+    .modulex-ozellik-isaret-gorsel-nokta::after { inset: -7px; }
+    .modulex-ozellik-isaret-gorsel-balon { display: none; }
+    .modulex-ozellik-isaret-gorsel-not { padding: 12px; }
+  }
+  .modulex-ozellik-isaret-gorsel-git { display: inline-flex; align-items: center; gap: 6px; width: fit-content; color: --accentInk--; font-weight: 700; text-decoration: none; transition: gap 0.25s ease; }
+  .modulex-ozellik-isaret-gorsel-git:hover { gap: 10px; }
+  .modulex-ozellik-isaret-gorsel-git .material-symbols-outlined { font-size: 18px; }
+  .modulex-ozellik-isaret-gorsel-ic > .modulex-ozellik-isaret-gorsel-cta { grid-column: 1 / -1; margin-block-start: 32px; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-ozellik-isaret-gorsel :is(.modulex-ozellik-isaret-gorsel-baslik, .modulex-ozellik-isaret-gorsel-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-ozellik-isaret-gorsel-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-ozellik-isaret-gorsel { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-ozellik-isaret-gorsel *, .modulex-ozellik-isaret-gorsel *::before, .modulex-ozellik-isaret-gorsel *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-ozellik-isaret-gorsel";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const isaretSec = (s, P) => {
+        const n = [...s.querySelectorAll("[data-hs]")];
+        const ln = [...s.querySelectorAll("[data-hs-not]")];
+        const b = s.querySelector("[data-hs-balon]");
+        if (!n.length) return;
+        s.classList.add(P + "--hsjs");
+        const sec = (i) => {
+          n.forEach((x, j) => x.setAttribute("aria-expanded", String(j === i)));
+          ln.forEach((x, j) => x.classList.toggle(P + "-not--etkin", j === i));
+          if (!b) return;
+          if (i < 0 || !n[i]) { b.hidden = true; return; }
+          const y = ln[i] ? ln[i].querySelector("[data-hs-yazi]") : null;
+          b.replaceChildren(...(y ? [y.cloneNode(true)] : []));
+          b.style.setProperty("--x", n[i].style.getPropertyValue("--x"));
+          b.style.setProperty("--y", n[i].style.getPropertyValue("--y"));
+          b.classList.toggle(P + "-balon--sag", parseFloat(n[i].style.getPropertyValue("--x")) > 58);
+          b.hidden = false;
+        };
+        n.forEach((x, i) => x.addEventListener("click", () => sec(x.getAttribute("aria-expanded") === "true" ? -1 : i)));
+        ln.forEach((x, i) => {
+          ["mouseenter", "focusin"].forEach((t) => x.addEventListener(t, () => { if (n[i]) n[i].classList.add(P + "-nokta--on"); }));
+          ["mouseleave", "focusout"].forEach((t) => x.addEventListener(t, () => { if (n[i]) n[i].classList.remove(P + "-nokta--on"); }));
+        });
+        s.addEventListener("keydown", (e) => { if (e.key === "Escape") sec(-1); });
+        sec(0);
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      isaretSec(s, P, az);
+    });
+  })();
+</script>

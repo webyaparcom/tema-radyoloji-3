@@ -1,0 +1,72 @@
+<section class="modulex-sss-kisaca{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-sss-kisaca-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* sss-kisaca — Mevcut akordeonlar (sss-iki-sutun, sss-cerceve …) soruyu, açık modüller (sss-tablo, sss-gazete) tüm cevabı gösterir; bu modülde soru ve kısa cevap hep açık, yalnız ayrıntı katlanır — iki katmanlı cevap (TL;DR + ayrıntı), açılır öğe cevabın içinde. */
+  .modulex-sss-kisaca { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-sss-kisaca *, .modulex-sss-kisaca *::before, .modulex-sss-kisaca *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-sss-kisaca :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-sss-kisaca :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-sss-kisaca :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-sss-kisaca :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-sss-kisaca img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-sss-kisaca) img { height: auto; }
+  .modulex-sss-kisaca [hidden] { display: none !important; }
+  .modulex-sss-kisaca :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-sss-kisaca :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-sss-kisaca-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-sss-kisaca-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-sss-kisaca--bassiz .modulex-sss-kisaca-bas { display: none; }
+  .modulex-sss-kisaca-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-sss-kisaca-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-sss-kisaca-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-sss-kisaca-bas { max-width: 760px; }
+  .modulex-sss-kisaca-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-sss-kisaca-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-sss-kisaca-dugme:hover { transform: translateY(-2px); }
+  .modulex-sss-kisaca-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-sss-kisaca-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-sss-kisaca-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-sss-kisaca-liste { display: grid; gap: 18px; max-width: 940px; }
+  .modulex-sss-kisaca-madde { display: grid; grid-template-columns: 58px minmax(0, 1fr); align-items: start; gap: 10px 22px; padding: clamp(20px, 3vw, 30px); border-radius: --yuvarlak--; background-color: --kartBg--; transition: box-shadow 0.3s ease; }
+  .modulex-sss-kisaca-madde:hover { box-shadow: 0 0 0 1px --cizgi--, 0 16px 30px -26px rgba(0, 0, 0, 0.5); }
+  .modulex-sss-kisaca-madde > :not(.modulex-sss-kisaca-mno) { grid-column: 2; }
+  .modulex-sss-kisaca-mno { grid-row: span 2; display: grid; place-items: center; width: 56px; height: 56px; border: 2px solid --accent--; border-radius: 50%; color: --accentInk--; font-weight: 800; font-variant-numeric: tabular-nums; }
+  .modulex-sss-kisaca-msoru { padding-block-start: 4px; color: --muted--; font-size: 1.02rem; font-weight: 700; line-height: 1.45; }
+  .modulex-sss-kisaca-ozcevap { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 12px; padding: 12px 16px; border-inline-start: 4px solid --accent--; border-radius: 4px; background-color: color-mix(in srgb, --accent-- 9%, --kartBg--); font-family: var(--mx-font-heading, inherit); font-size: clamp(1.15rem, 2vw, 1.4rem); font-weight: 750; line-height: 1.35; }
+  .modulex-sss-kisaca-rozet { flex: none; padding: 3px 10px; border-radius: 999px; background-color: --vurguBg--; color: --vurguText--; font-family: var(--mx-font-sans, inherit); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+  .modulex-sss-kisaca-adugme { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding-block: 6px; padding-inline: 16px 10px; border: 1px solid --cizgi--; border-radius: 999px; color: --accentInk--; font-size: 0.92rem; font-weight: 700; list-style: none; transition: border-color 0.2s ease, background-color 0.2s ease; }
+  .modulex-sss-kisaca-adugme::-webkit-details-marker { display: none; }
+  .modulex-sss-kisaca-adugme:hover { border-color: --accent--; }
+  .modulex-sss-kisaca-ayrinti[open] .modulex-sss-kisaca-adugme { background-color: --bg--; }
+  .modulex-sss-kisaca-aok { font-size: 20px; transition: transform 0.3s ease; }
+  .modulex-sss-kisaca-ayrinti[open] .modulex-sss-kisaca-aok { transform: rotate(180deg); }
+  .modulex-sss-kisaca-aic { display: grid; gap: 10px; margin-block-start: 14px; padding-block-start: 14px; border-block-start: 1px dashed --cizgi--; animation: modulex-sss-kisaca-kisagel 0.35s ease both; }
+  .modulex-sss-kisaca-cevap { color: --muted--; line-height: 1.75; }
+  @keyframes modulex-sss-kisaca-kisagel { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+  @media (max-width: 768px) {
+    .modulex-sss-kisaca-madde { grid-template-columns: minmax(0, 1fr); }
+    .modulex-sss-kisaca-madde > :not(.modulex-sss-kisaca-mno) { grid-column: 1; }
+    .modulex-sss-kisaca-mno { grid-row: auto; width: 40px; height: 40px; font-size: 0.9rem; }
+  }
+  .modulex-sss-kisaca-bag { display: inline-flex; align-items: center; gap: 6px; margin-block-start: 10px; color: --accentInk--; font-weight: 700; text-decoration: none; transition: gap 0.25s ease; }
+  .modulex-sss-kisaca-bag:hover { gap: 10px; text-decoration: underline; text-underline-offset: 4px; }
+  .modulex-sss-kisaca-bag .material-symbols-outlined { font-size: 18px; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-sss-kisaca :is(.modulex-sss-kisaca-baslik, .modulex-sss-kisaca-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-sss-kisaca-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-sss-kisaca { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-sss-kisaca *, .modulex-sss-kisaca *::before, .modulex-sss-kisaca *::after { animation: none !important; transition: none !important; }
+  }
+</style>

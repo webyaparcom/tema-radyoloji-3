@@ -1,0 +1,140 @@
+<section class="modulex-ekip-avukat-profil{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-ekip-avukat-profil-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* ekip-avukat-profil — Ana-detay düzeni: ekip-akordeon'un satır içinde açılmasından ve ekip-bolum-sekme'nin bölüm sekmesinden farklı olarak liste kişi başına bir seçim, ayrıntı tek ve kalıcı bir dosya panelinde; uzmanlık/baro/dil yapılandırılmış alanlar (dl) olarak basılır. */
+  .modulex-ekip-avukat-profil { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-ekip-avukat-profil *, .modulex-ekip-avukat-profil *::before, .modulex-ekip-avukat-profil *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-ekip-avukat-profil :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-ekip-avukat-profil :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-ekip-avukat-profil :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-ekip-avukat-profil :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-ekip-avukat-profil img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-ekip-avukat-profil) img { height: auto; }
+  .modulex-ekip-avukat-profil [hidden] { display: none !important; }
+  .modulex-ekip-avukat-profil :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-ekip-avukat-profil :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-ekip-avukat-profil-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-ekip-avukat-profil-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-ekip-avukat-profil--bassiz .modulex-ekip-avukat-profil-bas { display: none; }
+  .modulex-ekip-avukat-profil-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-ekip-avukat-profil-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-ekip-avukat-profil-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-ekip-avukat-profil-bas { max-width: 760px; }
+  .modulex-ekip-avukat-profil-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-ekip-avukat-profil-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-ekip-avukat-profil-dugme:hover { transform: translateY(-2px); }
+  .modulex-ekip-avukat-profil-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-ekip-avukat-profil-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-ekip-avukat-profil-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-ekip-avukat-profil-ana { display: grid; grid-template-columns: minmax(0, 330px) minmax(0, 1fr); gap: clamp(24px, 4vw, 56px); align-items: start; }
+  .modulex-ekip-avukat-profil-ana--tek { grid-template-columns: minmax(0, 1fr); }
+  .modulex-ekip-avukat-profil-dizin { position: sticky; inset-block-start: 96px; display: grid; gap: 2px; padding: 8px; border: 1px solid --cizgi--; border-radius: --yuvarlak--; }
+  .modulex-ekip-avukat-profil-isim { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 12px; padding: 10px 12px; border-radius: calc(--yuvarlak-- * 0.6); color: --text--; text-decoration: none; transition: background-color 0.25s ease, color 0.25s ease; }
+  .modulex-ekip-avukat-profil-isim:hover { background-color: --kartBg--; }
+  .modulex-ekip-avukat-profil-isim[aria-current="true"] { background-color: --vurguBg--; color: --vurguText--; }
+  .modulex-ekip-avukat-profil-isim[aria-current="true"] .modulex-ekip-avukat-profil-iunvan { color: inherit; }
+  .modulex-ekip-avukat-profil-mini { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; font-size: 0.9rem; }
+  .modulex-ekip-avukat-profil-iyazi { display: grid; min-width: 0; line-height: 1.35; }
+  .modulex-ekip-avukat-profil-iad { font-weight: 700; }
+  .modulex-ekip-avukat-profil-iunvan { color: --muted--; font-size: 0.84rem; }
+  .modulex-ekip-avukat-profil-iok { font-size: 20px; opacity: 0.35; transition: opacity 0.25s ease; }
+  .modulex-ekip-avukat-profil-isim[aria-current="true"] .modulex-ekip-avukat-profil-iok, .modulex-ekip-avukat-profil-isim:hover .modulex-ekip-avukat-profil-iok { opacity: 1; }
+  .modulex-ekip-avukat-profil-detaylar { display: grid; gap: 28px; }
+  .modulex-ekip-avukat-profil-detay { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(20px, 3vw, 40px); align-items: start; padding: clamp(18px, 3vw, 32px); border-radius: --yuvarlak--; background-color: --kartBg--; scroll-margin-block-start: 96px; }
+  .modulex-ekip-avukat-profil-detay:focus { outline: none; }
+  .modulex-ekip-avukat-profil--gel { animation: modulex-ekip-avukat-profil-gel 0.45s ease both; }
+  @keyframes modulex-ekip-avukat-profil-gel { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  .modulex-ekip-avukat-profil-dfoto { width: 100%; aspect-ratio: 4 / 5; border-radius: calc(--yuvarlak-- * 0.7); object-fit: cover; font-size: 4rem; }
+  .modulex-ekip-avukat-profil-dyazi { display: grid; gap: 10px; }
+  .modulex-ekip-avukat-profil-dyazi .modulex-ekip-avukat-profil-ad { font-size: clamp(1.4rem, 2.4vw, 1.9rem); }
+  .modulex-ekip-avukat-profil-ozl { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 12px 16px; margin-block-start: 8px; padding-block-start: 16px; border-block-start: 1px solid --cizgi--; font-size: 0.95rem; }
+  .modulex-ekip-avukat-profil-dt { display: inline-flex; align-items: center; gap: 6px; color: --accentInk--; font-size: 0.85rem; font-weight: 700; }
+  .modulex-ekip-avukat-profil-dt .material-symbols-outlined { font-size: 19px; }
+  .modulex-ekip-avukat-profil-etiketler { display: flex; flex-wrap: wrap; gap: 6px; }
+  .modulex-ekip-avukat-profil-etiketler li { padding: 3px 10px; border-radius: 6px; background-color: color-mix(in srgb, --accent-- 12%, --bg--); font-size: 0.82rem; font-weight: 600; }
+  @media (max-width: 1024px) {
+    .modulex-ekip-avukat-profil-detay { grid-template-columns: minmax(0, 1fr); }
+    .modulex-ekip-avukat-profil-dfoto { aspect-ratio: 16 / 10; }
+  }
+  @media (max-width: 768px) {
+    .modulex-ekip-avukat-profil-ana { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+    .modulex-ekip-avukat-profil-dizin { position: static; display: flex; overflow-x: auto; scrollbar-width: none; }
+    .modulex-ekip-avukat-profil-dizin li { flex: none; }
+    .modulex-ekip-avukat-profil-iok { display: none; }
+    .modulex-ekip-avukat-profil-ozl { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+    .modulex-ekip-avukat-profil-ozl dd + dt { margin-block-start: 8px; }
+  }
+  /* img width/height öznitelikleri CSS yüksekliği olur — aspect-ratio'nun çalışması için yükseklik auto (modül kuralı ezebilir) */
+  :where(.modulex-ekip-avukat-profil) img { height: auto; }
+  .modulex-ekip-avukat-profil-foto { min-width: 0; }
+  .modulex-ekip-avukat-profil-bag { color: inherit; text-decoration: none; }
+  .modulex-ekip-avukat-profil-bag:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .modulex-ekip-avukat-profil-harf { display: grid; place-items: center; background-color: --vurguBg--; color: --vurguText--; font-weight: 800; letter-spacing: 0.02em; }
+  .modulex-ekip-avukat-profil-sosyal { display: flex; flex-wrap: wrap; gap: 8px; }
+  .modulex-ekip-avukat-profil-slink { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-width: 40px; min-height: 40px; padding: 0 10px; border: 1px solid --cizgi--; border-radius: 999px; color: inherit; font-size: 0.88rem; text-decoration: none; transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease; }
+  .modulex-ekip-avukat-profil-slink:hover { background-color: --accent--; border-color: --accent--; color: --accentText--; }
+  .modulex-ekip-avukat-profil-slink .material-symbols-outlined { font-size: 19px; }
+  .modulex-ekip-avukat-profil-syazi { overflow-wrap: anywhere; }
+  .modulex-ekip-avukat-profil-ad { font-size: 1.12rem; font-weight: 750; line-height: 1.3; }
+  .modulex-ekip-avukat-profil-unvan { color: --accentInk--; font-size: 0.92rem; font-weight: 650; }
+  .modulex-ekip-avukat-profil-bio { color: --muted--; font-size: 0.95rem; line-height: 1.65; }
+  .modulex-ekip-avukat-profil-bolum { color: --muted--; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-ekip-avukat-profil :is(.modulex-ekip-avukat-profil-baslik, .modulex-ekip-avukat-profil-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-ekip-avukat-profil-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-ekip-avukat-profil { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-ekip-avukat-profil *, .modulex-ekip-avukat-profil *::before, .modulex-ekip-avukat-profil *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-ekip-avukat-profil";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const anaDetay = (s, P, az) => {
+        const sec = [...s.querySelectorAll("[data-ad-sec]")];
+        const det = [...s.querySelectorAll("[data-ad-detay]")];
+        if (sec.length < 2) return;
+        s.classList.add(P + "--js");
+        const mq = window.matchMedia ? window.matchMedia("(max-width: 768px)") : null;
+        const goster = (n, kaydir) => {
+          sec.forEach((a) => { if (a.dataset.adSec === n) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current"); });
+          det.forEach((d) => {
+            const on = d.dataset.adDetay === n;
+            d.hidden = !on;
+            d.classList.remove(P + "--gel");
+            if (on && !az) { void d.offsetWidth; d.classList.add(P + "--gel"); }
+            if (on && kaydir && mq && mq.matches) d.scrollIntoView({ block: "nearest", behavior: az ? "auto" : "smooth" });
+          });
+        };
+        sec.forEach((a, i) => {
+          a.addEventListener("click", (e) => { e.preventDefault(); goster(a.dataset.adSec, true); });
+          a.addEventListener("keydown", (e) => {
+            let n = -1;
+            if (e.key === "ArrowDown") n = (i + 1) % sec.length;
+            else if (e.key === "ArrowUp") n = (i - 1 + sec.length) % sec.length;
+            else if (e.key === "Home") n = 0;
+            else if (e.key === "End") n = sec.length - 1;
+            if (n > -1) { e.preventDefault(); sec[n].focus(); goster(sec[n].dataset.adSec); }
+          });
+        });
+        goster(sec[0].dataset.adSec);
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      anaDetay(s, P, az);
+    });
+  })();
+</script>

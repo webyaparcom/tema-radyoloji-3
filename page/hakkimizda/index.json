@@ -1,0 +1,48 @@
+{
+  "name": {
+    "tr": "Merkez",
+    "en": "Centre",
+    "ar": "المركز"
+  },
+  "status": "play",
+  "category": "",
+  "id": "hakkimizda",
+  "url": "",
+  "path": "hakkimizda",
+  "index": 1,
+  "icon": "info",
+  "desing": {
+    "header": [],
+    "body": [
+      "h9ppaa",
+      "lu15z1",
+      "qj40da"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Sayılar, hekim kadrosu ve tetkik günü (kurgusal).",
+    "en": "Figures, the medical team and the scan day (fictional).",
+    "ar": "الأرقام والفريق الطبي ويوم الفحص (افتراضي)."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Merkez",
+    "en": "Centre",
+    "ar": "المركز"
+  },
+  "keyword": {
+    "tr": "hakkımızda",
+    "en": "about",
+    "ar": "من نحن"
+  },
+  "text": {},
+  "update": "2026-11-16T20:31:12.790Z",
+  "date": "2026-10-30"
+}

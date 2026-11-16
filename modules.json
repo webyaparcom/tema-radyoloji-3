@@ -1,0 +1,3354 @@
+{
+  "data": [
+    {
+      "name": "Demo Bandı",
+      "path": "demo-bandi",
+      "local": "header",
+      "category": "demo",
+      "id": "k8db01",
+      "desing": {
+        "tone": "info",
+        "bandBg": "",
+        "bandFg": "",
+        "ctaHref": "https://webyapar.com/temalar",
+        "ariaLabel": {
+          "tr": "Demo site uyarısı",
+          "en": "Demo site notice",
+          "ar": "تنبيه الموقع التجريبي"
+        },
+        "text": {
+          "tr": "Bu bir demo sitedir — içerik kurgusaldır, ödeme alınmaz",
+          "en": "This is a demo site — the content is fictional and no payment is taken",
+          "ar": "هذا موقع تجريبي — المحتوى افتراضي ولا يتم تحصيل أي مدفوعات"
+        },
+        "ctaText": {
+          "tr": "Bu temayı iste",
+          "en": "Get this theme",
+          "ar": "اطلب هذا القالب"
+        },
+        "newTabText": {
+          "tr": "(yeni sekmede açılır)",
+          "en": "(opens in a new tab)",
+          "ar": "(يفتح في علامة تبويب جديدة)"
+        },
+        "girisHref": "",
+        "girisText": {
+          "tr": "Üye Girişi",
+          "en": "Login",
+          "ar": "تسجيل الدخول"
+        },
+        "hataBildir": "https://webyapar.com/api/portal/tema-hata.js"
+      },
+      "version": "1.0.0",
+      "icon": "info",
+      "index": 0
+    },
+    {
+      "name": "Menü 4",
+      "path": "menu-4",
+      "local": "header",
+      "category": "menu",
+      "id": "k8mn01",
+      "desing": {
+        "logo": "logo.png",
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "height": "84px",
+        "background-color": "var(--mx-site-bg, #ffffff)",
+        "menubg": "",
+        "menutext": "#fff",
+        "menuhoverbg": "rgba(255,255,255,.18)"
+      },
+      "version": "1.0.0",
+      "icon": "menu",
+      "index": 1
+    },
+    {
+      "name": "Hero 2 (Ortalanmış)",
+      "path": "hero-2",
+      "local": "body",
+      "category": "hero",
+      "id": "k8hr01",
+      "desing": {
+        "max": "1200px",
+        "gradient": "linear-gradient(135deg, color-mix(in srgb, var(--mx-site-primary, #2563eb) 42%, #000), color-mix(in srgb, var(--mx-site-primary, #2563eb) 24%, #000))",
+        "glow1": "rgba(255,255,255,.16)",
+        "glow2": "rgba(255,255,255,.1)",
+        "btnbg": "var(--mx-site-surface, #ffffff)",
+        "btncolor": "var(--mx-site-text, #1b1b1b)",
+        "badge": {
+          "tr": "Emlak",
+          "en": "Real estate",
+          "ar": "عقارات"
+        },
+        "title": {
+          "tr": "Hayalinizdeki yeri birlikte bulalım",
+          "en": "Let's find your dream home together",
+          "ar": "لنجد معًا المكان الذي تحلم به"
+        },
+        "description": {
+          "tr": "Satılık ve kiralık seçkin portföy, şeffaf süreç, her ilanda yetki belgesi numarası.",
+          "en": "A curated sale and rental portfolio, a transparent process, a permit number on every listing.",
+          "ar": "محفظة مختارة للبيع والإيجار وعملية شفافة ورقم ترخيص في كل إعلان."
+        },
+        "btn1Text": {
+          "tr": "İlanları gör",
+          "en": "Browse listings",
+          "ar": "تصفح الإعلانات"
+        },
+        "btn1Url": "ilanlar",
+        "btn2Text": {
+          "tr": "Değerleme",
+          "en": "Valuation",
+          "ar": "التقييم"
+        },
+        "btn2Url": "iletisim"
+      },
+      "version": "1.0.0",
+      "icon": "hero",
+      "index": 2
+    },
+    {
+      "name": "İlan Filtre (Emlak İlan Listesi)",
+      "path": "ilan-filtre",
+      "local": "body",
+      "category": "page-list",
+      "id": "k8il01",
+      "desing": {
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #fff))",
+        "surface": "var(--mx-site-surface, #ffffff)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "pageSize": 6,
+        "sort": "date",
+        "urlState": true,
+        "title": {
+          "tr": "Emlak İlanları",
+          "en": "Property Listings",
+          "ar": "إعلانات العقارات"
+        },
+        "subtitle": {
+          "tr": "Satılık ve kiralık ilanları süzün, sıralayın ve karşılaştırın.",
+          "en": "Filter, sort and compare properties for sale and for rent.",
+          "ar": "صفِّ العقارات المعروضة للبيع والإيجار ورتّبها وقارن بينها."
+        },
+        "searchLabel": {
+          "tr": "İlan ara",
+          "en": "Search listings",
+          "ar": "ابحث في الإعلانات"
+        },
+        "searchPlaceholder": {
+          "tr": "Semt veya ilan başlığı…",
+          "en": "District or listing title…",
+          "ar": "الحي أو عنوان الإعلان…"
+        },
+        "dealGroupLabel": {
+          "tr": "İşlem türü",
+          "en": "Deal type",
+          "ar": "نوع الصفقة"
+        },
+        "dealAll": {
+          "tr": "Tümü",
+          "en": "All",
+          "ar": "الكل"
+        },
+        "dealSale": {
+          "tr": "Satılık",
+          "en": "For sale",
+          "ar": "للبيع"
+        },
+        "dealRent": {
+          "tr": "Kiralık",
+          "en": "For rent",
+          "ar": "للإيجار"
+        },
+        "filtersTitle": {
+          "tr": "Filtreler",
+          "en": "Filters",
+          "ar": "التصفية"
+        },
+        "typeTitle": {
+          "tr": "Emlak türü",
+          "en": "Property type",
+          "ar": "نوع العقار"
+        },
+        "roomsTitle": {
+          "tr": "Oda sayısı",
+          "en": "Rooms",
+          "ar": "عدد الغرف"
+        },
+        "m2Title": {
+          "tr": "Alan (m²)",
+          "en": "Area (m²)",
+          "ar": "المساحة (م²)"
+        },
+        "priceTitle": {
+          "tr": "Fiyat",
+          "en": "Price",
+          "ar": "السعر"
+        },
+        "districtTitle": {
+          "tr": "Semt",
+          "en": "District",
+          "ar": "الحي"
+        },
+        "districtAll": {
+          "tr": "Tüm semtler",
+          "en": "All districts",
+          "ar": "كل الأحياء"
+        },
+        "minLabel": {
+          "tr": "En az",
+          "en": "Min",
+          "ar": "الحد الأدنى"
+        },
+        "maxLabel": {
+          "tr": "En çok",
+          "en": "Max",
+          "ar": "الحد الأقصى"
+        },
+        "m2Unit": {
+          "tr": "m²",
+          "en": "m²",
+          "ar": "م²"
+        },
+        "sortLabel": {
+          "tr": "Sırala",
+          "en": "Sort by",
+          "ar": "ترتيب حسب"
+        },
+        "sortDate": {
+          "tr": "En yeni",
+          "en": "Newest",
+          "ar": "الأحدث"
+        },
+        "sortPrice": {
+          "tr": "Fiyat: düşükten yükseğe",
+          "en": "Price: low to high",
+          "ar": "السعر: من الأقل إلى الأعلى"
+        },
+        "sortPriceDesc": {
+          "tr": "Fiyat: yüksekten düşüğe",
+          "en": "Price: high to low",
+          "ar": "السعر: من الأعلى إلى الأقل"
+        },
+        "sortM2": {
+          "tr": "Alan: büyükten küçüğe",
+          "en": "Area: large to small",
+          "ar": "المساحة: من الأكبر إلى الأصغر"
+        },
+        "sortM2Asc": {
+          "tr": "Alan: küçükten büyüğe",
+          "en": "Area: small to large",
+          "ar": "المساحة: من الأصغر إلى الأكبر"
+        },
+        "resetFilters": {
+          "tr": "Filtreleri temizle",
+          "en": "Clear filters",
+          "ar": "مسح عوامل التصفية"
+        },
+        "resultCount": {
+          "tr": {
+            "one": "{n} ilan bulundu",
+            "other": "{n} ilan bulundu"
+          },
+          "en": {
+            "one": "{n} listing found",
+            "other": "{n} listings found"
+          },
+          "ar": {
+            "zero": "لم يتم العثور على إعلانات",
+            "one": "تم العثور على إعلان واحد",
+            "two": "تم العثور على إعلانين",
+            "few": "تم العثور على {n} إعلانات",
+            "many": "تم العثور على {n} إعلانًا",
+            "other": "تم العثور على {n} إعلان"
+          }
+        },
+        "photoCount": {
+          "tr": {
+            "one": "{n} fotoğraf",
+            "other": "{n} fotoğraf"
+          },
+          "en": {
+            "one": "{n} photo",
+            "other": "{n} photos"
+          },
+          "ar": {
+            "one": "صورة واحدة",
+            "two": "صورتان",
+            "few": "{n} صور",
+            "many": "{n} صورة",
+            "other": "{n} صورة"
+          }
+        },
+        "noResultTitle": {
+          "tr": "Sonuç bulunamadı",
+          "en": "No results found",
+          "ar": "لم يتم العثور على نتائج"
+        },
+        "noResultText": {
+          "tr": "Filtreleri gevşetmeyi veya temizlemeyi deneyin.",
+          "en": "Try loosening or clearing your filters.",
+          "ar": "جرّب تخفيف عوامل التصفية أو مسحها."
+        },
+        "pagesLabel": {
+          "tr": "Sayfalama",
+          "en": "Pagination",
+          "ar": "التنقل بين الصفحات"
+        },
+        "prevPage": {
+          "tr": "Önceki sayfa",
+          "en": "Previous page",
+          "ar": "الصفحة السابقة"
+        },
+        "nextPage": {
+          "tr": "Sonraki sayfa",
+          "en": "Next page",
+          "ar": "الصفحة التالية"
+        },
+        "pageN": {
+          "tr": "Sayfa {n}",
+          "en": "Page {n}",
+          "ar": "الصفحة {n}"
+        },
+        "permitLabel": {
+          "tr": "Yetki belgesi no",
+          "en": "Authorization certificate no.",
+          "ar": "رقم شهادة التفويض"
+        },
+        "permitDemo": {
+          "tr": "Yetki belgesi no: örnek ilan (DEMO)",
+          "en": "Authorization no.: sample listing (DEMO)",
+          "ar": "رقم شهادة التفويض: إعلان تجريبي (عرض توضيحي)"
+        },
+        "perMonth": {
+          "tr": "/ ay",
+          "en": "/ month",
+          "ar": "/ شهريًا"
+        },
+        "details": {
+          "tr": "İlan detayı",
+          "en": "View listing",
+          "ar": "تفاصيل الإعلان"
+        },
+        "dateLabel": {
+          "tr": "İlan tarihi",
+          "en": "Listed on",
+          "ar": "تاريخ الإعلان"
+        },
+        "demoNote": {
+          "tr": "Bu sayfadaki ilanlar kurgusaldır; yetki belgesi numaraları örnektir (DEMO).",
+          "en": "Listings on this page are fictional; authorization numbers are samples (DEMO).",
+          "ar": "الإعلانات في هذه الصفحة وهمية، وأرقام شهادات التفويض أمثلة فقط (عرض توضيحي)."
+        }
+      },
+      "version": "1.0.0",
+      "icon": "real_estate_agent",
+      "data": {
+        "facets": [
+          "type",
+          "rooms",
+          "m2",
+          "price",
+          "district"
+        ],
+        "typeLabels": {
+          "daire": {
+            "tr": "Daire",
+            "en": "Apartment",
+            "ar": "شقة"
+          },
+          "villa": {
+            "tr": "Villa",
+            "en": "Villa",
+            "ar": "فيلا"
+          },
+          "rezidans": {
+            "tr": "Rezidans",
+            "en": "Residence",
+            "ar": "مجمّع سكني"
+          },
+          "arsa": {
+            "tr": "Arsa",
+            "en": "Land",
+            "ar": "أرض"
+          },
+          "isyeri": {
+            "tr": "İşyeri",
+            "en": "Commercial",
+            "ar": "محل تجاري"
+          }
+        },
+        "listings": [
+          {
+            "id": "ilan-001",
+            "title": {
+              "tr": "Deniz manzaralı 3+1 daire",
+              "en": "3+1 apartment with sea view",
+              "ar": "شقة 3+1 بإطلالة بحرية"
+            },
+            "deal": "sale",
+            "type": "daire",
+            "rooms": "3+1",
+            "m2": 142,
+            "price": 6850000,
+            "currency": "TRY",
+            "city": {
+              "tr": "İstanbul",
+              "en": "Istanbul",
+              "ar": "إسطنبول"
+            },
+            "district": {
+              "tr": "Kadıköy",
+              "en": "Kadikoy",
+              "ar": "قاضي كوي"
+            },
+            "img": [],
+            "permitNo": "DEMO-34-0001",
+            "url": "",
+            "date": "2026-10-24",
+            "badge": {
+              "tr": "Yeni",
+              "en": "New",
+              "ar": "جديد"
+            }
+          },
+          {
+            "id": "ilan-002",
+            "title": {
+              "tr": "Bahçe katı 2+1 kiralık daire",
+              "en": "2+1 garden-floor apartment for rent",
+              "ar": "شقة 2+1 في الطابق الأرضي مع حديقة للإيجار"
+            },
+            "deal": "rent",
+            "type": "daire",
+            "rooms": "2+1",
+            "m2": 95,
+            "price": 38000,
+            "currency": "TRY",
+            "city": {
+              "tr": "Ankara",
+              "en": "Ankara",
+              "ar": "أنقرة"
+            },
+            "district": {
+              "tr": "Çankaya",
+              "en": "Cankaya",
+              "ar": "تشانكايا"
+            },
+            "img": [],
+            "permitNo": "DEMO-06-0002",
+            "url": "",
+            "date": "2026-10-22"
+          },
+          {
+            "id": "ilan-003",
+            "title": {
+              "tr": "Havuzlu müstakil villa",
+              "en": "Detached villa with pool",
+              "ar": "فيلا مستقلة مع مسبح"
+            },
+            "deal": "sale",
+            "type": "villa",
+            "rooms": "5+2",
+            "m2": 320,
+            "price": 18900000,
+            "currency": "TRY",
+            "city": {
+              "tr": "Muğla",
+              "en": "Mugla",
+              "ar": "موغلا"
+            },
+            "district": {
+              "tr": "Bodrum",
+              "en": "Bodrum",
+              "ar": "بودروم"
+            },
+            "img": [],
+            "permitNo": "DEMO-48-0003",
+            "url": "",
+            "date": "2026-10-18"
+          },
+          {
+            "id": "ilan-004",
+            "title": {
+              "tr": "Eşyalı 1+1 kiralık daire",
+              "en": "Furnished 1+1 apartment for rent",
+              "ar": "شقة 1+1 مفروشة للإيجار"
+            },
+            "deal": "rent",
+            "type": "daire",
+            "rooms": "1+1",
+            "m2": 55,
+            "price": 22500,
+            "currency": "TRY",
+            "city": {
+              "tr": "İzmir",
+              "en": "Izmir",
+              "ar": "إزمير"
+            },
+            "district": {
+              "tr": "Karşıyaka",
+              "en": "Karsiyaka",
+              "ar": "قارشيياكا"
+            },
+            "img": [],
+            "permitNo": "DEMO-35-0004",
+            "url": "",
+            "date": "2026-10-15"
+          },
+          {
+            "id": "ilan-005",
+            "title": {
+              "tr": "İmarlı satılık arsa",
+              "en": "Zoned plot for sale",
+              "ar": "أرض مخططة للبيع"
+            },
+            "deal": "sale",
+            "type": "arsa",
+            "rooms": "",
+            "m2": 600,
+            "price": 3200000,
+            "currency": "TRY",
+            "city": {
+              "tr": "İzmir",
+              "en": "Izmir",
+              "ar": "إزمير"
+            },
+            "district": {
+              "tr": "Urla",
+              "en": "Urla",
+              "ar": "أورلا"
+            },
+            "img": [],
+            "permitNo": "DEMO-35-0005",
+            "url": "",
+            "date": "2026-10-11"
+          },
+          {
+            "id": "ilan-006",
+            "title": {
+              "tr": "Cadde üstü kiralık dükkân",
+              "en": "Street-front shop for rent",
+              "ar": "محل على الشارع الرئيسي للإيجار"
+            },
+            "deal": "rent",
+            "type": "isyeri",
+            "rooms": "",
+            "m2": 120,
+            "price": 65000,
+            "currency": "TRY",
+            "city": {
+              "tr": "İstanbul",
+              "en": "Istanbul",
+              "ar": "إسطنبول"
+            },
+            "district": {
+              "tr": "Şişli",
+              "en": "Sisli",
+              "ar": "شيشلي"
+            },
+            "img": [],
+            "permitNo": "DEMO-34-0006",
+            "url": "",
+            "date": "2026-10-08"
+          },
+          {
+            "id": "ilan-007",
+            "title": {
+              "tr": "Site içinde 2+1 daire",
+              "en": "2+1 apartment in a gated complex",
+              "ar": "شقة 2+1 داخل مجمع سكني مسوّر"
+            },
+            "deal": "sale",
+            "type": "daire",
+            "rooms": "2+1",
+            "m2": 100,
+            "price": 4150000,
+            "currency": "TRY",
+            "city": {
+              "tr": "Bursa",
+              "en": "Bursa",
+              "ar": "بورصة"
+            },
+            "district": {
+              "tr": "Nilüfer",
+              "en": "Nilufer",
+              "ar": "نيلوفر"
+            },
+            "img": [],
+            "permitNo": "DEMO-16-0007",
+            "url": "",
+            "date": "2026-10-05"
+          },
+          {
+            "id": "ilan-008",
+            "title": {
+              "tr": "Merkezi konumda 1+1 rezidans",
+              "en": "1+1 residence in a central location",
+              "ar": "وحدة 1+1 في مجمّع سكني بموقع مركزي"
+            },
+            "deal": "sale",
+            "type": "rezidans",
+            "rooms": "1+1",
+            "m2": 70,
+            "price": 5300000,
+            "currency": "TRY",
+            "city": {
+              "tr": "İstanbul",
+              "en": "Istanbul",
+              "ar": "إسطنبول"
+            },
+            "district": {
+              "tr": "Beşiktaş",
+              "en": "Besiktas",
+              "ar": "بشيكتاش"
+            },
+            "img": [],
+            "permitNo": "DEMO-34-0008",
+            "url": "",
+            "date": "2026-10-02"
+          }
+        ]
+      },
+      "index": 3
+    },
+    {
+      "name": "İstatistik Bandı 1",
+      "path": "stats-1",
+      "local": "body",
+      "category": "stats",
+      "id": "k8st01",
+      "desing": {
+        "max": "1200px",
+        "gradient": "linear-gradient(135deg, color-mix(in srgb, var(--mx-site-primary, #2563eb) 42%, #000), color-mix(in srgb, var(--mx-site-primary, #2563eb) 24%, #000))",
+        "numbercolor": "#ffffff",
+        "labelcolor": "rgba(255,255,255,.88)",
+        "iconsize": "56px",
+        "iconbox": "88px",
+        "stil": ""
+      },
+      "version": "1.0.0",
+      "icon": "monitoring",
+      "data": [
+        {
+          "number": 150,
+          "suffix": "+",
+          "label": {
+            "tr": "Tamamlanan Proje",
+            "en": "Completed Projects",
+            "ar": "مشروع منجز"
+          },
+          "icon": "task_alt"
+        },
+        {
+          "number": 50,
+          "suffix": "+",
+          "label": {
+            "tr": "Mutlu Müşteri",
+            "en": "Happy Customers",
+            "ar": "عميل سعيد"
+          },
+          "icon": "sentiment_satisfied"
+        },
+        {
+          "number": 10,
+          "suffix": "+",
+          "label": {
+            "tr": "Yıllık Deneyim",
+            "en": "Years of Experience",
+            "ar": "سنوات من الخبرة"
+          },
+          "icon": "workspace_premium"
+        },
+        {
+          "number": 24,
+          "suffix": "/7",
+          "label": {
+            "tr": "Destek",
+            "en": "Support",
+            "ar": "الدعم"
+          },
+          "icon": "support_agent"
+        }
+      ],
+      "index": 4
+    },
+    {
+      "name": "Ekip 1",
+      "path": "team-1",
+      "local": "body",
+      "category": "team",
+      "id": "k8tm01",
+      "desing": {
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "titlecolor": "var(--mx-site-text, #1b1b1b)",
+        "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "badge": {
+          "tr": "Ekip",
+          "en": "Team",
+          "ar": "الفريق"
+        },
+        "title": {
+          "tr": "Danışmanlarımız",
+          "en": "Our advisors",
+          "ar": "مستشارونا"
+        },
+        "description": {
+          "tr": "Alanında deneyimli ekibimiz projelerinize değer katmak için burada.",
+          "en": "Our experienced team is here to add value to your projects.",
+          "ar": "فريقنا ذو الخبرة هنا ليضيف قيمة إلى مشاريعك."
+        },
+        "accentText": "#ffffff"
+      },
+      "version": "1.0.0",
+      "icon": "groups",
+      "data": [
+        {
+          "name": "Ad Soyad",
+          "role": {
+            "tr": "Kurucu / CEO",
+            "en": "Founder / CEO",
+            "ar": "المؤسس / الرئيس التنفيذي"
+          },
+          "bio": {
+            "tr": "10+ yıllık sektör deneyimi ile strateji ve yönetim.",
+            "en": "Strategy and management with 10+ years of industry experience.",
+            "ar": "الاستراتيجية والإدارة بخبرة تتجاوز 10 سنوات في القطاع."
+          },
+          "img": ""
+        },
+        {
+          "name": "Ad Soyad",
+          "role": {
+            "tr": "Tasarım Direktörü",
+            "en": "Design Director",
+            "ar": "مدير التصميم"
+          },
+          "bio": {
+            "tr": "Marka kimliği ve kullanıcı deneyimi tasarımı.",
+            "en": "Brand identity and user experience design.",
+            "ar": "تصميم هوية العلامة التجارية وتجربة المستخدم."
+          },
+          "img": ""
+        },
+        {
+          "name": "Ad Soyad",
+          "role": {
+            "tr": "Yazılım Geliştirici",
+            "en": "Software Developer",
+            "ar": "مطوّر برمجيات"
+          },
+          "bio": {
+            "tr": "Modern web teknolojileri ile ölçeklenebilir çözümler.",
+            "en": "Scalable solutions with modern web technologies.",
+            "ar": "حلول قابلة للتوسّع بتقنيات الويب الحديثة."
+          },
+          "img": ""
+        }
+      ],
+      "index": 5
+    },
+    {
+      "name": "Footer 3",
+      "path": "footer-3",
+      "local": "footer",
+      "category": "footer",
+      "id": "k8ft01",
+      "desing": {
+        "showlang": true,
+        "bgcolor": "var(--mx-site-surface-2, #f1f1ee)",
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "minimal_design": true,
+        "social_media": false,
+        "logo_maxh": "60px",
+        "logo_plate": false,
+        "contact_line": "auto",
+        "logoDark": "",
+        "duzen": "",
+        "slogan": "",
+        "ikinciSutun": "",
+        "iletisimNot": ""
+      },
+      "version": "1.0.0",
+      "icon": "widgets",
+      "data": [],
+      "index": 6
+    },
+    {
+      "name": "İletişim",
+      "path": "contact-3",
+      "local": "body",
+      "category": "contact",
+      "id": "k8ct01",
+      "desing": {
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "name": {
+          "tr": "Bize Ulaşın",
+          "en": "Contact Us",
+          "ar": "تواصل معنا"
+        },
+        "margin": "30px 0px 30px 0px",
+        "linkcolor": "var(--mx-site-primary, #2563eb)",
+        "stil": ""
+      },
+      "version": "1.0.0",
+      "icon": "contact_mail",
+      "data": [
+        {
+          "icon": "phone",
+          "text": "+90",
+          "url": ""
+        },
+        {
+          "icon": "email",
+          "text": ""
+        },
+        {
+          "icon": "map",
+          "text": ""
+        }
+      ],
+      "index": 7
+    },
+    {
+      "name": "Maps",
+      "path": "map-2",
+      "local": "body",
+      "category": "map",
+      "id": "k8mp01",
+      "desing": {
+        "height": "200px",
+        "opacity": "0.5",
+        "backgroundcolor": "#ffffff",
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "img": "map.png",
+        "externalUrl": "",
+        "margin": "0px 0px 0px 0px"
+      },
+      "version": "1.0.0",
+      "icon": "widgets",
+      "index": 8
+    },
+    {
+      "name": "Tanıtım Modülü",
+      "path": "module-1",
+      "local": "body",
+      "category": "module",
+      "id": "k8in01",
+      "desing": {
+        "name": {
+          "tr": "Hakkımızda",
+          "en": "About us",
+          "ar": "من نحن"
+        },
+        "description": {
+          "tr": "Bu sayfa bir tema örneğidir; içerik demo üretiminde doldurulur.",
+          "en": "This page is a theme sample; its content is filled in during demo production.",
+          "ar": "هذه الصفحة نموذج للقالب؛ يُملأ محتواها عند إنتاج العرض التجريبي."
+        },
+        "name2": {
+          "tr": "Vizyonumuz",
+          "en": "Our Vision",
+          "ar": "رؤيتنا"
+        },
+        "spot2": {
+          "tr": "Sektörümüzde yenilikçi yaklaşımlarla öncü olmak.",
+          "en": "To lead our industry with innovative approaches.",
+          "ar": "أن نكون روّادًا في قطاعنا بأساليب مبتكرة."
+        },
+        "icon2": "visibility",
+        "name3": {
+          "tr": "Misyonumuz",
+          "en": "Our Mission",
+          "ar": "مهمتنا"
+        },
+        "spot3": {
+          "tr": "İhtiyaç duyulan çözümleri hızlı ve şeffaf sunmak.",
+          "en": "Deliver needed solutions quickly and transparently.",
+          "ar": "تقديم الحلول المطلوبة بسرعة وشفافية."
+        },
+        "icon3": "flag",
+        "img": "index.jpg",
+        "bgcolor": "var(--mx-site-surface, #ffffff)",
+        "fontcolor": "var(--mx-site-text, #1b1b1b)",
+        "margintop": "20",
+        "marginbotton": "20",
+        "title": {
+          "tr": "Kurumsal",
+          "en": "Corporate",
+          "ar": "المؤسسة"
+        },
+        "stil": ""
+      },
+      "version": "1.1.0",
+      "icon": "business",
+      "index": 9
+    },
+    {
+      "name": "İlan Filtre (Emlak İlan Listesi)",
+      "path": "ilan-filtre",
+      "local": "body",
+      "category": "page-list",
+      "id": "k8il02",
+      "desing": {
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #fff))",
+        "surface": "var(--mx-site-surface, #ffffff)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "pageSize": 6,
+        "sort": "date",
+        "urlState": true,
+        "title": {
+          "tr": "Emlak İlanları",
+          "en": "Property Listings",
+          "ar": "إعلانات العقارات"
+        },
+        "subtitle": {
+          "tr": "Satılık ve kiralık ilanları süzün, sıralayın ve karşılaştırın.",
+          "en": "Filter, sort and compare properties for sale and for rent.",
+          "ar": "صفِّ العقارات المعروضة للبيع والإيجار ورتّبها وقارن بينها."
+        },
+        "searchLabel": {
+          "tr": "İlan ara",
+          "en": "Search listings",
+          "ar": "ابحث في الإعلانات"
+        },
+        "searchPlaceholder": {
+          "tr": "Semt veya ilan başlığı…",
+          "en": "District or listing title…",
+          "ar": "الحي أو عنوان الإعلان…"
+        },
+        "dealGroupLabel": {
+          "tr": "İşlem türü",
+          "en": "Deal type",
+          "ar": "نوع الصفقة"
+        },
+        "dealAll": {
+          "tr": "Tümü",
+          "en": "All",
+          "ar": "الكل"
+        },
+        "dealSale": {
+          "tr": "Satılık",
+          "en": "For sale",
+          "ar": "للبيع"
+        },
+        "dealRent": {
+          "tr": "Kiralık",
+          "en": "For rent",
+          "ar": "للإيجار"
+        },
+        "filtersTitle": {
+          "tr": "Filtreler",
+          "en": "Filters",
+          "ar": "التصفية"
+        },
+        "typeTitle": {
+          "tr": "Emlak türü",
+          "en": "Property type",
+          "ar": "نوع العقار"
+        },
+        "roomsTitle": {
+          "tr": "Oda sayısı",
+          "en": "Rooms",
+          "ar": "عدد الغرف"
+        },
+        "m2Title": {
+          "tr": "Alan (m²)",
+          "en": "Area (m²)",
+          "ar": "المساحة (م²)"
+        },
+        "priceTitle": {
+          "tr": "Fiyat",
+          "en": "Price",
+          "ar": "السعر"
+        },
+        "districtTitle": {
+          "tr": "Semt",
+          "en": "District",
+          "ar": "الحي"
+        },
+        "districtAll": {
+          "tr": "Tüm semtler",
+          "en": "All districts",
+          "ar": "كل الأحياء"
+        },
+        "minLabel": {
+          "tr": "En az",
+          "en": "Min",
+          "ar": "الحد الأدنى"
+        },
+        "maxLabel": {
+          "tr": "En çok",
+          "en": "Max",
+          "ar": "الحد الأقصى"
+        },
+        "m2Unit": {
+          "tr": "m²",
+          "en": "m²",
+          "ar": "م²"
+        },
+        "sortLabel": {
+          "tr": "Sırala",
+          "en": "Sort by",
+          "ar": "ترتيب حسب"
+        },
+        "sortDate": {
+          "tr": "En yeni",
+          "en": "Newest",
+          "ar": "الأحدث"
+        },
+        "sortPrice": {
+          "tr": "Fiyat: düşükten yükseğe",
+          "en": "Price: low to high",
+          "ar": "السعر: من الأقل إلى الأعلى"
+        },
+        "sortPriceDesc": {
+          "tr": "Fiyat: yüksekten düşüğe",
+          "en": "Price: high to low",
+          "ar": "السعر: من الأعلى إلى الأقل"
+        },
+        "sortM2": {
+          "tr": "Alan: büyükten küçüğe",
+          "en": "Area: large to small",
+          "ar": "المساحة: من الأكبر إلى الأصغر"
+        },
+        "sortM2Asc": {
+          "tr": "Alan: küçükten büyüğe",
+          "en": "Area: small to large",
+          "ar": "المساحة: من الأصغر إلى الأكبر"
+        },
+        "resetFilters": {
+          "tr": "Filtreleri temizle",
+          "en": "Clear filters",
+          "ar": "مسح عوامل التصفية"
+        },
+        "resultCount": {
+          "tr": {
+            "one": "{n} ilan bulundu",
+            "other": "{n} ilan bulundu"
+          },
+          "en": {
+            "one": "{n} listing found",
+            "other": "{n} listings found"
+          },
+          "ar": {
+            "zero": "لم يتم العثور على إعلانات",
+            "one": "تم العثور على إعلان واحد",
+            "two": "تم العثور على إعلانين",
+            "few": "تم العثور على {n} إعلانات",
+            "many": "تم العثور على {n} إعلانًا",
+            "other": "تم العثور على {n} إعلان"
+          }
+        },
+        "photoCount": {
+          "tr": {
+            "one": "{n} fotoğraf",
+            "other": "{n} fotoğraf"
+          },
+          "en": {
+            "one": "{n} photo",
+            "other": "{n} photos"
+          },
+          "ar": {
+            "one": "صورة واحدة",
+            "two": "صورتان",
+            "few": "{n} صور",
+            "many": "{n} صورة",
+            "other": "{n} صورة"
+          }
+        },
+        "noResultTitle": {
+          "tr": "Sonuç bulunamadı",
+          "en": "No results found",
+          "ar": "لم يتم العثور على نتائج"
+        },
+        "noResultText": {
+          "tr": "Filtreleri gevşetmeyi veya temizlemeyi deneyin.",
+          "en": "Try loosening or clearing your filters.",
+          "ar": "جرّب تخفيف عوامل التصفية أو مسحها."
+        },
+        "pagesLabel": {
+          "tr": "Sayfalama",
+          "en": "Pagination",
+          "ar": "التنقل بين الصفحات"
+        },
+        "prevPage": {
+          "tr": "Önceki sayfa",
+          "en": "Previous page",
+          "ar": "الصفحة السابقة"
+        },
+        "nextPage": {
+          "tr": "Sonraki sayfa",
+          "en": "Next page",
+          "ar": "الصفحة التالية"
+        },
+        "pageN": {
+          "tr": "Sayfa {n}",
+          "en": "Page {n}",
+          "ar": "الصفحة {n}"
+        },
+        "permitLabel": {
+          "tr": "Yetki belgesi no",
+          "en": "Authorization certificate no.",
+          "ar": "رقم شهادة التفويض"
+        },
+        "permitDemo": {
+          "tr": "Yetki belgesi no: örnek ilan (DEMO)",
+          "en": "Authorization no.: sample listing (DEMO)",
+          "ar": "رقم شهادة التفويض: إعلان تجريبي (عرض توضيحي)"
+        },
+        "perMonth": {
+          "tr": "/ ay",
+          "en": "/ month",
+          "ar": "/ شهريًا"
+        },
+        "details": {
+          "tr": "İlan detayı",
+          "en": "View listing",
+          "ar": "تفاصيل الإعلان"
+        },
+        "dateLabel": {
+          "tr": "İlan tarihi",
+          "en": "Listed on",
+          "ar": "تاريخ الإعلان"
+        },
+        "demoNote": {
+          "tr": "Bu sayfadaki ilanlar kurgusaldır; yetki belgesi numaraları örnektir (DEMO).",
+          "en": "Listings on this page are fictional; authorization numbers are samples (DEMO).",
+          "ar": "الإعلانات في هذه الصفحة وهمية، وأرقام شهادات التفويض أمثلة فقط (عرض توضيحي)."
+        }
+      },
+      "version": "1.0.0",
+      "icon": "real_estate_agent",
+      "data": {
+        "facets": [
+          "type",
+          "rooms",
+          "m2",
+          "price",
+          "district"
+        ],
+        "typeLabels": {
+          "daire": {
+            "tr": "Daire",
+            "en": "Apartment",
+            "ar": "شقة"
+          },
+          "villa": {
+            "tr": "Villa",
+            "en": "Villa",
+            "ar": "فيلا"
+          },
+          "rezidans": {
+            "tr": "Rezidans",
+            "en": "Residence",
+            "ar": "مجمّع سكني"
+          },
+          "arsa": {
+            "tr": "Arsa",
+            "en": "Land",
+            "ar": "أرض"
+          },
+          "isyeri": {
+            "tr": "İşyeri",
+            "en": "Commercial",
+            "ar": "محل تجاري"
+          }
+        },
+        "listings": [
+          {
+            "id": "ilan-001",
+            "title": {
+              "tr": "Deniz manzaralı 3+1 daire",
+              "en": "3+1 apartment with sea view",
+              "ar": "شقة 3+1 بإطلالة بحرية"
+            },
+            "deal": "sale",
+            "type": "daire",
+            "rooms": "3+1",
+            "m2": 142,
+            "price": 6850000,
+            "currency": "TRY",
+            "city": {
+              "tr": "İstanbul",
+              "en": "Istanbul",
+              "ar": "إسطنبول"
+            },
+            "district": {
+              "tr": "Kadıköy",
+              "en": "Kadikoy",
+              "ar": "قاضي كوي"
+            },
+            "img": [],
+            "permitNo": "DEMO-34-0001",
+            "url": "",
+            "date": "2026-10-24",
+            "badge": {
+              "tr": "Yeni",
+              "en": "New",
+              "ar": "جديد"
+            }
+          },
+          {
+            "id": "ilan-002",
+            "title": {
+              "tr": "Bahçe katı 2+1 kiralık daire",
+              "en": "2+1 garden-floor apartment for rent",
+              "ar": "شقة 2+1 في الطابق الأرضي مع حديقة للإيجار"
+            },
+            "deal": "rent",
+            "type": "daire",
+            "rooms": "2+1",
+            "m2": 95,
+            "price": 38000,
+            "currency": "TRY",
+            "city": {
+              "tr": "Ankara",
+              "en": "Ankara",
+              "ar": "أنقرة"
+            },
+            "district": {
+              "tr": "Çankaya",
+              "en": "Cankaya",
+              "ar": "تشانكايا"
+            },
+            "img": [],
+            "permitNo": "DEMO-06-0002",
+            "url": "",
+            "date": "2026-10-22"
+          },
+          {
+            "id": "ilan-003",
+            "title": {
+              "tr": "Havuzlu müstakil villa",
+              "en": "Detached villa with pool",
+              "ar": "فيلا مستقلة مع مسبح"
+            },
+            "deal": "sale",
+            "type": "villa",
+            "rooms": "5+2",
+            "m2": 320,
+            "price": 18900000,
+            "currency": "TRY",
+            "city": {
+              "tr": "Muğla",
+              "en": "Mugla",
+              "ar": "موغلا"
+            },
+            "district": {
+              "tr": "Bodrum",
+              "en": "Bodrum",
+              "ar": "بودروم"
+            },
+            "img": [],
+            "permitNo": "DEMO-48-0003",
+            "url": "",
+            "date": "2026-10-18"
+          },
+          {
+            "id": "ilan-004",
+            "title": {
+              "tr": "Eşyalı 1+1 kiralık daire",
+              "en": "Furnished 1+1 apartment for rent",
+              "ar": "شقة 1+1 مفروشة للإيجار"
+            },
+            "deal": "rent",
+            "type": "daire",
+            "rooms": "1+1",
+            "m2": 55,
+            "price": 22500,
+            "currency": "TRY",
+            "city": {
+              "tr": "İzmir",
+              "en": "Izmir",
+              "ar": "إزمير"
+            },
+            "district": {
+              "tr": "Karşıyaka",
+              "en": "Karsiyaka",
+              "ar": "قارشيياكا"
+            },
+            "img": [],
+            "permitNo": "DEMO-35-0004",
+            "url": "",
+            "date": "2026-10-15"
+          },
+          {
+            "id": "ilan-005",
+            "title": {
+              "tr": "İmarlı satılık arsa",
+              "en": "Zoned plot for sale",
+              "ar": "أرض مخططة للبيع"
+            },
+            "deal": "sale",
+            "type": "arsa",
+            "rooms": "",
+            "m2": 600,
+            "price": 3200000,
+            "currency": "TRY",
+            "city": {
+              "tr": "İzmir",
+              "en": "Izmir",
+              "ar": "إزمير"
+            },
+            "district": {
+              "tr": "Urla",
+              "en": "Urla",
+              "ar": "أورلا"
+            },
+            "img": [],
+            "permitNo": "DEMO-35-0005",
+            "url": "",
+            "date": "2026-10-11"
+          },
+          {
+            "id": "ilan-006",
+            "title": {
+              "tr": "Cadde üstü kiralık dükkân",
+              "en": "Street-front shop for rent",
+              "ar": "محل على الشارع الرئيسي للإيجار"
+            },
+            "deal": "rent",
+            "type": "isyeri",
+            "rooms": "",
+            "m2": 120,
+            "price": 65000,
+            "currency": "TRY",
+            "city": {
+              "tr": "İstanbul",
+              "en": "Istanbul",
+              "ar": "إسطنبول"
+            },
+            "district": {
+              "tr": "Şişli",
+              "en": "Sisli",
+              "ar": "شيشلي"
+            },
+            "img": [],
+            "permitNo": "DEMO-34-0006",
+            "url": "",
+            "date": "2026-10-08"
+          },
+          {
+            "id": "ilan-007",
+            "title": {
+              "tr": "Site içinde 2+1 daire",
+              "en": "2+1 apartment in a gated complex",
+              "ar": "شقة 2+1 داخل مجمع سكني مسوّر"
+            },
+            "deal": "sale",
+            "type": "daire",
+            "rooms": "2+1",
+            "m2": 100,
+            "price": 4150000,
+            "currency": "TRY",
+            "city": {
+              "tr": "Bursa",
+              "en": "Bursa",
+              "ar": "بورصة"
+            },
+            "district": {
+              "tr": "Nilüfer",
+              "en": "Nilufer",
+              "ar": "نيلوفر"
+            },
+            "img": [],
+            "permitNo": "DEMO-16-0007",
+            "url": "",
+            "date": "2026-10-05"
+          },
+          {
+            "id": "ilan-008",
+            "title": {
+              "tr": "Merkezi konumda 1+1 rezidans",
+              "en": "1+1 residence in a central location",
+              "ar": "وحدة 1+1 في مجمّع سكني بموقع مركزي"
+            },
+            "deal": "sale",
+            "type": "rezidans",
+            "rooms": "1+1",
+            "m2": 70,
+            "price": 5300000,
+            "currency": "TRY",
+            "city": {
+              "tr": "İstanbul",
+              "en": "Istanbul",
+              "ar": "إسطنبول"
+            },
+            "district": {
+              "tr": "Beşiktaş",
+              "en": "Besiktas",
+              "ar": "بشيكتاش"
+            },
+            "img": [],
+            "permitNo": "DEMO-34-0008",
+            "url": "",
+            "date": "2026-10-02"
+          }
+        ]
+      },
+      "index": 10
+    },
+    {
+      "name": "Demo Kredi Şeridi",
+      "description": "Demo sitelerin alt bilgisinde duran kredi şeridi: «Bu demo Webyapar tarafından hazırlanmıştır — Bu temayı iste». Marka adı çevrilmez (Latin, dir=ltr izole), bağlantı demo adına göre webyapar.com/temalar#<slug>. Üç dil (TR/EN/AR), mantıksal CSS (RTL), mobilde sarar, reduced-motion'a saygılı.",
+      "version": "1.0.0",
+      "icon": "campaign",
+      "category": "demo",
+      "tags": [
+        "demo",
+        "footer",
+        "kredi",
+        "rtl"
+      ],
+      "desing": {
+        "href": "https://webyapar.com/temalar#radyoloji-3",
+        "brand": "Webyapar",
+        "text": {
+          "tr": "Bu demo {brand} tarafından hazırlanmıştır —",
+          "en": "This demo was prepared by {brand} —",
+          "ar": "تم إعداد هذا العرض التجريبي بواسطة {brand} —"
+        },
+        "ctaText": {
+          "tr": "Bu temayı iste",
+          "en": "Get this theme",
+          "ar": "اطلب هذا القالب"
+        },
+        "newTabText": {
+          "tr": "(yeni sekmede açılır)",
+          "en": "(opens in a new tab)",
+          "ar": "(يفتح في علامة تبويب جديدة)"
+        },
+        "ariaLabel": {
+          "tr": "Demo bilgisi",
+          "en": "Demo credit",
+          "ar": "معلومات العرض التجريبي"
+        }
+      },
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "bzityh",
+      "path": "demo-kredi",
+      "local": "footer",
+      "data": [],
+      "index": 11
+    },
+    {
+      "name": "Üst İlerleme — okuma ilerleme çizgisi + halkalı başa dön",
+      "description": "Buzlu cam yapışkan çubuk; alt kenarında sayfanın ne kadarının okunduğunu gösteren renk geçişli ilerleme çizgisi dolar. Yarım ekran inince sonda, çevresi aynı ilerlemeyle dolan yuvarlak «başa dön» düğmesi belirir. Etkin sayfa noktalı alt çizgili. Dar ekranda açılır liste. Menü aynı zamanda okuma göstergesi: uzun rehber/makale sayfalarında konum ve başa dönüş başlıkta; diğer menülerde kaydırma yalnız görünüşü değiştirir. Sayfalar site sayfalarından, dil seçici {{langbar}}, logo {{logo}}. Mobil menü erişilebilir (aria-expanded, Esc, odak). Renkler desing + var(--mx-site-*); mantıksal CSS → RTL.",
+      "version": "1.0.0",
+      "icon": "linear_scale",
+      "category": "menu",
+      "subCategory": "reading-progress",
+      "tags": [
+        "menu",
+        "progress",
+        "sticky",
+        "back-to-top",
+        "reading",
+        "rtl",
+        "fabrika"
+      ],
+      "desing": {
+        "max": "1200px",
+        "bosluk": "0px",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "cta_ad": {
+          "tr": "Randevu al",
+          "en": "Book a scan",
+          "ar": "احجز فحصًا"
+        },
+        "cta_url": "teklif-al",
+        "tel": "+90 312 095 72 72",
+        "logoimg": "",
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+        "kartBg": "var(--mx-site-surface, #f6f7f9)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "logoH": "44px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "color": "var(--mx-site-text, #111318)",
+        "logo_acik": "logo-acik.svg",
+        "logo_h": "44px",
+        "cta": {
+          "tr": "Randevu al",
+          "en": "Book a scan",
+          "ar": "احجز فحصًا"
+        }
+      },
+      "data": [],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "data",
+        "alanlar": {
+          "name": "ek bağlantı adı (dil sözlüğü)",
+          "url": "iç yol ya da dış adres (dış adres yeni sekmede)"
+        }
+      },
+      "id": "4qq1y6",
+      "path": "ust-ilerleme",
+      "local": "header",
+      "index": 12
+    },
+    {
+      "name": "Sayaç Nabız Monitör — EKG dalgası + renkli vital okumalar",
+      "description": "Hasta başı monitörü: üstte ızgaralı ekranda EKG / NST dalgası (SVG) ve atan kalp, altında her rakam bir vital okuma karosu — küçük büyük harfli etiket + ikon, renkli mono dev rakam (karo sırasıyla dört ton), oran kadar dolan sinyal çentikleri, not. Görünür olunca dalga soldan sağa iki kez taranır (≈5 sn), çentikler basamak basamak dolar. sayac-kronometre kadran + tur listesi, sayac-sube-harita akan güzergâh çizer; bu modül cihaz ekranı iskeletidir — ızgaralı dalga şeridi + renk kodlu vital karolar + çentikli sinyal göstergesi (tıbbi monitör dili). Sayılar sayfa diliyle biçimlenir (Intl), metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+      "version": "1.0.0",
+      "icon": "monitor_heart",
+      "category": "stats",
+      "subCategory": "vital-monitor",
+      "tags": [
+        "stats",
+        "monitor",
+        "ecg",
+        "vitals",
+        "dark",
+        "rtl",
+        "fabrika"
+      ],
+      "desing": {
+        "max": "1200px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": {
+          "tr": "Radyoloji · Çankaya, Ankara",
+          "en": "Radiology · Cankaya, Ankara",
+          "ar": "الأشعة · تشانكايا، أنقرة"
+        },
+        "baslik": {
+          "tr": "Lumen Radyoloji: görüntülemede ölçtüğümüz sayılar",
+          "en": "Lumen Radiology: the figures we measure in imaging",
+          "ar": "لومن للأشعة: الأرقام التي نقيسها في التصوير"
+        },
+        "metin": {
+          "tr": "Rapor süresinden bekleme süresine kadar her adımı ölçer, sayıları burada paylaşırız. Sayılar kurgusal demo verisidir. Bilgiler genel bilgilendirme amaçlıdır; tetkik kararı sevk eden hekiminize, raporlama radyoloji uzmanına aittir. Gebelik olasılığınızı mutlaka bildirin.",
+          "en": "We measure every step, from report time to waiting time, and share the figures here. Figures are fictional demo data. Information is general only; the decision on a scan belongs to your referring doctor and the reporting to the radiologist. Always tell us if you might be pregnant.",
+          "ar": "نقيس كل خطوة من مدة التقرير إلى وقت الانتظار ونشارك الأرقام هنا. الأرقام بيانات تجريبية افتراضية. المعلومات عامة فقط؛ قرار الفحص يعود إلى طبيبك المُحيل، وكتابة التقرير إلى أخصائي الأشعة. أخبرينا دائمًا إذا كان هناك احتمال حمل."
+        },
+        "bg": "#0A0D11",
+        "text": "#ECEAE6",
+        "muted": "#B9BCC2",
+        "kartBg": "rgba(255, 255, 255, 0.05)",
+        "cizgi": "rgba(255, 255, 255, 0.14)",
+        "accent": "var(--mx-site-primary, #E8A33D)",
+        "accentInk": "#F0BD6B",
+        "accentText": "var(--mx-site-text, #111318)",
+        "vurguBg": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 55%, var(--mx-site-bg, #ffffff))",
+        "vurguText": "var(--mx-site-text, #111318)",
+        "bgcolor": "#0A0D11",
+        "color": "#ECEAE6",
+        "title": {
+          "tr": "Lumen Radyoloji: görüntülemede ölçtüğümüz sayılar",
+          "en": "Lumen Radiology: the figures we measure in imaging",
+          "ar": "لومن للأشعة: الأرقام التي نقيسها في التصوير"
+        },
+        "description": {
+          "tr": "Sayılar kurgusal demo verisidir.",
+          "en": "Figures are fictional demo data.",
+          "ar": "الأرقام بيانات تجريبية افتراضية."
+        },
+        "cta_ad": {
+          "tr": "Randevu al",
+          "en": "Book a scan",
+          "ar": "احجز فحصًا"
+        },
+        "cta_url": "teklif-al",
+        "cta2_ad": {
+          "tr": "Tetkikler",
+          "en": "Scans",
+          "ar": "الفحوص"
+        },
+        "cta2_url": "hizmetler"
+      },
+      "data": [
+        {
+          "sayi": 24,
+          "etiket": {
+            "tr": "Rutin rapor süresi (saat)",
+            "en": "Routine report time (hours)",
+            "ar": "مدة التقرير الروتيني (ساعة)"
+          },
+          "metin": {
+            "tr": "Raporun sevk eden hekime iletilmesine kadar geçen ortalama süre.",
+            "en": "Average time until the report reaches your referring doctor.",
+            "ar": "متوسط الوقت حتى يصل التقرير إلى طبيبك المُحيل."
+          },
+          "ikon": "description",
+          "max": 48
+        },
+        {
+          "sayi": 14,
+          "etiket": {
+            "tr": "Ortalama bekleme (dakika)",
+            "en": "Average wait (minutes)",
+            "ar": "متوسط الانتظار (دقيقة)"
+          },
+          "metin": {
+            "tr": "Randevu saatinden çekim odasına geçişe kadar.",
+            "en": "From your booked time to entering the scan room.",
+            "ar": "من موعدك حتى دخول غرفة الفحص."
+          },
+          "ikon": "schedule",
+          "max": 30
+        },
+        {
+          "sayi": 2,
+          "etiket": {
+            "tr": "Mamografiyi okuyan uzman",
+            "en": "Radiologists per mammogram",
+            "ar": "أخصائيو الأشعة لكل ماموغرام"
+          },
+          "metin": {
+            "tr": "Her mamografiyi iki radyoloji uzmanı ayrı ayrı okur.",
+            "en": "Two radiologists read every mammogram separately.",
+            "ar": "يقرأ أخصائيّا أشعة كل صورة ماموغرام بشكل منفصل."
+          },
+          "ikon": "visibility",
+          "max": 2
+        },
+        {
+          "sayi": 6,
+          "etiket": {
+            "tr": "Sabah kalite kontrolündeki cihaz",
+            "en": "Devices in the morning quality check",
+            "ar": "الأجهزة في فحص الجودة الصباحي"
+          },
+          "metin": {
+            "tr": "Her sabah ilk hastadan önce test görüntüsüyle.",
+            "en": "With a test image every morning before the first patient.",
+            "ar": "بصورة اختبار كل صباح قبل أول مريض."
+          },
+          "ikon": "fact_check",
+          "max": 6
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "data",
+        "alanlar": {
+          "sayi": "sayı (zorunlu; 1200 · \"4.9\")",
+          "onek": "önek (dil sözlüğü; ör. «%»)",
+          "sonek": "sonek (dil sözlüğü; ör. «+», «/5»)",
+          "etiket": "etiket (dil sözlüğü, zorunlu)",
+          "metin": "kısa not (dil sözlüğü)",
+          "ikon": "Material Symbols adı",
+          "ondalik": "ondalık basamak (yoksa sayıdan)",
+          "max": "oran tavanı (halka/çubuk/dolgu; yoksa % → 100, değilse listedeki en büyük)"
+        }
+      },
+      "id": "h9ppaa",
+      "path": "sayac-nabiz-monitor",
+      "local": "body",
+      "index": 13
+    },
+    {
+      "name": "Ekip Avukat Profili — isim listesi + seçilen kişinin dosya kartı",
+      "description": "Solda yapışkan isim listesi (küçük portre, ad, unvan), sağda seçilen kişinin dosya kartı: büyük portre, tanıtım ve tanım listesinde uzmanlık alanları (etiket), baro/sicil kaydı, konuşulan diller ve iletişim. JS yoksa liste çapa, tüm kartlar alt alta. Ana-detay düzeni: ekip-akordeon'un satır içinde açılmasından ve ekip-bolum-sekme'nin bölüm sekmesinden farklı olarak liste kişi başına bir seçim, ayrıntı tek ve kalıcı bir dosya panelinde; uzmanlık/baro/dil yapılandırılmış alanlar (dl) olarak basılır. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+      "version": "1.0.0",
+      "icon": "badge",
+      "category": "team",
+      "subCategory": "master-detail",
+      "tags": [
+        "team",
+        "master-detail",
+        "profile",
+        "lawyer",
+        "interactive",
+        "rtl",
+        "fabrika"
+      ],
+      "desing": {
+        "max": "1200px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": {
+          "tr": "Hekim kadrosu",
+          "en": "Medical team",
+          "ar": "الفريق الطبي"
+        },
+        "baslik": {
+          "tr": "Raporunuzu kim yazar?",
+          "en": "Who writes your report?",
+          "ar": "من يكتب تقريرك؟"
+        },
+        "metin": {
+          "tr": "Bir hekim seçin; uzmanlık alanı, uzmanlık belgesi ve konuştuğu diller açılır. Kurgusal profiller; portre kullanılmaz.",
+          "en": "Pick a doctor to see their field, specialty certificate and languages. Fictional profiles; no portraits are used.",
+          "ar": "اختر طبيبًا لترى مجال تخصصه وشهادة الاختصاص واللغات التي يتحدثها. ملفات افتراضية؛ لا تُستخدم صور شخصية."
+        },
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+        "kartBg": "var(--mx-site-surface, #f6f7f9)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "uzmanlikEtiket": {
+          "tr": "Alanlar",
+          "en": "Fields",
+          "ar": "المجالات"
+        },
+        "baroEtiket": {
+          "tr": "Uzmanlık belgesi",
+          "en": "Specialty certificate",
+          "ar": "شهادة الاختصاص"
+        },
+        "dilEtiket": {
+          "tr": "Diller",
+          "en": "Languages",
+          "ar": "اللغات"
+        },
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "color": "var(--mx-site-text, #111318)",
+        "badge": "",
+        "title": "",
+        "description": ""
+      },
+      "data": [
+        {
+          "ad": "Elif Kaya",
+          "unvan": {
+            "tr": "Uzm. Dr. · Radyoloji",
+            "en": "MD · Radiologist",
+            "ar": "طبيبة أخصائية أشعة"
+          },
+          "bolum": {
+            "tr": "Meme görüntüleme",
+            "en": "Breast imaging",
+            "ar": "تصوير الثدي"
+          },
+          "metin": {
+            "tr": "Mamografi ve meme ultrasonu; mamografide ikinci okuyucu (kurgusal profil).",
+            "en": "Mammography and breast ultrasound; second reader in mammography (fictional profile).",
+            "ar": "الماموغرام والموجات فوق الصوتية للثدي؛ القارئة الثانية في الماموغرام (ملف افتراضي)."
+          },
+          "uzmanlik": [
+            {
+              "tr": "Mamografi",
+              "en": "Mammography",
+              "ar": "الماموغرام"
+            },
+            {
+              "tr": "Meme ultrasonu",
+              "en": "Breast ultrasound",
+              "ar": "موجات الثدي"
+            }
+          ],
+          "baro": {
+            "tr": "Radyoloji uzmanlığı · 2011 (kurgusal)",
+            "en": "Radiology specialty · 2011 (fictional)",
+            "ar": "اختصاص الأشعة · 2011 (افتراضي)"
+          },
+          "diller": [
+            {
+              "tr": "Türkçe",
+              "en": "Turkish",
+              "ar": "التركية"
+            },
+            {
+              "tr": "İngilizce",
+              "en": "English",
+              "ar": "الإنجليزية"
+            }
+          ]
+        },
+        {
+          "ad": "Murat Tan",
+          "unvan": {
+            "tr": "Uzm. Dr. · Radyoloji",
+            "en": "MD · Radiologist",
+            "ar": "طبيب أخصائي أشعة"
+          },
+          "bolum": {
+            "tr": "Kesitsel görüntüleme",
+            "en": "Cross-sectional imaging",
+            "ar": "التصوير المقطعي"
+          },
+          "metin": {
+            "tr": "Nöroradyoloji; beyin ve omurga MR’ı (kurgusal profil).",
+            "en": "Neuroradiology; brain and spine MRI (fictional profile).",
+            "ar": "الأشعة العصبية؛ رنين الدماغ والعمود الفقري (ملف افتراضي)."
+          },
+          "uzmanlik": [
+            {
+              "tr": "Beyin MR",
+              "en": "Brain MRI",
+              "ar": "رنين الدماغ"
+            },
+            {
+              "tr": "Omurga MR",
+              "en": "Spine MRI",
+              "ar": "رنين العمود الفقري"
+            }
+          ],
+          "baro": {
+            "tr": "Radyoloji uzmanlığı · 2008 (kurgusal)",
+            "en": "Radiology specialty · 2008 (fictional)",
+            "ar": "اختصاص الأشعة · 2008 (افتراضي)"
+          },
+          "diller": [
+            {
+              "tr": "Türkçe",
+              "en": "Turkish",
+              "ar": "التركية"
+            },
+            {
+              "tr": "Almanca",
+              "en": "German",
+              "ar": "الألمانية"
+            }
+          ]
+        },
+        {
+          "ad": "Selin Yavuz",
+          "unvan": {
+            "tr": "Uzm. Dr. · Radyoloji",
+            "en": "MD · Radiologist",
+            "ar": "طبيبة أخصائية أشعة"
+          },
+          "bolum": {
+            "tr": "Ultrason",
+            "en": "Ultrasound",
+            "ar": "الموجات فوق الصوتية"
+          },
+          "metin": {
+            "tr": "Karın ve damar ultrasonu, Doppler (kurgusal profil).",
+            "en": "Abdominal and vascular ultrasound, Doppler (fictional profile).",
+            "ar": "الموجات فوق الصوتية للبطن والأوعية، دوبلر (ملف افتراضي)."
+          },
+          "uzmanlik": [
+            {
+              "tr": "Karın ultrasonu",
+              "en": "Abdominal ultrasound",
+              "ar": "موجات البطن"
+            },
+            {
+              "tr": "Doppler",
+              "en": "Doppler",
+              "ar": "دوبلر"
+            }
+          ],
+          "baro": {
+            "tr": "Radyoloji uzmanlığı · 2015 (kurgusal)",
+            "en": "Radiology specialty · 2015 (fictional)",
+            "ar": "اختصاص الأشعة · 2015 (افتراضي)"
+          },
+          "diller": [
+            {
+              "tr": "Türkçe",
+              "en": "Turkish",
+              "ar": "التركية"
+            },
+            {
+              "tr": "Arapça",
+              "en": "Arabic",
+              "ar": "العربية"
+            }
+          ]
+        },
+        {
+          "ad": "Deniz Sarp",
+          "unvan": {
+            "tr": "Uzm. Dr. · Radyoloji",
+            "en": "MD · Radiologist",
+            "ar": "طبيب أخصائي أشعة"
+          },
+          "bolum": {
+            "tr": "Grafi ve kemik",
+            "en": "X-ray and bone",
+            "ar": "الأشعة السينية والعظام"
+          },
+          "metin": {
+            "tr": "Kas-iskelet görüntüleme, röntgen ve kemik yoğunluğu (kurgusal profil).",
+            "en": "Musculoskeletal imaging, X-ray and bone density (fictional profile).",
+            "ar": "تصوير الجهاز العضلي الهيكلي والأشعة السينية وكثافة العظام (ملف افتراضي)."
+          },
+          "uzmanlik": [
+            {
+              "tr": "Kas-iskelet",
+              "en": "Musculoskeletal",
+              "ar": "العضلي الهيكلي"
+            },
+            {
+              "tr": "DEXA",
+              "en": "DEXA",
+              "ar": "DEXA"
+            }
+          ],
+          "baro": {
+            "tr": "Radyoloji uzmanlığı · 2013 (kurgusal)",
+            "en": "Radiology specialty · 2013 (fictional)",
+            "ar": "اختصاص الأشعة · 2013 (افتراضي)"
+          },
+          "diller": [
+            {
+              "tr": "Türkçe",
+              "en": "Turkish",
+              "ar": "التركية"
+            },
+            {
+              "tr": "İngilizce",
+              "en": "English",
+              "ar": "الإنجليزية"
+            }
+          ]
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "data",
+        "alanlar": {
+          "ad": "ad soyad (zorunlu; düz metin ya da dil sözlüğü)",
+          "unvan": "görev / unvan (dil sözlüğü)",
+          "metin": "kısa tanıtım (dil sözlüğü)",
+          "img": "portre görseli (yoksa baş harfler)",
+          "bolum": "bölüm (dil sözlüğü ya da desing.departments id'si)",
+          "eposta": "e-posta (mailto)",
+          "telefon": "telefon (tel:)",
+          "url": "profil sayfası bağlantısı",
+          "social": "[{ ad, url (http(s)/mailto/tel), ikon (Material Symbols) }]"
+        }
+      },
+      "id": "lu15z1",
+      "path": "ekip-avukat-profil",
+      "local": "body",
+      "index": 14
+    },
+    {
+      "name": "Özellik İşaret Görseli — görsel üstünde numaralı işaretler + baloncuk",
+      "description": "Büyük ana görselin üzerinde numaralı, nabız halkalı işaretler (konum: data[].x / y yüzde; yoksa hazır dağılım). İşarete dokununca o özelliğin başlığı, açıklaması ve bağlantısı işaretin yanında baloncukta açılır, yandaki numaralı listede satırı vurgulanır; listedeki satırın üzerine gelince işaret parlar. Görsel yoksa yalnız numaralı liste; JS yokken işaretler ve liste numarayla eşleşir. ozellik-merkez-gorsel özellikleri görselin iki yanına dizer, ozellik-sekme-gorsel sekmeyle görsel değiştirir; bu modülde özellikler görselin TAM üzerinde konumlu etkileşimli işaretlerdir (hotspot) — baloncuk + liste eşleşmesi, işaret konumu veriden. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+      "version": "1.0.0",
+      "icon": "ads_click",
+      "category": "ozellik",
+      "subCategory": "hotspots",
+      "tags": [
+        "ozellik",
+        "hotspots",
+        "image",
+        "popover",
+        "pins",
+        "rtl",
+        "fabrika"
+      ],
+      "desing": {
+        "max": "1200px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": {
+          "tr": "Tetkik günü",
+          "en": "Scan day",
+          "ar": "يوم الفحص"
+        },
+        "baslik": {
+          "tr": "Girişten çekime dört nokta",
+          "en": "Four points from the door to the scan",
+          "ar": "أربع نقاط من المدخل إلى الفحص"
+        },
+        "metin": {
+          "tr": "Numaralı işaretlere dokunun: tetkik gününde nerede ne yapıldığını görün. Görsel temsilîdir.",
+          "en": "Tap the numbered markers to see what happens where on the day of your scan. The image is representative.",
+          "ar": "المس العلامات المرقّمة لترى ما يجري وأين في يوم الفحص. الصورة تمثيلية."
+        },
+        "img": "/img/klinik-bekleme.webp",
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+        "kartBg": "var(--mx-site-surface, #f6f7f9)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "color": "var(--mx-site-text, #111318)",
+        "eyebrow": "",
+        "title": "",
+        "description": "",
+        "ctaLabel": {
+          "tr": "Randevu al",
+          "en": "Book a scan",
+          "ar": "احجز فحصًا"
+        },
+        "imgAlt": {
+          "tr": "Mint rengi koltuklu bekleme salonu",
+          "en": "A waiting room with mint armchairs",
+          "ar": "قاعة انتظار بكراسٍ بلون النعناع"
+        },
+        "ctaUrl": "teklif-al",
+        "linkMetin": {
+          "tr": "Ayrıntı",
+          "en": "Details",
+          "ar": "التفاصيل"
+        }
+      },
+      "data": [
+        {
+          "baslik": {
+            "tr": "Kabul ve sıra",
+            "en": "Check-in and queue",
+            "ar": "الاستقبال والدور"
+          },
+          "metin": {
+            "tr": "Sevk belgeniz okunur, sıra numaranız verilir; gebelik olasılığı burada sorulur.",
+            "en": "Your referral is read and you get a queue number; you are asked here about possible pregnancy.",
+            "ar": "تُقرأ ورقة الإحالة وتحصل على رقم دور، ويُسأل هنا عن احتمال الحمل."
+          },
+          "ikon": "confirmation_number",
+          "x": 22,
+          "y": 34
+        },
+        {
+          "baslik": {
+            "tr": "Hazırlık köşesi",
+            "en": "Preparation corner",
+            "ar": "ركن التحضير"
+          },
+          "metin": {
+            "tr": "Kontrastlı tetkikte damar yolu ve yazılı bilgilendirme.",
+            "en": "For contrast scans, an IV line and written information.",
+            "ar": "في الفحوص مع التباين: خط وريدي ومعلومات مكتوبة."
+          },
+          "ikon": "vaccines",
+          "x": 46,
+          "y": 62
+        },
+        {
+          "baslik": {
+            "tr": "Değişim kabini",
+            "en": "Changing room",
+            "ar": "غرفة التبديل"
+          },
+          "metin": {
+            "tr": "Metal eşyalar kilitli dolaba; MR güvenlik formu teknikerle birlikte doldurulur.",
+            "en": "Metal items go into a locker; the MRI safety form is filled in with the radiographer.",
+            "ar": "توضع المعادن في خزانة مقفلة، وتُملأ استمارة سلامة الرنين مع الفني."
+          },
+          "ikon": "lock",
+          "x": 70,
+          "y": 40
+        },
+        {
+          "baslik": {
+            "tr": "Çekim sonrası",
+            "en": "After the scan",
+            "ar": "بعد الفحص"
+          },
+          "metin": {
+            "tr": "Su ve dinlenme; görüntüler aynı gün arşive, rapor hekiminize.",
+            "en": "Water and rest; images go to the archive the same day and the report to your doctor.",
+            "ar": "ماء وراحة؛ تُحفظ الصور في الأرشيف في اليوم نفسه ويُرسل التقرير إلى طبيبك."
+          },
+          "ikon": "local_drink",
+          "x": 84,
+          "y": 72
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "data",
+        "alanlar": {
+          "baslik": "özellik adı — dil sözlüğü (zorunlu)",
+          "metin": "açıklama — dil sözlüğü",
+          "ikon": "Material Symbols adı",
+          "img": "görsel yolu (destekleyen yerleşimde; ana görsel yoksa ilk görsel)",
+          "alt": "görsel alt metni — dil sözlüğü",
+          "url": "bağlantı",
+          "linkMetin": "bağlantı yazısı (yoksa eski `ctaLabel`, o da yoksa «Devamını oku»)"
+        }
+      },
+      "id": "i18twx",
+      "path": "ozellik-isaret-gorsel",
+      "local": "body",
+      "index": 15
+    },
+    {
+      "name": "SSS Kısaca — tek satır cevap, isteğe bağlı ayrıntı",
+      "description": "Her soru numaralı bir kart: cevabın ilk satırı «Kısaca» rozetiyle büyük puntolu hızlı cevap olarak hep görünür; kalan satırlar «Devamı» hap düğmesinin altında (yerel <details>) açılır. Tek satırlı cevapta düğme basılmaz. Rozet yazısı desing `kisaAd`. Mevcut akordeonlar (sss-iki-sutun, sss-cerceve …) soruyu, açık modüller (sss-tablo, sss-gazete) tüm cevabı gösterir; bu modülde soru ve kısa cevap hep açık, yalnız ayrıntı katlanır — iki katmanlı cevap (TL;DR + ayrıntı), açılır öğe cevabın içinde. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Açılırlar yerel <details> (JS'siz). Veri yoksa blok basılmaz.",
+      "version": "1.0.0",
+      "icon": "short_text",
+      "category": "faq",
+      "subCategory": "tldr",
+      "tags": [
+        "faq",
+        "tldr",
+        "short-answer",
+        "details",
+        "two-level",
+        "rtl",
+        "fabrika"
+      ],
+      "desing": {
+        "max": "1200px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": {
+          "tr": "Kısaca",
+          "en": "In short",
+          "ar": "باختصار"
+        },
+        "baslik": {
+          "tr": "Tetkik öncesi en çok sorulanlar",
+          "en": "Most asked before a scan",
+          "ar": "الأكثر سؤالًا قبل الفحص"
+        },
+        "metin": {
+          "tr": "Bilgiler genel bilgilendirme amaçlıdır; tetkik kararı sevk eden hekiminize, raporlama radyoloji uzmanına aittir. Gebelik olasılığınızı mutlaka bildirin.",
+          "en": "Information is general only; the decision on a scan belongs to your referring doctor and the reporting to the radiologist. Always tell us if you might be pregnant.",
+          "ar": "المعلومات عامة فقط؛ قرار الفحص يعود إلى طبيبك المُحيل، وكتابة التقرير إلى أخصائي الأشعة. أخبرينا دائمًا إذا كان هناك احتمال حمل."
+        },
+        "tekAcik": "",
+        "ilkAcik": "",
+        "cta_ad": {
+          "tr": "Randevu al",
+          "en": "Book a scan",
+          "ar": "احجز فحصًا"
+        },
+        "cta_url": "teklif-al",
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+        "kartBg": "var(--mx-site-surface, #f6f7f9)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "kisaAd": {
+          "tr": "Kısaca",
+          "en": "In short",
+          "ar": "باختصار"
+        },
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "color": "var(--mx-site-text, #111318)",
+        "badge": "",
+        "title": "",
+        "description": ""
+      },
+      "data": [
+        {
+          "soru": {
+            "tr": "MR çekimi ne kadar sürer?",
+            "en": "How long does an MRI take?",
+            "ar": "كم يستغرق فحص الرنين؟"
+          },
+          "cevap": {
+            "tr": "Bölgeye göre 20–45 dakika; kontrastlıda biraz daha uzun sürebilir.",
+            "en": "Depending on the area, 20–45 minutes; with contrast it can take a little longer.",
+            "ar": "حسب المنطقة من 20 إلى 45 دقيقة، وقد يطول قليلًا مع التباين."
+          }
+        },
+        {
+          "soru": {
+            "tr": "Raporum ne zaman hazır olur?",
+            "en": "When will my report be ready?",
+            "ar": "متى يكون تقريري جاهزًا؟"
+          },
+          "cevap": {
+            "tr": "Rutin tetkiklerde ortalama 24 saat içinde sevk eden hekiminize iletilir; acil istemde daha kısa sürer.",
+            "en": "For routine scans it reaches your referring doctor within 24 hours on average; urgent requests are faster.",
+            "ar": "في الفحوص الروتينية يصل إلى طبيبك المُحيل خلال 24 ساعة في المتوسط، والطلبات العاجلة أسرع."
+          }
+        },
+        {
+          "soru": {
+            "tr": "Aç gelmem gerekiyor mu?",
+            "en": "Do I need to fast?",
+            "ar": "هل يجب أن أحضر صائمًا؟"
+          },
+          "cevap": {
+            "tr": "Karın ultrasonu ve kontrastlı tetkiklerde evet; süre randevuda yazılı verilir.",
+            "en": "Yes for abdominal ultrasound and contrast scans; the time is given in writing when you book.",
+            "ar": "نعم لفحص البطن بالموجات والفحوص مع التباين، وتُعطى المدة مكتوبة عند الحجز."
+          }
+        },
+        {
+          "soru": {
+            "tr": "Gebelik olasılığım varsa?",
+            "en": "What if I might be pregnant?",
+            "ar": "ماذا لو كان هناك احتمال حمل؟"
+          },
+          "cevap": {
+            "tr": "Kabulde mutlaka söyleyin; röntgen ve tomografi kararı hekimle yeniden değerlendirilir.",
+            "en": "Always say so at check-in; the decision on X-ray or CT is reviewed with the doctor.",
+            "ar": "أخبري الاستقبال دائمًا؛ يُعاد تقييم قرار الأشعة السينية أو المقطعية مع الطبيب."
+          }
+        },
+        {
+          "soru": {
+            "tr": "Önceki görüntülerimi getirmeli miyim?",
+            "en": "Should I bring my previous images?",
+            "ar": "هل أحضر صوري السابقة؟"
+          },
+          "cevap": {
+            "tr": "Evet; karşılaştırma raporun daha anlaşılır olmasına yardım eder.",
+            "en": "Yes; comparing helps make the report clearer.",
+            "ar": "نعم؛ فالمقارنة تساعد على وضوح التقرير."
+          }
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "data",
+        "alanlar": {
+          "soru": "dil sözlüğü (zorunlu; eski `question`)",
+          "cevap": "dil sözlüğü (eski `answer`)",
+          "kategori": "grup adı, dil sözlüğü (gruplayan yerleşimde)",
+          "ikon": "Material Symbols adı (destekleyen yerleşimde)",
+          "url": "«Devamı» bağlantısı (iç slug ya da tam URL)"
+        }
+      },
+      "id": "n7hi8r",
+      "path": "sss-kisaca",
+      "local": "body",
+      "index": 16
+    },
+    {
+      "name": "İletişim KVKK Odak — ikonlu alanlar + onay anahtarlı gizlilik paneli",
+      "description": "Tek çerçeveli iki sütunlu form: geniş tarafta baş ikonlu alanlar (kişi · zarf · telefon · konu · kalem); dar tarafta vurgu tonlu gizlilik paneli: kalkan rozeti, iri puntolu onay metni ve yanında aç/kapa anahtarı (zorunlu onay kutusu), aydınlatma metni bağlantısı, gönder düğmesi ve kanallar. Onay verilmeden gönder düğmesi çerçeveli (boş) görünür, anahtar açılınca dolar ve kalkan döner. Ailede onay metnini formun küçük dipnotundan çıkarıp AYRI PANELE taşıyan tek modül: appearance:none ile çizilmiş anahtar (::before topuz, RTL'de ters yön), :has(.anahtar:checked) ile kalkan / çerçeve / gönder düğmesi durum değişimi; alanlarda mutlak konumlu baş ikonu — kvkk-hassas sektörler için. Kanallar desing'den (adres · telefon · WhatsApp · e-posta · saat) + data satırları; etiketler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Kanal yoksa blok basılmaz.",
+      "version": "1.0.0",
+      "icon": "verified_user",
+      "category": "contact",
+      "subCategory": "consent-panel-form",
+      "tags": [
+        "contact",
+        "form",
+        "consent",
+        "privacy",
+        "toggle",
+        "rtl",
+        "fabrika"
+      ],
+      "desing": {
+        "max": "1200px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": {
+          "tr": "İletişim",
+          "en": "Contact",
+          "ar": "اتصل بنا"
+        },
+        "baslik": {
+          "tr": "Sorunuzu yazın; onayınız olmadan gönderilmez",
+          "en": "Write your question; nothing is sent without your consent",
+          "ar": "اكتب سؤالك؛ لا يُرسل شيء دون موافقتك"
+        },
+        "metin": {
+          "tr": "Randevu, hazırlık ya da rapor teslimi için yazın. Formda sağlık bilgisi ve sonuç istenmez; gizlilik onayı açılmadan gönder düğmesi çalışmaz. Bilgiler genel bilgilendirme amaçlıdır; tetkik kararı sevk eden hekiminize, raporlama radyoloji uzmanına aittir. Gebelik olasılığınızı mutlaka bildirin.",
+          "en": "Write about a booking, preparation or report delivery. The form asks for no health details or results; the send button works only after you switch on privacy consent. Information is general only; the decision on a scan belongs to your referring doctor and the reporting to the radiologist. Always tell us if you might be pregnant.",
+          "ar": "راسلنا بشأن موعد أو تحضير أو تسليم تقرير. لا يطلب النموذج معلومات صحية أو نتائج، ولا يعمل زر الإرسال قبل تفعيل موافقة الخصوصية. المعلومات عامة فقط؛ قرار الفحص يعود إلى طبيبك المُحيل، وكتابة التقرير إلى أخصائي الأشعة. أخبرينا دائمًا إذا كان هناك احتمال حمل."
+        },
+        "adres": {
+          "tr": "Kızılırmak Mahallesi, Ufuk Üniversitesi Caddesi No: 9, Çankaya, Ankara (kurgusal adres)",
+          "en": "9 Ufuk Universitesi Avenue, Kizilirmak, Cankaya, Ankara (fictional address)",
+          "ar": "شارع جامعة أفق رقم 9، حي كيزيليرماك، تشانكايا، أنقرة (عنوان افتراضي)"
+        },
+        "telefon": "+90 312 095 72 72",
+        "eposta": "randevu@lumenradyoloji.example",
+        "whatsapp": "903120957272",
+        "saat": {
+          "tr": "Pzt–Cuma 07:30 – 21:00 · Cumartesi 08:00 – 16:00",
+          "en": "Mon–Fri 07:30 – 21:00 · Saturday 08:00 – 16:00",
+          "ar": "الاثنين–الجمعة 07:30 – 21:00 · السبت 08:00 – 16:00"
+        },
+        "haritaUrl": "",
+        "haritaGomme": "",
+        "waMesaj": {
+          "tr": "Merhaba Lumen Radyoloji, bir sorum var.",
+          "en": "Hello Lumen Radiology, I have a question.",
+          "ar": "مرحبًا لومن للأشعة، لدي سؤال."
+        },
+        "bg": "var(--mx-site-surface, #f6f7f9)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9))",
+        "kartBg": "var(--mx-site-bg, #ffffff)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bgcolor": "var(--mx-site-surface, #f6f7f9)",
+        "color": "var(--mx-site-text, #111318)",
+        "gonderim": "mailto",
+        "address": {
+          "tr": "Kızılırmak Mahallesi, Ufuk Üniversitesi Caddesi No: 9, Çankaya, Ankara (kurgusal adres)",
+          "en": "9 Ufuk Universitesi Avenue, Kizilirmak, Cankaya, Ankara (fictional address)",
+          "ar": "شارع جامعة أفق رقم 9، حي كيزيليرماك، تشانكايا، أنقرة (عنوان افتراضي)"
+        },
+        "phone": "+90 312 095 72 72",
+        "email": "randevu@lumenradyoloji.example",
+        "hours": {
+          "tr": "Pzt–Cuma 07:30 – 21:00 · Cumartesi 08:00 – 16:00",
+          "en": "Mon–Fri 07:30 – 21:00 · Saturday 08:00 – 16:00",
+          "ar": "الاثنين–الجمعة 07:30 – 21:00 · السبت 08:00 – 16:00"
+        },
+        "social": [],
+        "title": {
+          "tr": "Sorunuzu yazın; onayınız olmadan gönderilmez",
+          "en": "Write your question; nothing is sent without your consent",
+          "ar": "اكتب سؤالك؛ لا يُرسل شيء دون موافقتك"
+        },
+        "description": {
+          "tr": "Bilgiler genel bilgilendirme amaçlıdır; tetkik kararı sevk eden hekiminize, raporlama radyoloji uzmanına aittir. Gebelik olasılığınızı mutlaka bildirin.",
+          "en": "Information is general only; the decision on a scan belongs to your referring doctor and the reporting to the radiologist. Always tell us if you might be pregnant.",
+          "ar": "المعلومات عامة فقط؛ قرار الفحص يعود إلى طبيبك المُحيل، وكتابة التقرير إلى أخصائي الأشعة. أخبرينا دائمًا إذا كان هناك احتمال حمل."
+        },
+        "panelTitle": {
+          "tr": "Lumen Radyoloji",
+          "en": "Lumen Radiology",
+          "ar": "لومن للأشعة"
+        },
+        "panelText": {
+          "tr": "Sayılar kurgusal demo verisidir.",
+          "en": "Figures are fictional demo data.",
+          "ar": "الأرقام بيانات تجريبية افتراضية."
+        },
+        "formTitle": {
+          "tr": "Mesaj formu",
+          "en": "Message form",
+          "ar": "نموذج الرسالة"
+        },
+        "subjects": [
+          {
+            "id": "a",
+            "name": {
+              "tr": "Randevu",
+              "en": "Booking",
+              "ar": "موعد"
+            }
+          },
+          {
+            "id": "b",
+            "name": {
+              "tr": "Hazırlık sorusu",
+              "en": "Preparation question",
+              "ar": "سؤال عن التحضير"
+            }
+          },
+          {
+            "id": "c",
+            "name": {
+              "tr": "Rapor teslimi",
+              "en": "Report delivery",
+              "ar": "تسليم التقرير"
+            }
+          },
+          {
+            "id": "d",
+            "name": {
+              "tr": "Diğer",
+              "en": "Other",
+              "ar": "أخرى"
+            }
+          }
+        ],
+        "kvkkText": {
+          "tr": "Kişisel verilerimin yalnız bu talebin yanıtlanması için işlenmesine onay veriyorum.",
+          "en": "I consent to my personal data being processed only to answer this request.",
+          "ar": "أوافق على معالجة بياناتي الشخصية للرد على هذا الطلب فقط."
+        },
+        "kvkkLinkText": {
+          "tr": "Aydınlatma metni",
+          "en": "Privacy notice",
+          "ar": "إشعار الخصوصية"
+        },
+        "kvkkHref": "kisiselveriler",
+        "konuEtiket": {
+          "tr": "Konu",
+          "en": "Subject",
+          "ar": "الموضوع"
+        },
+        "konuIlk": {
+          "tr": "Konu seçin",
+          "en": "Choose a subject",
+          "ar": "اختر الموضوع"
+        }
+      },
+      "data": [],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing",
+        "alanlar": {
+          "ikon": "Material Symbols adı (kanal türü ikondan da anlaşılır: mail · call · location_on · schedule)",
+          "deger": "dil sözlüğü (görünen değer, zorunlu; eski `text`)",
+          "url": "bağlantı (boşsa e-posta/telefon/haritadan türetilir)",
+          "baslik": "dil sözlüğü (kanal etiketi)"
+        }
+      },
+      "id": "v1ubmt",
+      "path": "iletisim-kvkk-odak",
+      "local": "body",
+      "index": 17
+    },
+    {
+      "name": "Alt Zaman Çizgisi — adım adım ulaşım yolu (adres → telefon → e-posta → saat → sosyal)",
+      "description": "«Bize ulaşın» başlığı altında iletişim bir yol haritası: her kanal ikonlu bir durak, duraklar çizgiyle bağlı (masaüstünde yatay, tablet/telefonda dikey); adres durağında yol tarifi. Altında marka, sayfalar, bağlantılar; en altta telif, yasal, dil, başa dön. İletişim liste değil süreç: ziyaretçi «nereye gelirim, nasıl ararım, ne zaman açık» sırasını duraklarda izler; duraklar görünür olunca sırayla belirir (reduced-motion'da hemen). Sayfalar site sayfalarından, iletişim desing → site ayarı, sosyal wmSocialBar, dil seçici {{langbar}}. Metinler dil sözlüğü / lang.json; renkler desing + var(--mx-site-*); mantıksal CSS → RTL.",
+      "version": "1.0.0",
+      "icon": "timeline",
+      "category": "footer",
+      "subCategory": "contact-timeline",
+      "tags": [
+        "footer",
+        "timeline",
+        "steps",
+        "contact",
+        "rtl",
+        "fabrika"
+      ],
+      "desing": {
+        "max": "1200px",
+        "bosluk": "clamp(48px, 6vw, 80px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "hakkinda": {
+          "tr": "Çankaya’da randevulu görüntüleme; rapor ve bekleme süreleri açık. Bilgiler genel bilgilendirme amaçlıdır; tetkik kararı sevk eden hekiminize, raporlama radyoloji uzmanına aittir. Gebelik olasılığınızı mutlaka bildirin.",
+          "en": "Appointment-based imaging in Cankaya with open report and waiting times. Information is general only; the decision on a scan belongs to your referring doctor and the reporting to the radiologist. Always tell us if you might be pregnant.",
+          "ar": "تصوير بالموعد في تشانكايا مع أوقات تقارير وانتظار معلنة. المعلومات عامة فقط؛ قرار الفحص يعود إلى طبيبك المُحيل، وكتابة التقرير إلى أخصائي الأشعة. أخبرينا دائمًا إذا كان هناك احتمال حمل."
+        },
+        "tel": "+90 312 095 72 72",
+        "eposta": "randevu@lumenradyoloji.example",
+        "adres": {
+          "tr": "Kızılırmak Mahallesi, Ufuk Üniversitesi Caddesi No: 9, Çankaya, Ankara (kurgusal adres)",
+          "en": "9 Ufuk Universitesi Avenue, Kizilirmak, Cankaya, Ankara (fictional address)",
+          "ar": "شارع جامعة أفق رقم 9، حي كيزيليرماك، تشانكايا، أنقرة (عنوان افتراضي)"
+        },
+        "cta_ad": {
+          "tr": "Randevu al",
+          "en": "Book a scan",
+          "ar": "احجز فحصًا"
+        },
+        "cta_url": "teklif-al",
+        "rightsText": "",
+        "bg": "var(--mx-site-surface, #f6f7f9)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9))",
+        "kartBg": "var(--mx-site-bg, #ffffff)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "logoH": "48px",
+        "bgcolor": "var(--mx-site-surface, #f6f7f9)",
+        "color": "var(--mx-site-text, #111318)",
+        "showlang": true,
+        "maxpages": 8,
+        "nlShow": true,
+        "nlGonderim": "mailto",
+        "about": {
+          "tr": "Lumen Radyoloji demo temadır; içerik ve sayılar kurgusaldır, görseller temsilîdir. Bilgiler genel bilgilendirme amaçlıdır; tetkik kararı sevk eden hekiminize, raporlama radyoloji uzmanına aittir. Gebelik olasılığınızı mutlaka bildirin.",
+          "en": "Lumen Radiology is a demo theme; content and figures are fictional and images are representative. Information is general only; the decision on a scan belongs to your referring doctor and the reporting to the radiologist. Always tell us if you might be pregnant.",
+          "ar": "لومن للأشعة قالب تجريبي؛ المحتوى والأرقام افتراضية والصور تمثيلية. المعلومات عامة فقط؛ قرار الفحص يعود إلى طبيبك المُحيل، وكتابة التقرير إلى أخصائي الأشعة. أخبرينا دائمًا إذا كان هناك احتمال حمل."
+        },
+        "address": {
+          "tr": "Kızılırmak Mahallesi, Ufuk Üniversitesi Caddesi No: 9, Çankaya, Ankara (kurgusal adres)",
+          "en": "9 Ufuk Universitesi Avenue, Kizilirmak, Cankaya, Ankara (fictional address)",
+          "ar": "شارع جامعة أفق رقم 9، حي كيزيليرماك، تشانكايا، أنقرة (عنوان افتراضي)"
+        },
+        "phone": "+90 312 095 72 72",
+        "email": "randevu@lumenradyoloji.example",
+        "social": [],
+        "legal": [
+          {
+            "name": {
+              "tr": "KVKK",
+              "en": "Privacy (KVKK)",
+              "ar": "حماية البيانات"
+            },
+            "href": "kisiselveriler"
+          },
+          {
+            "name": {
+              "tr": "Gizlilik",
+              "en": "Privacy policy",
+              "ar": "سياسة الخصوصية"
+            },
+            "href": "gizlilikpolitikasi"
+          },
+          {
+            "name": {
+              "tr": "Yasal uyarı",
+              "en": "Legal notice",
+              "ar": "إشعار قانوني"
+            },
+            "href": "yasaluyari"
+          }
+        ],
+        "nlTitle": {
+          "tr": "Haberdar olun",
+          "en": "Stay informed",
+          "ar": "ابقَ على اطلاع"
+        },
+        "nlText": {
+          "tr": "Yeni duyurular için e-posta bırakın. Bu demo sitede veri saklanmaz.",
+          "en": "Leave your e-mail for new announcements. No data is stored on this demo site.",
+          "ar": "اترك بريدك الإلكتروني للإعلانات الجديدة. لا تُحفظ أي بيانات في هذا الموقع التجريبي."
+        },
+        "nlKvkk": {
+          "tr": "E-postanız yalnızca duyuru göndermek için kullanılır; dilediğiniz an listeden çıkabilirsiniz.",
+          "en": "Your e-mail is used only to send announcements; you can leave the list at any time.",
+          "ar": "يُستخدم بريدك الإلكتروني لإرسال الإعلانات فقط، ويمكنك إلغاء الاشتراك في أي وقت."
+        },
+        "services": [],
+        "hours": [
+          {
+            "days": {
+              "tr": "Pazartesi – Cuma",
+              "en": "Monday – Friday",
+              "ar": "الاثنين – الجمعة"
+            },
+            "time": "07:30 – 21:00"
+          },
+          {
+            "days": {
+              "tr": "Cumartesi",
+              "en": "Saturday",
+              "ar": "السبت"
+            },
+            "time": "08:00 – 16:00"
+          }
+        ],
+        "title_contact": {
+          "tr": "Merkeze ulaşmanın yolu",
+          "en": "The way to the centre",
+          "ar": "الطريق إلى المركز"
+        },
+        "title_services": ""
+      },
+      "data": [],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing",
+        "alanlar": {
+          "hakkinda": "kısa tanıtım (dil sözlüğü; yoksa setting.description)",
+          "tel": "telefon (yoksa setting.phone)",
+          "eposta": "e-posta (yoksa setting.email)",
+          "adres": "adres (dil sözlüğü; yoksa setting.address)",
+          "services": "bağlantı listesi [{ name, href }] (footer-10)",
+          "hours": "çalışma saatleri [{ days, time }]",
+          "legal": "yasal bağlantılar [{ text, href }]",
+          "social": "sosyal hesaplar [{ ad, url }] (yoksa site ayarı)",
+          "rightsText": "telif satırı (yoksa @all-rights@)",
+          "nlTitle": "bülten başlığı (bülten formu yalnız başlık/metin + alıcı e-posta varken)"
+        }
+      },
+      "id": "5f5cep",
+      "path": "alt-zaman-cizgisi",
+      "local": "footer",
+      "index": 18
+    },
+    {
+      "name": "Hizmet Bölüm Süzgeci — bölüm çipleri ve aramayla süzülen hizmet kartları",
+      "description": "Yapışkan süzgeç çubuğu: bölüm çipleri (Tümü + her bölüm, hizmet sayısıyla) ve isteğe bağlı arama kutusu; altında köşesinde bölüm etiketi olan kompakt hizmet kartları (ikon, ad, açıklama, maddeler, fiyat, bağlantı). Seçim/arama kartları anında süzer, sonuç yoksa «sonuç bulunamadı». JS yoksa tüm hizmetler görünür. Bölüme göre süzme + metin araması: hizmet-sekmeli bir panelde tek hizmet, hizmet-yan-dizin çapa ile atlar; burada çok bölümlü kurum (poliklinik, veteriner) tüm hizmetleri tek ızgarada tutar ve çip/arama ile daraltır — kart köşesinde bölüm şeridi. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+      "version": "1.0.0",
+      "icon": "filter_list",
+      "category": "hizmet",
+      "subCategory": "department-filter",
+      "tags": [
+        "hizmet",
+        "filter",
+        "search",
+        "departments",
+        "clinic",
+        "interactive",
+        "rtl",
+        "fabrika"
+      ],
+      "desing": {
+        "max": "1200px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": {
+          "tr": "Tetkikler",
+          "en": "Scans",
+          "ar": "الفحوص"
+        },
+        "baslik": {
+          "tr": "Bölüme göre süzün",
+          "en": "Filter by section",
+          "ar": "صفِّ حسب القسم"
+        },
+        "metin": {
+          "tr": "Bir bölüm seçin ya da tetkik adı yazın; kartta süre ve hazırlık maddeleri var. Bilgiler genel bilgilendirme amaçlıdır; tetkik kararı sevk eden hekiminize, raporlama radyoloji uzmanına aittir. Gebelik olasılığınızı mutlaka bildirin.",
+          "en": "Pick a section or type a scan name; each card lists the time and preparation. Information is general only; the decision on a scan belongs to your referring doctor and the reporting to the radiologist. Always tell us if you might be pregnant.",
+          "ar": "اختر قسمًا أو اكتب اسم الفحص؛ في كل بطاقة المدة وبنود التحضير. المعلومات عامة فقط؛ قرار الفحص يعود إلى طبيبك المُحيل، وكتابة التقرير إلى أخصائي الأشعة. أخبرينا دائمًا إذا كان هناك احتمال حمل."
+        },
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+        "kartBg": "var(--mx-site-surface, #f6f7f9)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "aramaEtiket": {
+          "tr": "Tetkik ara",
+          "en": "Search scans",
+          "ar": "ابحث عن فحص"
+        },
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "color": "var(--mx-site-text, #111318)",
+        "linkMetin": {
+          "tr": "Randevu al",
+          "en": "Book a scan",
+          "ar": "احجز فحصًا"
+        }
+      },
+      "data": [
+        {
+          "baslik": {
+            "tr": "MR (manyetik rezonans)",
+            "en": "MRI",
+            "ar": "الرنين المغناطيسي"
+          },
+          "bolum": {
+            "tr": "Kesitsel görüntüleme",
+            "en": "Cross-sectional imaging",
+            "ar": "التصوير المقطعي"
+          },
+          "ikon": "radiology",
+          "metin": {
+            "tr": "20–45 dk · kontrast gerekebilir.",
+            "en": "20–45 min · contrast may be needed.",
+            "ar": "20–45 دقيقة · قد يلزم التباين."
+          },
+          "url": "teklif-al",
+          "maddeler": [
+            {
+              "tr": "Metal eşya dolaba",
+              "en": "Metal items into a locker",
+              "ar": "المعادن في الخزانة"
+            },
+            {
+              "tr": "İmplantı bildirin",
+              "en": "Tell us about implants",
+              "ar": "أبلغ عن أي زرعة"
+            }
+          ]
+        },
+        {
+          "baslik": {
+            "tr": "Bilgisayarlı tomografi",
+            "en": "CT scan",
+            "ar": "الأشعة المقطعية"
+          },
+          "bolum": {
+            "tr": "Kesitsel görüntüleme",
+            "en": "Cross-sectional imaging",
+            "ar": "التصوير المقطعي"
+          },
+          "ikon": "motion_photos_on",
+          "metin": {
+            "tr": "10–20 dk · kontrastlıda böbrek tahlili.",
+            "en": "10–20 min · kidney test for contrast.",
+            "ar": "10–20 دقيقة · تحليل الكلى مع التباين."
+          },
+          "url": "teklif-al",
+          "maddeler": [
+            {
+              "tr": "Kontrastlıda 4 saat açlık",
+              "en": "4 h fasting with contrast",
+              "ar": "صيام 4 ساعات مع التباين"
+            },
+            {
+              "tr": "Gebelik olasılığını bildirin",
+              "en": "Mention possible pregnancy",
+              "ar": "أبلغي عن احتمال الحمل"
+            }
+          ]
+        },
+        {
+          "baslik": {
+            "tr": "Röntgen",
+            "en": "X-ray",
+            "ar": "الأشعة السينية"
+          },
+          "bolum": {
+            "tr": "Grafi ve kemik",
+            "en": "X-ray and bone",
+            "ar": "الأشعة السينية والعظام"
+          },
+          "ikon": "skeleton",
+          "metin": {
+            "tr": "5–10 dk · hazırlık gerekmez.",
+            "en": "5–10 min · no preparation.",
+            "ar": "5–10 دقائق · لا تحضير."
+          },
+          "url": "teklif-al",
+          "maddeler": [
+            {
+              "tr": "Takıları çıkarın",
+              "en": "Remove jewellery",
+              "ar": "انزع المجوهرات"
+            }
+          ]
+        },
+        {
+          "baslik": {
+            "tr": "Kemik yoğunluğu (DEXA)",
+            "en": "Bone density (DEXA)",
+            "ar": "كثافة العظام (DEXA)"
+          },
+          "bolum": {
+            "tr": "Grafi ve kemik",
+            "en": "X-ray and bone",
+            "ar": "الأشعة السينية والعظام"
+          },
+          "ikon": "accessibility_new",
+          "metin": {
+            "tr": "10–15 dk · düşük doz.",
+            "en": "10–15 min · low dose.",
+            "ar": "10–15 دقيقة · جرعة منخفضة."
+          },
+          "url": "teklif-al",
+          "maddeler": [
+            {
+              "tr": "24 saat kalsiyum takviyesi yok",
+              "en": "No calcium supplement for 24 h",
+              "ar": "لا مكملات كالسيوم لمدة 24 ساعة"
+            }
+          ]
+        },
+        {
+          "baslik": {
+            "tr": "Karın ultrasonu",
+            "en": "Abdominal ultrasound",
+            "ar": "موجات فوق صوتية للبطن"
+          },
+          "bolum": {
+            "tr": "Ultrason",
+            "en": "Ultrasound",
+            "ar": "الموجات فوق الصوتية"
+          },
+          "ikon": "sensors",
+          "metin": {
+            "tr": "15–30 dk · 6 saat açlık.",
+            "en": "15–30 min · 6 h fasting.",
+            "ar": "15–30 دقيقة · صيام 6 ساعات."
+          },
+          "url": "teklif-al",
+          "maddeler": [
+            {
+              "tr": "Aç gelin",
+              "en": "Come fasting",
+              "ar": "احضر صائمًا"
+            }
+          ]
+        },
+        {
+          "baslik": {
+            "tr": "Doppler ultrason",
+            "en": "Doppler ultrasound",
+            "ar": "الدوبلر"
+          },
+          "bolum": {
+            "tr": "Ultrason",
+            "en": "Ultrasound",
+            "ar": "الموجات فوق الصوتية"
+          },
+          "ikon": "monitor_heart",
+          "metin": {
+            "tr": "20–30 dk · hazırlık gerekmez.",
+            "en": "20–30 min · no preparation.",
+            "ar": "20–30 دقيقة · لا تحضير."
+          },
+          "url": "teklif-al",
+          "maddeler": [
+            {
+              "tr": "Rahat giysi",
+              "en": "Comfortable clothes",
+              "ar": "ملابس مريحة"
+            }
+          ]
+        },
+        {
+          "baslik": {
+            "tr": "Mamografi",
+            "en": "Mammography",
+            "ar": "الماموغرام"
+          },
+          "bolum": {
+            "tr": "Meme görüntüleme",
+            "en": "Breast imaging",
+            "ar": "تصوير الثدي"
+          },
+          "ikon": "female",
+          "metin": {
+            "tr": "15 dk · çift okuma.",
+            "en": "15 min · double reading.",
+            "ar": "15 دقيقة · قراءة مزدوجة."
+          },
+          "url": "teklif-al",
+          "maddeler": [
+            {
+              "tr": "Deodorant sürmeyin",
+              "en": "No deodorant",
+              "ar": "لا مزيل عرق"
+            },
+            {
+              "tr": "Önceki filmler",
+              "en": "Previous images",
+              "ar": "الصور السابقة"
+            }
+          ]
+        },
+        {
+          "baslik": {
+            "tr": "Meme ultrasonu",
+            "en": "Breast ultrasound",
+            "ar": "موجات الثدي"
+          },
+          "bolum": {
+            "tr": "Meme görüntüleme",
+            "en": "Breast imaging",
+            "ar": "تصوير الثدي"
+          },
+          "ikon": "sensors",
+          "metin": {
+            "tr": "15–20 dk · hazırlık gerekmez.",
+            "en": "15–20 min · no preparation.",
+            "ar": "15–20 دقيقة · لا تحضير."
+          },
+          "url": "teklif-al",
+          "maddeler": [
+            {
+              "tr": "Önceki raporlar",
+              "en": "Previous reports",
+              "ar": "التقارير السابقة"
+            }
+          ]
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "data",
+        "alanlar": {
+          "baslik": "hizmet adı — dil sözlüğü (zorunlu; eski `ad`)",
+          "metin": "kısa açıklama — dil sözlüğü (eski `ozet`)",
+          "maddeler": "kapsam maddeleri — dil sözlüğü dizisi",
+          "ikon": "Material Symbols adı",
+          "img": "görsel yolu",
+          "alt": "görsel alt metni — dil sözlüğü",
+          "fiyat": "fiyat / «…'den başlayan» — dil sözlüğü ya da düz metin",
+          "url": "detay sayfası bağlantısı",
+          "linkMetin": "bağlantı yazısı (yoksa desing `linkMetin` / eski `ctaLabel`, o da yoksa «Devamını oku»)"
+        }
+      },
+      "id": "83jgzn",
+      "path": "hizmet-bolum-suz",
+      "local": "body",
+      "index": 19
+    },
+    {
+      "name": "Zaman Çift Kulvar — iki paralel şeritte aynı yıla hizalanan olaylar",
+      "description": "İki adlandırılmış kulvar (ör. «Şirketimiz» · «Sektörde», «Anne» · «Bebek») ve ortada yıl ekseni: aynı yıla düşen olaylar aynı satırda iki yana hizalanır, kulvarı boş kalan yılda kesik nokta izi kalır; kulvar başlıkları kaydırırken yapışkan, kartlar eksene kesik çizgiyle bağlanır. Mobilde tek sütun, her kartta kulvar çipi. Veride `kol` (1/2) yoksa olaylar sırayla iki kulvara dağılır. timeline-2 olayları tek eksenin iki yanına sırayla (zikzak) dizer; zaman-cift-kulvar karşılaştırmalı iki paralel anlatıdır: adlandırılmış yapışkan kulvar başlıkları, aynı yıla düşen olayların aynı satırda hizalanması, boş kulvar izi ve kulvar çipleri — «biz ve dünya», «anne ve bebek» gibi çift hikâye. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+      "version": "1.0.0",
+      "icon": "compare_arrows",
+      "category": "timeline",
+      "subCategory": "dual-lane",
+      "tags": [
+        "timeline",
+        "dual-lane",
+        "compare",
+        "aligned",
+        "sticky",
+        "rtl",
+        "fabrika"
+      ],
+      "desing": {
+        "max": "1200px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": {
+          "tr": "Tetkik günü",
+          "en": "Scan day",
+          "ar": "يوم الفحص"
+        },
+        "baslik": {
+          "tr": "Sizin adımınız, bizim adımımız",
+          "en": "Your steps and ours",
+          "ar": "خطواتك وخطواتنا"
+        },
+        "metin": {
+          "tr": "Aynı satırdaki iki kart aynı ana denk gelir: solda sizin yapacağınız, sağda merkezin yaptığı. Süreler ortalamadır. Sayılar kurgusal demo verisidir.",
+          "en": "The two cards on a row happen at the same moment: what you do on one side, what the centre does on the other. Times are averages. Figures are fictional demo data.",
+          "ar": "البطاقتان في السطر نفسه تحدثان في اللحظة نفسها: ما تفعله في جهة وما يفعله المركز في الأخرى. الأوقات متوسطة. الأرقام بيانات تجريبية افتراضية."
+        },
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+        "kartBg": "var(--mx-site-surface, #f6f7f9)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "kol1": {
+          "tr": "Siz",
+          "en": "You",
+          "ar": "أنت"
+        },
+        "kol2": {
+          "tr": "Lumen",
+          "en": "Lumen",
+          "ar": "لومن"
+        },
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "color": "var(--mx-site-text, #111318)"
+      },
+      "data": [
+        {
+          "etiket": {
+            "tr": "1 gün önce",
+            "en": "1 day before",
+            "ar": "قبل يوم"
+          },
+          "kol": 1,
+          "baslik": {
+            "tr": "Hazırlık notunu okuyun",
+            "en": "Read the preparation note",
+            "ar": "اقرأ ملاحظة التحضير"
+          },
+          "metin": {
+            "tr": "Açlık ve ilaç bilgisi SMS ve e-postayla gelir.",
+            "en": "Fasting and medicine notes arrive by SMS and e-mail.",
+            "ar": "تصلك معلومات الصيام والأدوية برسالة وبريد."
+          },
+          "ikon": "mark_email_read"
+        },
+        {
+          "etiket": {
+            "tr": "1 gün önce",
+            "en": "1 day before",
+            "ar": "قبل يوم"
+          },
+          "kol": 2,
+          "baslik": {
+            "tr": "Onay araması",
+            "en": "Confirmation call",
+            "ar": "مكالمة التأكيد"
+          },
+          "metin": {
+            "tr": "Sevk belgesi ve gebelik olasılığı sorulur.",
+            "en": "We ask about the referral and possible pregnancy.",
+            "ar": "نسأل عن ورقة الإحالة واحتمال الحمل."
+          },
+          "ikon": "call"
+        },
+        {
+          "etiket": "09:00",
+          "kol": 1,
+          "baslik": {
+            "tr": "Kabul",
+            "en": "Check-in",
+            "ar": "الاستقبال"
+          },
+          "metin": {
+            "tr": "Kimlik, sevk belgesi ve önceki görüntüler.",
+            "en": "ID, referral and previous images.",
+            "ar": "الهوية وورقة الإحالة والصور السابقة."
+          },
+          "ikon": "badge"
+        },
+        {
+          "etiket": "09:00",
+          "kol": 2,
+          "baslik": {
+            "tr": "Sıra numarası",
+            "en": "Queue number",
+            "ar": "رقم الدور"
+          },
+          "metin": {
+            "tr": "Ekranda bekleme süresi görünür.",
+            "en": "The waiting time shows on the screen.",
+            "ar": "يظهر وقت الانتظار على الشاشة."
+          },
+          "ikon": "confirmation_number"
+        },
+        {
+          "etiket": "09:14",
+          "kol": 1,
+          "baslik": {
+            "tr": "Çekim",
+            "en": "Scan",
+            "ar": "الفحص"
+          },
+          "metin": {
+            "tr": "Hareketsiz kalmanız istenir; teknikerle konuşabilirsiniz.",
+            "en": "You are asked to keep still; you can talk to the radiographer.",
+            "ar": "يُطلب منك عدم الحركة، ويمكنك التحدث مع الفني."
+          },
+          "ikon": "radiology"
+        },
+        {
+          "etiket": "09:14",
+          "kol": 2,
+          "baslik": {
+            "tr": "Görüntü kontrolü",
+            "en": "Image check",
+            "ar": "فحص الصور"
+          },
+          "metin": {
+            "tr": "Tekniker görüntülerin yeterliğini kontrol eder.",
+            "en": "The radiographer checks the images are adequate.",
+            "ar": "يتحقق الفني من كفاية الصور."
+          },
+          "ikon": "fact_check"
+        },
+        {
+          "etiket": {
+            "tr": "Ertesi gün",
+            "en": "Next day",
+            "ar": "اليوم التالي"
+          },
+          "kol": 2,
+          "baslik": {
+            "tr": "Rapor",
+            "en": "Report",
+            "ar": "التقرير"
+          },
+          "metin": {
+            "tr": "Radyoloji uzmanı raporu yazar, sevk eden hekime iletilir.",
+            "en": "The radiologist writes the report and it is sent to the referring doctor.",
+            "ar": "يكتب أخصائي الأشعة التقرير ويُرسل إلى الطبيب المُحيل."
+          },
+          "ikon": "description"
+        },
+        {
+          "etiket": {
+            "tr": "Ertesi gün",
+            "en": "Next day",
+            "ar": "اليوم التالي"
+          },
+          "kol": 1,
+          "baslik": {
+            "tr": "Hekiminizle görüşün",
+            "en": "See your doctor",
+            "ar": "راجع طبيبك"
+          },
+          "metin": {
+            "tr": "Sonucu sevk eden hekiminiz değerlendirir.",
+            "en": "Your referring doctor reviews the result.",
+            "ar": "يقيّم طبيبك المُحيل النتيجة."
+          },
+          "ikon": "stethoscope"
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "data",
+        "alanlar": {
+          "etiket": "yıl / tarih / dönem (dil sözlüğü ya da düz metin)",
+          "baslik": "dil sözlüğü (zorunlu)",
+          "metin": "dil sözlüğü",
+          "ikon": "Material Symbols adı",
+          "img": "görsel yolu (destekleyen yerleşimde)",
+          "url": "iç/dış bağlantı"
+        }
+      },
+      "id": "qj40da",
+      "path": "zaman-cift-kulvar",
+      "local": "body",
+      "index": 20
+    },
+    {
+      "name": "Randevu Hekim + Takvim — hekim listesi ve aylık takvim iki panel",
+      "description": "İki panel: solda fotoğraflı/baş harfli hekim satırları (ad · unvan, seçilince işaret) ve hizmet listesi; sağda aylık takvim ızgarası (gün başlıkları sayfa dilinde, kapalı ve sınır dışı günler soluk, önceki/sonraki ay, ok tuşlarıyla gezinme), tarih alanı, saat çipleri, hasta bilgileri, KVKK ve gönder. Hekim listesi yoksa sol panelde hizmetler satır olarak seçilir. JS yokken takvim yerine yerel tarih alanı. randevu-uzman-kart uzmanları kart ızgarası yapıp alanları alta dizer, randevu-gun-serit / randevu-ajanda yatay/dikey gün şeridi kullanır; bu modül gerçek aylık takvim ızgarası (ayTakvim parçası, kapalı gün + ön/azami gün sınırı) ile hekim listesini yan yana iki panelde birleştirir. Sunucusuz gönderim (formAction JSON POST › WhatsApp › .ics › mailto), kapalı gün denetimi, KVKK onayı. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Gönderim yolu yoksa blok basılmaz.",
+      "version": "1.0.0",
+      "icon": "stethoscope",
+      "category": "randevu",
+      "subCategory": "doctor-calendar",
+      "tags": [
+        "randevu",
+        "doctor",
+        "calendar",
+        "month-grid",
+        "two-panel",
+        "rtl",
+        "fabrika"
+      ],
+      "desing": {
+        "max": "1240px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": {
+          "tr": "Randevu",
+          "en": "Booking",
+          "ar": "الحجز"
+        },
+        "baslik": {
+          "tr": "Tetkiki ve günü seçin",
+          "en": "Choose the scan and the day",
+          "ar": "اختر الفحص واليوم"
+        },
+        "metin": {
+          "tr": "Hekim seçimi isteğe bağlıdır; takvimde kapalı günler soluk görünür. Talep WhatsApp’ta hazır açılır, merkez arayıp onaylar. Formda sağlık bilgisi istenmez. Bu form demodur; veri saklanmaz.",
+          "en": "Choosing a doctor is optional; closed days look faded on the calendar. The request opens ready in WhatsApp and the centre calls to confirm. The form asks for no health details. This form is a demo; no data is stored.",
+          "ar": "اختيار الطبيب اختياري، وتظهر الأيام المغلقة باهتة في التقويم. يُفتح الطلب جاهزًا في واتساب ويتصل المركز للتأكيد. لا يطلب النموذج معلومات صحية. هذا النموذج تجريبي؛ لا تُحفظ أي بيانات."
+        },
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+        "kartBg": "var(--mx-site-surface, #f6f7f9)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "color": "var(--mx-site-text, #111318)",
+        "telefon": "+90 312 095 72 72",
+        "phone": "+90 312 095 72 72",
+        "whatsapp": "903120957272",
+        "eposta": "randevu@lumenradyoloji.example",
+        "email": "randevu@lumenradyoloji.example",
+        "konum": {
+          "tr": "Kızılırmak Mahallesi, Ufuk Üniversitesi Caddesi No: 9, Çankaya, Ankara (kurgusal adres)",
+          "en": "9 Ufuk Universitesi Avenue, Kizilirmak, Cankaya, Ankara (fictional address)",
+          "ar": "شارع جامعة أفق رقم 9، حي كيزيليرماك، تشانكايا، أنقرة (عنوان افتراضي)"
+        },
+        "submit": "whatsapp",
+        "leadDays": 1,
+        "maxDays": 30,
+        "hours": {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "07:30",
+          "end": "20:30",
+          "slot": 30,
+          "breaks": [
+            {
+              "start": "12:30",
+              "end": "13:00"
+            }
+          ]
+        },
+        "closed": [
+          "2026-12-31",
+          "2027-01-01"
+        ],
+        "staff": [
+          {
+            "id": "k",
+            "name": "Elif Kaya",
+            "role": {
+              "tr": "Meme görüntüleme",
+              "en": "Breast imaging",
+              "ar": "تصوير الثدي"
+            }
+          },
+          {
+            "id": "t",
+            "name": "Murat Tan",
+            "role": {
+              "tr": "Kesitsel görüntüleme",
+              "en": "Cross-sectional imaging",
+              "ar": "التصوير المقطعي"
+            }
+          },
+          {
+            "id": "y",
+            "name": "Selin Yavuz",
+            "role": {
+              "tr": "Ultrason",
+              "en": "Ultrasound",
+              "ar": "الموجات فوق الصوتية"
+            }
+          },
+          {
+            "id": "s",
+            "name": "Deniz Sarp",
+            "role": {
+              "tr": "Grafi ve kemik",
+              "en": "X-ray and bone",
+              "ar": "الأشعة السينية والعظام"
+            }
+          }
+        ],
+        "kvkkText": {
+          "tr": "Kişisel verilerimin yalnız bu randevu talebinin yanıtlanması için işlenmesine ilişkin aydınlatma metnini okudum.",
+          "en": "I have read the privacy notice on processing my personal data only to answer this booking request.",
+          "ar": "لقد قرأت إشعار الخصوصية المتعلق بمعالجة بياناتي الشخصية للرد على طلب الحجز هذا فقط."
+        },
+        "kvkkHref": "kisiselveriler",
+        "kvkk": {
+          "text": {
+            "tr": "Kişisel verilerimin yalnız bu randevu talebinin yanıtlanması için işlenmesine ilişkin aydınlatma metnini okudum.",
+            "en": "I have read the privacy notice on processing my personal data only to answer this booking request.",
+            "ar": "لقد قرأت إشعار الخصوصية المتعلق بمعالجة بياناتي الشخصية للرد على طلب الحجز هذا فقط."
+          },
+          "href": "kisiselveriler"
+        },
+        "successText": {
+          "tr": "Talebiniz hazırlandı. Randevu, merkezin onay aramasından sonra takvime işlenir. (Demo)",
+          "en": "Your request is ready. The booking is added after the centre calls to confirm. (Demo)",
+          "ar": "طلبك جاهز. يُضاف الموعد بعد اتصال المركز للتأكيد. (تجريبي)"
+        },
+        "konu": {
+          "tr": "Tetkik randevusu talebi",
+          "en": "Scan booking request",
+          "ar": "طلب موعد فحص"
+        }
+      },
+      "data": [
+        {
+          "ad": {
+            "tr": "MR",
+            "en": "MRI",
+            "ar": "الرنين المغناطيسي"
+          },
+          "sure": 45,
+          "ikon": "radiology",
+          "metin": {
+            "tr": "Metal eşyaları çıkarın.",
+            "en": "Remove metal items.",
+            "ar": "انزع المعادن."
+          }
+        },
+        {
+          "ad": {
+            "tr": "Bilgisayarlı tomografi",
+            "en": "CT scan",
+            "ar": "الأشعة المقطعية"
+          },
+          "sure": 20,
+          "ikon": "motion_photos_on",
+          "metin": {
+            "tr": "Kontrastlıda böbrek tahlili.",
+            "en": "Kidney test for contrast.",
+            "ar": "تحليل الكلى مع التباين."
+          }
+        },
+        {
+          "ad": {
+            "tr": "Röntgen",
+            "en": "X-ray",
+            "ar": "الأشعة السينية"
+          },
+          "sure": 10,
+          "ikon": "skeleton",
+          "metin": {
+            "tr": "Hazırlık gerekmez.",
+            "en": "No preparation.",
+            "ar": "لا تحضير."
+          }
+        },
+        {
+          "ad": {
+            "tr": "Ultrason",
+            "en": "Ultrasound",
+            "ar": "الموجات فوق الصوتية"
+          },
+          "sure": 30,
+          "ikon": "sensors",
+          "metin": {
+            "tr": "Karın için 6 saat açlık.",
+            "en": "6 h fasting for abdomen.",
+            "ar": "صيام 6 ساعات للبطن."
+          }
+        },
+        {
+          "ad": {
+            "tr": "Mamografi",
+            "en": "Mammography",
+            "ar": "الماموغرام"
+          },
+          "sure": 15,
+          "ikon": "female",
+          "metin": {
+            "tr": "Deodorant sürmeyin.",
+            "en": "No deodorant.",
+            "ar": "لا مزيل عرق."
+          }
+        },
+        {
+          "ad": {
+            "tr": "Kemik yoğunluğu",
+            "en": "Bone density",
+            "ar": "كثافة العظام"
+          },
+          "sure": 15,
+          "ikon": "accessibility_new",
+          "metin": {
+            "tr": "24 saat kalsiyum takviyesi yok.",
+            "en": "No calcium for 24 h.",
+            "ar": "لا كالسيوم لمدة 24 ساعة."
+          }
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing",
+        "alanlar": {
+          "ad": "hizmet adı (dil sözlüğü, zorunlu) — eski `services[].name`",
+          "sure": "dakika — eski `duration`",
+          "fiyat": "sayı (sayfa diliyle biçimlenir) — eski `price`",
+          "ikon": "Material Symbols adı",
+          "metin": "kısa açıklama (dil sözlüğü)",
+          "img": "görsel (destekleyen yerleşimde)"
+        }
+      },
+      "id": "6zmmmm",
+      "path": "randevu-hekim-takvim",
+      "local": "body",
+      "index": 21
+    }
+  ]
+}

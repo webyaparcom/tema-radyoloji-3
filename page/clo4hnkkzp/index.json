@@ -1,0 +1,39 @@
+{
+  "id": "clo4hnkkzp",
+  "name": {
+    "tr": "Randevu",
+    "en": "Booking",
+    "ar": "الحجز"
+  },
+  "description": {
+    "tr": "Hekim takvimiyle tetkik randevusu talebi (demo).",
+    "en": "Scan booking request with the doctors’ calendar (demo).",
+    "ar": "طلب موعد فحص عبر تقويم الأطباء (تجريبي)."
+  },
+  "keyword": {
+    "tr": "randevu",
+    "en": "appointment",
+    "ar": "موعد"
+  },
+  "path": "teklif-al",
+  "icon": "event",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "6zmmmm"
+    ],
+    "footer": []
+  },
+  "index": 2,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Randevu",
+    "en": "Booking",
+    "ar": "الحجز"
+  },
+  "date": "2026-11-16T20:27:31.852Z",
+  "update": "2026-11-16T20:31:12.794Z"
+}
