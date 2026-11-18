@@ -5,12 +5,16 @@
       "name": {
         "tr": "Tetkikler",
         "en": "Scans",
-        "ar": "الفحوص"
+        "ar": "الفحوص",
+        "de": "Untersuchungen",
+        "ru": "Обследования"
       },
       "description": {
         "tr": "Bölüme göre tetkikler, hazırlık maddeleri ve kısa sorular.",
         "en": "Scans by section, preparation points and short answers.",
-        "ar": "الفحوص حسب القسم وبنود التحضير وإجابات قصيرة."
+        "ar": "الفحوص حسب القسم وبنود التحضير وإجابات قصيرة.",
+        "de": "Untersuchungen nach Fachbereich, Vorbereitungshinweise und kurze Fragen.",
+        "ru": "Обследования по отделениям, пункты подготовки и короткие вопросы."
       },
       "path": "hizmetler",
       "icon": "radiology",
@@ -31,7 +35,9 @@
       "name": {
         "tr": "Merkez",
         "en": "Centre",
-        "ar": "المركز"
+        "ar": "المركز",
+        "de": "Zentrum",
+        "ru": "Центр"
       },
       "status": "play",
       "id": "hakkimizda",
@@ -53,7 +59,9 @@
       "description": {
         "tr": "Sayılar, hekim kadrosu ve tetkik günü (kurgusal).",
         "en": "Figures, the medical team and the scan day (fictional).",
-        "ar": "الأرقام والفريق الطبي ويوم الفحص (افتراضي)."
+        "ar": "الأرقام والفريق الطبي ويوم الفحص (افتراضي).",
+        "de": "Zahlen, ärztliches Personal und Untersuchungstag (fiktiv).",
+        "ru": "Цифры, медицинский персонал и день обследования (вымышленные)."
       }
     },
     {
@@ -61,12 +69,16 @@
       "name": {
         "tr": "Randevu",
         "en": "Booking",
-        "ar": "الحجز"
+        "ar": "الحجز",
+        "de": "Termin",
+        "ru": "Запись"
       },
       "description": {
         "tr": "Hekim takvimiyle tetkik randevusu talebi (demo).",
         "en": "Scan booking request with the doctors’ calendar (demo).",
-        "ar": "طلب موعد فحص عبر تقويم الأطباء (تجريبي)."
+        "ar": "طلب موعد فحص عبر تقويم الأطباء (تجريبي).",
+        "de": "Anfrage für einen Scan-Termin mit dem Arztkalender (Demo).",
+        "ru": "Запрос записи на сканирование по календарю врача (демо)."
       },
       "path": "teklif-al",
       "icon": "event",
@@ -85,7 +97,9 @@
       "name": {
         "tr": "İletişim",
         "en": "Contact",
-        "ar": "اتصل بنا"
+        "ar": "اتصل بنا",
+        "de": "Kontakt",
+        "ru": "Контакты"
       },
       "status": "play",
       "id": "iletisim",
@@ -106,7 +120,9 @@
       "description": {
         "tr": "Adres, telefon ve çalışma saatleri.",
         "en": "Address, phone and opening hours.",
-        "ar": "العنوان والهاتف وساعات العمل."
+        "ar": "العنوان والهاتف وساعات العمل.",
+        "de": "Adresse, Telefon und Öffnungszeiten.",
+        "ru": "Адрес, телефон и часы работы."
       }
     }
   ],

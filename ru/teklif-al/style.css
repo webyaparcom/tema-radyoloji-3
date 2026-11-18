@@ -1,0 +1,525 @@
+:root{--mx-site-primary:#E8A33D;--mx-site-primary-contrast:#14161A;--mx-site-bg:#12151B;--mx-site-text:#ECEAE6;--mx-site-surface:#1A1E26;--mx-site-surface-2:#20242E;--mx-font-sans:"Source Sans 3", Rubik, system-ui, -apple-system, "Segoe UI", sans-serif;--mx-font-heading:"Barlow Condensed", Rubik, system-ui, -apple-system, "Segoe UI", sans-serif;--mx-radius-sm:2px;--mx-radius-md:4px;--mx-radius-lg:6px;--mx-radius-xl:8px}@media (prefers-color-scheme:dark){:root:not([data-mx-scheme="light"]){--mx-site-primary:#ECB25C;--mx-site-primary-contrast:#0E1116;--mx-site-bg:#0C0F13;--mx-site-text:#ECEAE6;--mx-site-surface:#141820;--mx-site-surface-2:#181D26;color-scheme:dark}}html[data-mx-scheme="dark"]{--mx-site-primary:#ECB25C;--mx-site-primary-contrast:#0E1116;--mx-site-bg:#0C0F13;--mx-site-text:#ECEAE6;--mx-site-surface:#141820;--mx-site-surface-2:#181D26;color-scheme:dark}body{background:var(--mx-site-bg,#fff);color:var(--mx-site-text,inherit)}html[lang="ar"]{--mx-font-sans:"IBM Plex Sans Arabic", Rubik, system-ui, -apple-system, "Segoe UI", sans-serif;--mx-font-heading:"Noto Kufi Arabic", Rubik, system-ui, -apple-system, "Segoe UI", sans-serif}
+
+  
+  :root {
+    --mx-demo-bandi-h: 48px;
+  }
+  .h0000-db {
+    --db-bg: var(--mx-site-text, #1b1b1b);
+    --db-fg: var(--mx-site-bg, #ffffff);
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 2147483000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    min-height: 48px;
+    padding-block: 2px;
+    padding-inline: 16px;
+    background: var(--db-bg);
+    color: var(--db-fg);
+    font-family: var(--mx-font-sans, system-ui, -apple-system, "Segoe UI", sans-serif);
+    font-size: 0.875rem;
+    line-height: 1.45;
+    text-align: start;
+    animation: mxDbGiris 0.35s ease-out both;
+  }
+  .h0000-db *,
+  .h0000-db *::before,
+  .h0000-db *::after {
+    box-sizing: border-box;
+  }
+  .h0000-db-icon {
+    flex: 0 0 auto;
+    font-size: 20px;
+    line-height: 1;
+  }
+  .h0000-db-text {
+    margin: 0;
+    min-width: 0;
+    flex: 0 1 auto;
+    font-weight: 500;
+    overflow-wrap: anywhere;
+  }
+  .h0000-db .h0000-db-cta {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    min-height: 44px;
+    min-width: 44px;
+    padding-inline: 4px;
+    color: var(--db-fg) !important;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+    transition: opacity 0.2s ease, gap 0.2s ease;
+  }
+  .h0000-db .h0000-db-cta:hover {
+    opacity: 0.85;
+    gap: 8px;
+  }
+  .h0000-db .h0000-db-cta:focus-visible {
+    outline: 2px solid var(--db-fg);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  .h0000-db-arrow {
+    font-size: 18px;
+    line-height: 1;
+  }
+  
+  .h0000-db .h0000-db-giris {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    min-height: 32px;
+    padding: 4px 12px;
+    margin-inline-start: 6px;
+    border: 1px solid color-mix(in srgb, var(--db-fg) 60%, transparent);
+    border-radius: 999px;
+    color: var(--db-fg) !important;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  .h0000-db .h0000-db-giris:hover {
+    background-color: color-mix(in srgb, var(--db-fg) 15%, transparent);
+  }
+  .h0000-db .h0000-db-giris:focus-visible {
+    outline: 2px solid var(--db-fg);
+    outline-offset: 2px;
+  }
+  .h0000-db-giris-ikon {
+    font-size: 18px;
+    line-height: 1;
+  }
+  @keyframes mxDbGiris {
+    from { opacity: 0; transform: translateY(-100%); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @media (max-width: 768px) {
+    
+    .h0000-db {
+      justify-content: space-between;
+      gap: 8px;
+      padding-inline: 12px;
+      font-size: 0.8125rem;
+    }
+    .h0000-db-icon {
+      display: none;
+    }
+    .h0000-db-text {
+      flex: 1 1 0;
+    }
+    .h0000-db .h0000-db-cta {
+      max-width: 38%;
+    }
+    .h0000-db .h0000-db-giris {
+      justify-content: center;
+      min-width: 44px;
+      min-height: 44px;
+      padding: 0;
+      margin-inline-start: 0;
+    }
+    .h0000-db-giris-yazi {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .h0000-db {
+      animation: none;
+    }
+    .h0000-db .h0000-db-cta,
+    .h0000-db .h0000-db-giris {
+      transition: none;
+    }
+  }
+
+
+  
+  .h0001-ust-ilerleme { box-sizing: border-box; width: 100%; padding: 0px 20px; background: var(--mx-site-bg, #ffffff); color: var(--mx-site-text, #111318); font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .h0001-ust-ilerleme *, .h0001-ust-ilerleme *::before, .h0001-ust-ilerleme *::after { box-sizing: border-box; }
+  
+  .h0001-ust-ilerleme :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  
+  .h0001-ust-ilerleme :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .h0001-ust-ilerleme :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .h0001-ust-ilerleme :where(ul, ol) { padding: 0; list-style: none; }
+  .h0001-ust-ilerleme img { display: block; max-width: 100%; }
+  
+  :where(.h0001-ust-ilerleme) img { height: auto; }
+  .h0001-ust-ilerleme [hidden] { display: none !important; }
+  .h0001-ust-ilerleme :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .h0001-ust-ilerleme :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid var(--mx-site-primary, #2563eb); outline-offset: 3px; }
+  .h0001-ust-ilerleme-ic { max-width: 1200px; margin-inline: auto; }
+  .h0001-ust-ilerleme-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .h0001-ust-ilerleme--bassiz .h0001-ust-ilerleme-bas { display: none; }
+  .h0001-ust-ilerleme-ust { color: color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318)); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .h0001-ust-ilerleme-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .h0001-ust-ilerleme-metin { color: color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff)); font-size: 1.05rem; line-height: 1.7; }
+  .h0001-ust-ilerleme-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .h0001-ust-ilerleme-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid var(--mx-site-primary, #2563eb); border-radius: 999px; background: var(--mx-site-primary, #2563eb); color: var(--mx-site-primary-contrast, #ffffff); font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .h0001-ust-ilerleme-dugme:hover { transform: translateY(-2px); }
+  .h0001-ust-ilerleme-dugme--ikincil { background: transparent; color: var(--mx-site-text, #111318); border-color: color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent); }
+  .h0001-ust-ilerleme-dugme--ikincil:hover { border-color: var(--mx-site-primary, #2563eb); }
+  .h0001-ust-ilerleme-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .h0001-ust-ilerleme { position: relative; z-index: 900; }
+  .h0001-ust-ilerleme-logo { display: inline-flex; flex: 0 1 auto; min-width: 0; align-items: center; color: inherit; text-decoration: none; }
+  
+  .h0001-ust-ilerleme-logo img { width: auto; max-height: 44px; }
+  .h0001-ust-ilerleme-ad { font-family: var(--mx-font-heading, inherit); font-size: 1.3rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
+  .h0001-ust-ilerleme-oge { position: relative; display: inline-flex; align-items: center; min-height: 44px; color: inherit; font-weight: 600; text-decoration: none; transition: color 0.2s ease, background 0.2s ease; }
+  .h0001-ust-ilerleme-oge:hover, .h0001-ust-ilerleme-oge[aria-current="page"] { color: color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318)); }
+  .h0001-ust-ilerleme-cta { display: inline-flex; flex: none; align-items: center; gap: 6px; min-height: 44px; padding: 8px 18px; border-radius: 999px; background: var(--mx-site-primary, #2563eb); color: var(--mx-site-primary-contrast, #ffffff); font-weight: 700; text-decoration: none; white-space: nowrap; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .h0001-ust-ilerleme-cta:hover { transform: translateY(-2px); box-shadow: 0 10px 20px -12px var(--mx-site-primary, #2563eb); }
+  .h0001-ust-ilerleme-cta .material-symbols-outlined, .h0001-ust-ilerleme-tel .material-symbols-outlined, .h0001-ust-ilerleme-posta .material-symbols-outlined { font-size: 18px; }
+  .h0001-ust-ilerleme-tel, .h0001-ust-ilerleme-posta { display: inline-flex; align-items: center; gap: 6px; color: inherit; text-decoration: none; white-space: nowrap; }
+  .h0001-ust-ilerleme-tel:hover, .h0001-ust-ilerleme-posta:hover { color: color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318)); }
+  .h0001-ust-ilerleme-dil:empty { display: none; }
+  .h0001-ust-ilerleme-ac { display: none; align-items: center; gap: 10px; min-width: 46px; min-height: 46px; padding: 0 12px; border: 1px solid color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent); border-radius: 999px; background: transparent; color: inherit; font: inherit; font-weight: 700; }
+  .h0001-ust-ilerleme-ac-ikon { display: grid; gap: 4px; width: 20px; }
+  .h0001-ust-ilerleme-ac-ikon span { display: block; height: 2px; border-radius: 2px; background: currentColor; transition: transform 0.3s ease, opacity 0.3s ease; }
+  .h0001-ust-ilerleme--acik .h0001-ust-ilerleme-ac-ikon span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+  .h0001-ust-ilerleme--acik .h0001-ust-ilerleme-ac-ikon span:nth-child(2) { opacity: 0; }
+  .h0001-ust-ilerleme--acik .h0001-ust-ilerleme-ac-ikon span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+  .h0001-ust-ilerleme-kapat { display: inline-grid; place-items: center; width: 46px; height: 46px; border: 1px solid color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent); border-radius: 50%; background: transparent; color: inherit; }
+  .h0001-ust-ilerleme-perde { position: fixed; inset: 0; z-index: 1; background: color-mix(in srgb, var(--mx-site-text, #111318) 45%, transparent); animation: h0001-ust-ilerleme-sol 0.3s ease both; }
+  @keyframes h0001-ust-ilerleme-sol { from { opacity: 0; } to { opacity: 1; } }
+
+  .h0001-ust-ilerleme-panel { display: grid; gap: 14px; }
+  @media (max-width: 1024px) {
+    .h0001-ust-ilerleme--js .h0001-ust-ilerleme-nav, .h0001-ust-ilerleme--js .h0001-ust-ilerleme-genis { display: none; }
+    .h0001-ust-ilerleme--js .h0001-ust-ilerleme-ac { display: inline-flex; }
+    .h0001-ust-ilerleme-panel { position: absolute; inset-inline: 0; inset-block-start: 100%; padding: 16px 20px 24px; border-block-end: 1px solid color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent); background: var(--mx-site-bg, #ffffff); box-shadow: 0 24px 40px -28px color-mix(in srgb, var(--mx-site-text, #111318) 55%, transparent); animation: h0001-ust-ilerleme-in 0.3s ease both; }
+    .h0001-ust-ilerleme-pliste { display: grid; }
+    .h0001-ust-ilerleme-pliste .h0001-ust-ilerleme-oge { width: 100%; min-height: 50px; border-block-end: 1px solid color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent); font-size: 1.05rem; }
+    .h0001-ust-ilerleme-palt { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+  }
+  @media (min-width: 1025px) {
+    .h0001-ust-ilerleme-panel { display: none !important; }
+  }
+  @keyframes h0001-ust-ilerleme-in { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
+
+  
+  #header:has(> .h0001-ust-ilerleme) { position: sticky; inset-block-start: 0; z-index: 955; }
+  .h0001-ust-ilerleme.h0001-ust-ilerleme { position: sticky; inset-block-start: 0; z-index: 955; background-color: color-mix(in srgb, var(--mx-site-bg, #ffffff) 93%, transparent); -webkit-backdrop-filter: saturate(1.4) blur(10px); backdrop-filter: saturate(1.4) blur(10px); }
+  .h0001-ust-ilerleme-cubuk { display: flex; align-items: center; justify-content: space-between; gap: 14px 28px; padding-block: 14px 16px; }
+  .h0001-ust-ilerleme-oliste { display: flex; flex-wrap: wrap; gap: 4px 24px; }
+  .h0001-ust-ilerleme-oliste .h0001-ust-ilerleme-oge[aria-current="page"] { text-decoration: underline dotted 2px; text-underline-offset: 7px; }
+  .h0001-ust-ilerleme-cubuk > .h0001-ust-ilerleme-son { display: flex; align-items: center; gap: 10px; }
+  .h0001-ust-ilerleme-genis { display: flex; align-items: center; gap: 12px; }
+  .h0001-ust-ilerleme-iz { position: absolute; inset-inline: 0; inset-block-end: 0; height: 4px; overflow: hidden; background-color: color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent); }
+  .h0001-ust-ilerleme-akis { display: block; width: calc(var(--oku, 0) * 100%); height: 100%; border-start-end-radius: 4px; border-end-end-radius: 4px; background-image: linear-gradient(90deg, var(--mx-site-primary, #2563eb), color-mix(in srgb, var(--mx-site-primary, #2563eb) 55%, var(--mx-site-text, #111318))); transition: width 0.12s linear; }
+  [dir="rtl"] .h0001-ust-ilerleme-akis { background-image: linear-gradient(270deg, var(--mx-site-primary, #2563eb), color-mix(in srgb, var(--mx-site-primary, #2563eb) 55%, var(--mx-site-text, #111318))); }
+  .h0001-ust-ilerleme-basa { position: relative; display: inline-grid; flex: none; place-items: center; width: 46px; height: 46px; padding: 0; border: 0; border-radius: 50%; background: conic-gradient(var(--mx-site-primary, #2563eb) calc(var(--oku, 0) * 360deg), color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent) 0); color: inherit; animation: h0001-ust-ilerleme-dog 0.3s ease both; }
+  .h0001-ust-ilerleme-basa::before { content: ""; position: absolute; inset: 4px; border-radius: 50%; background-color: var(--mx-site-bg, #ffffff); }
+  .h0001-ust-ilerleme-basa .material-symbols-outlined { position: relative; font-size: 20px; transition: transform 0.2s ease; }
+  .h0001-ust-ilerleme-basa:hover .material-symbols-outlined { transform: translateY(-3px); }
+  @keyframes h0001-ust-ilerleme-dog { from { opacity: 0; transform: scale(0.6); } to { opacity: 1; transform: none; } }
+  @media (max-width: 1024px) {
+    .h0001-ust-ilerleme:not(.h0001-ust-ilerleme--js) .h0001-ust-ilerleme-cubuk { flex-wrap: wrap; }
+  }
+  @media (max-width: 768px) {
+    .h0001-ust-ilerleme-basa { width: 42px; height: 42px; }
+  }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .h0001-ust-ilerleme :is(.h0001-ust-ilerleme-baslik, .h0001-ust-ilerleme-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .h0001-ust-ilerleme-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .h0001-ust-ilerleme { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .h0001-ust-ilerleme *, .h0001-ust-ilerleme *::before, .h0001-ust-ilerleme *::after { animation: none !important; transition: none !important; }
+  }
+
+
+  
+  .b0000-randevu-hekim-takvim { box-sizing: border-box; width: 100%; padding: clamp(56px, 8vw, 104px) 20px; background: var(--mx-site-bg, #ffffff); color: var(--mx-site-text, #111318); font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .b0000-randevu-hekim-takvim *, .b0000-randevu-hekim-takvim *::before, .b0000-randevu-hekim-takvim *::after { box-sizing: border-box; }
+  
+  .b0000-randevu-hekim-takvim :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  
+  .b0000-randevu-hekim-takvim :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .b0000-randevu-hekim-takvim :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .b0000-randevu-hekim-takvim :where(ul, ol) { padding: 0; list-style: none; }
+  .b0000-randevu-hekim-takvim img { display: block; max-width: 100%; }
+  
+  :where(.b0000-randevu-hekim-takvim) img { height: auto; }
+  .b0000-randevu-hekim-takvim [hidden] { display: none !important; }
+  .b0000-randevu-hekim-takvim :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .b0000-randevu-hekim-takvim :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid var(--mx-site-primary, #2563eb); outline-offset: 3px; }
+  .b0000-randevu-hekim-takvim-ic { max-width: 1240px; margin-inline: auto; }
+  .b0000-randevu-hekim-takvim-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .b0000-randevu-hekim-takvim--bassiz .b0000-randevu-hekim-takvim-bas { display: none; }
+  .b0000-randevu-hekim-takvim-ust { color: color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318)); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .b0000-randevu-hekim-takvim-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .b0000-randevu-hekim-takvim-metin { color: color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff)); font-size: 1.05rem; line-height: 1.7; }
+  .b0000-randevu-hekim-takvim-bas { max-width: 780px; margin-inline: auto; text-align: center; justify-items: center; }
+  .b0000-randevu-hekim-takvim-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .b0000-randevu-hekim-takvim-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid var(--mx-site-primary, #2563eb); border-radius: 999px; background: var(--mx-site-primary, #2563eb); color: var(--mx-site-primary-contrast, #ffffff); font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .b0000-randevu-hekim-takvim-dugme:hover { transform: translateY(-2px); }
+  .b0000-randevu-hekim-takvim-dugme--ikincil { background: transparent; color: var(--mx-site-text, #111318); border-color: color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent); }
+  .b0000-randevu-hekim-takvim-dugme--ikincil:hover { border-color: var(--mx-site-primary, #2563eb); }
+  .b0000-randevu-hekim-takvim-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .b0000-randevu-hekim-takvim-form { position: relative; display: grid; gap: 18px; }
+  .b0000-randevu-hekim-takvim-alanlar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .b0000-randevu-hekim-takvim-alan { display: grid; align-content: start; gap: 6px; min-width: 0; }
+  .b0000-randevu-hekim-takvim-alan--genis { grid-column: 1 / -1; }
+  .b0000-randevu-hekim-takvim-etiket { color: var(--mx-site-text, #111318); font-size: 0.9rem; font-weight: 650; }
+  .b0000-randevu-hekim-takvim-zor { color: color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318)); }
+  .b0000-randevu-hekim-takvim-girdi { width: 100%; min-height: 48px; padding: 11px 14px; border: 1.5px solid color-mix(in srgb, var(--mx-site-text, #111318) 32%, transparent); border-radius: calc(18px * 0.6); background-color: var(--mx-site-bg, #ffffff); color: var(--mx-site-text, #111318); font: inherit; transition: border-color 0.2s ease, box-shadow 0.2s ease; }
+  textarea.b0000-randevu-hekim-takvim-girdi { min-height: 108px; resize: vertical; }
+  .b0000-randevu-hekim-takvim-girdi:hover { border-color: color-mix(in srgb, var(--mx-site-text, #111318) 55%, transparent); }
+  .b0000-randevu-hekim-takvim-girdi:focus { border-color: var(--mx-site-primary, #2563eb); outline: none; box-shadow: 0 0 0 3px color-mix(in srgb, var(--mx-site-primary, #2563eb) 28%, transparent); }
+  .b0000-randevu-hekim-takvim-grup { display: grid; gap: 10px; min-width: 0; margin: 0; padding: 0; border: 0; }
+  .b0000-randevu-hekim-takvim-grup > legend { padding: 0; margin-block-end: 10px; }
+  .b0000-randevu-hekim-takvim-secenekler { display: flex; flex-wrap: wrap; gap: 8px; }
+  .b0000-randevu-hekim-takvim-radyo { position: absolute; inset-block-start: 0; inset-inline-start: 0; inline-size: 1px; block-size: 1px; opacity: 0; pointer-events: none; }
+  .b0000-randevu-hekim-takvim-cip, .b0000-randevu-hekim-takvim-saat, .b0000-randevu-hekim-takvim-hkart { position: relative; display: inline-flex; cursor: pointer; }
+  .b0000-randevu-hekim-takvim-cyazi, .b0000-randevu-hekim-takvim-syazi { display: inline-flex; flex-direction: column; justify-content: center; min-height: 44px; padding: 8px 16px; border: 1.5px solid color-mix(in srgb, var(--mx-site-text, #111318) 30%, transparent); border-radius: 999px; background-color: var(--mx-site-bg, #ffffff); color: var(--mx-site-text, #111318); font-weight: 650; line-height: 1.25; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease; }
+  .b0000-randevu-hekim-takvim-syazi { min-width: 74px; align-items: center; font-variant-numeric: tabular-nums; }
+  .b0000-randevu-hekim-takvim-cyazi small { color: color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff)); font-size: 0.8rem; font-weight: 500; }
+  .b0000-randevu-hekim-takvim-cip:hover .b0000-randevu-hekim-takvim-cyazi, .b0000-randevu-hekim-takvim-saat:hover .b0000-randevu-hekim-takvim-syazi { border-color: var(--mx-site-primary, #2563eb); transform: translateY(-1px); }
+  .b0000-randevu-hekim-takvim-radyo:checked + :is(.b0000-randevu-hekim-takvim-cyazi, .b0000-randevu-hekim-takvim-syazi) { border-color: var(--mx-site-primary, #2563eb); background-color: var(--mx-site-primary, #2563eb); color: var(--mx-site-primary-contrast, #ffffff); }
+  .b0000-randevu-hekim-takvim-radyo:checked + .b0000-randevu-hekim-takvim-cyazi small { color: inherit; }
+  .b0000-randevu-hekim-takvim-radyo:focus-visible + * { outline: 3px solid var(--mx-site-primary, #2563eb); outline-offset: 2px; }
+  .b0000-randevu-hekim-takvim-dilimler { display: grid; gap: 14px; }
+  .b0000-randevu-hekim-takvim-dilim { display: grid; gap: 8px; }
+  .b0000-randevu-hekim-takvim-dbaslik { display: flex; align-items: center; gap: 6px; color: color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff)); font-size: 0.85rem; font-weight: 650; }
+  .b0000-randevu-hekim-takvim-dbaslik .material-symbols-outlined { font-size: 18px; }
+  .b0000-randevu-hekim-takvim-gunler { display: flex; gap: 8px; overflow-x: auto; padding-block-end: 6px; scroll-snap-type: x mandatory; scrollbar-width: thin; }
+  .b0000-randevu-hekim-takvim-gun { position: relative; display: grid; flex: none; justify-items: center; gap: 2px; min-width: 66px; padding: 10px 8px; border: 1.5px solid color-mix(in srgb, var(--mx-site-text, #111318) 30%, transparent); border-radius: 14px; background-color: var(--mx-site-bg, #ffffff); color: var(--mx-site-text, #111318); scroll-snap-align: start; cursor: pointer; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease; }
+  .b0000-randevu-hekim-takvim-gun:hover { border-color: var(--mx-site-primary, #2563eb); }
+  .b0000-randevu-hekim-takvim-gun:has(:checked) { border-color: var(--mx-site-primary, #2563eb); background-color: var(--mx-site-primary, #2563eb); color: var(--mx-site-primary-contrast, #ffffff); }
+  .b0000-randevu-hekim-takvim-gun:has(:focus-visible) { outline: 3px solid var(--mx-site-primary, #2563eb); outline-offset: 2px; }
+  .b0000-randevu-hekim-takvim-gad, .b0000-randevu-hekim-takvim-gay { font-size: 0.78rem; font-weight: 600; }
+  .b0000-randevu-hekim-takvim-gno { font-size: 1.35rem; font-weight: 800; line-height: 1.1; }
+  .b0000-randevu-hekim-takvim-sayac { display: flex; align-items: stretch; gap: 8px; }
+  .b0000-randevu-hekim-takvim-kisi { text-align: center; font-variant-numeric: tabular-nums; }
+  .b0000-randevu-hekim-takvim-adimla { display: inline-grid; flex: none; place-items: center; width: 48px; min-height: 48px; border: 1.5px solid color-mix(in srgb, var(--mx-site-text, #111318) 32%, transparent); border-radius: calc(18px * 0.6); background-color: var(--mx-site-bg, #ffffff); color: var(--mx-site-text, #111318); transition: border-color 0.2s ease, background-color 0.2s ease; }
+  .b0000-randevu-hekim-takvim-adimla:hover { border-color: var(--mx-site-primary, #2563eb); }
+  .b0000-randevu-hekim-takvim:not(.b0000-randevu-hekim-takvim--rjs) :is([data-ileri], [data-geri], [data-eksi], [data-arti]) { display: none; }
+  .b0000-randevu-hekim-takvim-onay { display: flex; align-items: flex-start; gap: 10px; color: color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff)); font-size: 0.9rem; }
+  .b0000-randevu-hekim-takvim-onaykutu { flex: none; width: 20px; height: 20px; margin: 2px 0 0; accent-color: var(--mx-site-primary, #2563eb); }
+  .b0000-randevu-hekim-takvim-onay a { color: color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318)); font-weight: 650; }
+  .b0000-randevu-hekim-takvim-gkap { display: grid; justify-items: start; gap: 10px; }
+  .b0000-randevu-hekim-takvim-gonder:disabled { opacity: 0.6; transform: none; }
+  .b0000-randevu-hekim-takvim-durum { color: color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318)); font-weight: 650; }
+  .b0000-randevu-hekim-takvim-durum:empty { display: none; }
+  .b0000-randevu-hekim-takvim-durum--hata { color: var(--mx-site-text, #111318); text-decoration: underline wavy; text-decoration-color: var(--mx-site-primary, #2563eb); }
+  .b0000-randevu-hekim-takvim-adimnav { display: flex; flex-wrap: wrap; gap: 10px; }
+  .b0000-randevu-hekim-takvim-bal { position: absolute; inline-size: 1px; block-size: 1px; overflow: hidden; clip-path: inset(50%); }
+  .b0000-randevu-hekim-takvim-kanallar { display: grid; gap: 14px; }
+  .b0000-randevu-hekim-takvim-kanal { display: flex; align-items: center; gap: 12px; min-width: 0; }
+  .b0000-randevu-hekim-takvim-kikon { flex: none; display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 12px; background-color: color-mix(in srgb, var(--mx-site-primary, #2563eb) 14%, transparent); color: color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318)); font-size: 22px; }
+  .b0000-randevu-hekim-takvim-kyazi { display: grid; min-width: 0; }
+  .b0000-randevu-hekim-takvim-ket { color: color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff)); font-size: 0.8rem; font-weight: 600; }
+  .b0000-randevu-hekim-takvim-kdeger { color: inherit; font-weight: 700; text-decoration: none; overflow-wrap: anywhere; transition: color 0.2s ease; }
+  .b0000-randevu-hekim-takvim-kdeger:hover { color: color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318)); text-decoration: underline; text-underline-offset: 3px; }
+  .b0000-randevu-hekim-takvim-cizelge { display: grid; gap: 2px; margin: 0; }
+  .b0000-randevu-hekim-takvim-csatir { display: flex; justify-content: space-between; gap: 12px; padding-block: 7px; border-block-end: 1px dashed color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent); }
+  .b0000-randevu-hekim-takvim-csatir dt { font-weight: 600; }
+  .b0000-randevu-hekim-takvim-csatir dd { margin: 0; font-variant-numeric: tabular-nums; }
+  .b0000-randevu-hekim-takvim-csatir--kapali { color: color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff)); }
+  @media (max-width: 768px) {
+    .b0000-randevu-hekim-takvim-alanlar { grid-template-columns: minmax(0, 1fr); }
+  }
+
+  .b0000-randevu-hekim-takvim-form--hekim { grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.4fr); gap: 0; overflow: hidden; border: 1px solid color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent); border-radius: calc(18px * 1.2); background-color: var(--mx-site-bg, #ffffff); box-shadow: 0 30px 70px -50px color-mix(in srgb, var(--mx-site-text, #111318) 60%, transparent); }
+  .b0000-randevu-hekim-takvim-sol { display: grid; align-content: start; gap: 22px; padding: clamp(18px, 2.6vw, 30px); background-color: var(--mx-site-surface, #f6f7f9); border-inline-end: 1px solid color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent); }
+  .b0000-randevu-hekim-takvim-sag { display: grid; align-content: start; gap: 20px; padding: clamp(18px, 2.6vw, 30px); min-width: 0; }
+  .b0000-randevu-hekim-takvim-hliste { display: grid; gap: 8px; }
+  .b0000-randevu-hekim-takvim-hekim { position: relative; display: grid; cursor: pointer; }
+  .b0000-randevu-hekim-takvim-hkart { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 12px; padding-block: 10px; padding-inline: 10px 14px; border: 1.5px solid transparent; border-radius: 999px; background-color: var(--mx-site-bg, #ffffff); transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease; }
+  .b0000-randevu-hekim-takvim-hekim:hover .b0000-randevu-hekim-takvim-hkart { border-color: var(--mx-site-primary, #2563eb); transform: translateY(-1px); }
+  .b0000-randevu-hekim-takvim-radyo:checked + .b0000-randevu-hekim-takvim-hkart { border-color: var(--mx-site-primary, #2563eb); background-color: color-mix(in srgb, var(--mx-site-primary, #2563eb) 10%, var(--mx-site-bg, #ffffff)); }
+  .b0000-randevu-hekim-takvim-foto { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; background-color: var(--mx-site-primary, #2563eb); color: var(--mx-site-primary-contrast, #ffffff); font-size: 1.1rem; font-weight: 800; object-fit: cover; }
+  .b0000-randevu-hekim-takvim-hyazi { display: grid; min-width: 0; line-height: 1.3; }
+  .b0000-randevu-hekim-takvim-hyazi small { color: color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff)); font-size: 0.82rem; }
+  .b0000-randevu-hekim-takvim-hsec { color: color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318)); font-size: 24px; opacity: 0; transform: scale(0.6); transition: opacity 0.25s ease, transform 0.25s ease; }
+  .b0000-randevu-hekim-takvim-radyo:checked + .b0000-randevu-hekim-takvim-hkart .b0000-randevu-hekim-takvim-hsec { opacity: 1; transform: none; }
+  .b0000-randevu-hekim-takvim-hkanal { display: grid; gap: 12px; padding-block-start: 18px; border-block-start: 1px solid color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent); }
+  .b0000-randevu-hekim-takvim-takvim { display: grid; gap: 12px; }
+  .b0000-randevu-hekim-takvim-tbas { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .b0000-randevu-hekim-takvim-ay { font-size: 1.15rem; font-weight: 800; text-transform: capitalize; }
+  .b0000-randevu-hekim-takvim-tok { display: inline-grid; place-items: center; width: 44px; height: 44px; border: 1.5px solid color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent); border-radius: 50%; background-color: var(--mx-site-bg, #ffffff); color: var(--mx-site-text, #111318); transition: border-color 0.2s ease, background-color 0.2s ease, opacity 0.2s ease; }
+  .b0000-randevu-hekim-takvim-tok:hover:not(:disabled) { border-color: var(--mx-site-primary, #2563eb); }
+  .b0000-randevu-hekim-takvim-tok:disabled { opacity: 0.35; cursor: default; }
+  .b0000-randevu-hekim-takvim-ayizgara { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; }
+  .b0000-randevu-hekim-takvim-hg { padding-block: 4px; color: color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff)); font-size: 0.75rem; font-weight: 700; text-align: center; text-transform: uppercase; }
+  .b0000-randevu-hekim-takvim-gunb { display: grid; place-items: center; height: 46px; padding: 0; border: 1.5px solid color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent); border-radius: 12px; background-color: var(--mx-site-bg, #ffffff); color: var(--mx-site-text, #111318); font: inherit; font-weight: 700; font-variant-numeric: tabular-nums; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease; }
+  .b0000-randevu-hekim-takvim-gunb:hover:not(:disabled) { border-color: var(--mx-site-primary, #2563eb); transform: scale(1.05); }
+  .b0000-randevu-hekim-takvim-gunb:disabled { border-style: dashed; background-color: transparent; color: color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff)); text-decoration: line-through; text-decoration-color: color-mix(in srgb, var(--mx-site-text, #111318) 35%, transparent); cursor: not-allowed; }
+  .b0000-randevu-hekim-takvim-gunb.b0000-randevu-hekim-takvim--bugun { box-shadow: inset 0 -3px 0 var(--mx-site-primary, #2563eb); }
+  .b0000-randevu-hekim-takvim-gunb[aria-pressed="true"] { border-color: var(--mx-site-primary, #2563eb); background-color: var(--mx-site-primary, #2563eb); color: var(--mx-site-primary-contrast, #ffffff); }
+  .b0000-randevu-hekim-takvim--tjs .b0000-randevu-hekim-takvim-alan--tarih { max-width: 260px; }
+  .b0000-randevu-hekim-takvim-grup--saatler .b0000-randevu-hekim-takvim-secenekler { display: grid; grid-template-columns: repeat(auto-fill, minmax(84px, 1fr)); gap: 8px; }
+  .b0000-randevu-hekim-takvim-grup--saatler .b0000-randevu-hekim-takvim-saat { display: grid; }
+  .b0000-randevu-hekim-takvim-grup--saatler .b0000-randevu-hekim-takvim-syazi { min-width: 0; border-radius: 10px; }
+  @media (max-width: 1024px) {
+    .b0000-randevu-hekim-takvim-form--hekim { grid-template-columns: minmax(0, 1fr); }
+    .b0000-randevu-hekim-takvim-sol { border-inline-end: 0; border-block-end: 1px solid color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent); }
+  }
+  @media (max-width: 768px) {
+    .b0000-randevu-hekim-takvim-ayizgara { gap: 4px; }
+    .b0000-randevu-hekim-takvim-gunb { height: 40px; border-radius: 9px; font-size: 0.9rem; }
+  }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .b0000-randevu-hekim-takvim :is(.b0000-randevu-hekim-takvim-baslik, .b0000-randevu-hekim-takvim-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .b0000-randevu-hekim-takvim-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .b0000-randevu-hekim-takvim { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .b0000-randevu-hekim-takvim *, .b0000-randevu-hekim-takvim *::before, .b0000-randevu-hekim-takvim *::after { animation: none !important; transition: none !important; }
+  }
+
+
+  
+  .f0000-alt-zaman-cizgisi { box-sizing: border-box; width: 100%; padding: clamp(48px, 6vw, 80px) 20px; background: var(--mx-site-surface, #f6f7f9); color: var(--mx-site-text, #111318); font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .f0000-alt-zaman-cizgisi *, .f0000-alt-zaman-cizgisi *::before, .f0000-alt-zaman-cizgisi *::after { box-sizing: border-box; }
+  
+  .f0000-alt-zaman-cizgisi :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  
+  .f0000-alt-zaman-cizgisi :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .f0000-alt-zaman-cizgisi :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .f0000-alt-zaman-cizgisi :where(ul, ol) { padding: 0; list-style: none; }
+  .f0000-alt-zaman-cizgisi img { display: block; max-width: 100%; }
+  
+  :where(.f0000-alt-zaman-cizgisi) img { height: auto; }
+  .f0000-alt-zaman-cizgisi [hidden] { display: none !important; }
+  .f0000-alt-zaman-cizgisi :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .f0000-alt-zaman-cizgisi :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid var(--mx-site-primary, #2563eb); outline-offset: 3px; }
+  .f0000-alt-zaman-cizgisi-ic { max-width: 1200px; margin-inline: auto; }
+  .f0000-alt-zaman-cizgisi-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .f0000-alt-zaman-cizgisi--bassiz .f0000-alt-zaman-cizgisi-bas { display: none; }
+  .f0000-alt-zaman-cizgisi-ust { color: color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318)); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .f0000-alt-zaman-cizgisi-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .f0000-alt-zaman-cizgisi-metin { color: color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9)); font-size: 1.05rem; line-height: 1.7; }
+  .f0000-alt-zaman-cizgisi-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .f0000-alt-zaman-cizgisi-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid var(--mx-site-primary, #2563eb); border-radius: 999px; background: var(--mx-site-primary, #2563eb); color: var(--mx-site-primary-contrast, #ffffff); font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .f0000-alt-zaman-cizgisi-dugme:hover { transform: translateY(-2px); }
+  .f0000-alt-zaman-cizgisi-dugme--ikincil { background: transparent; color: var(--mx-site-text, #111318); border-color: color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent); }
+  .f0000-alt-zaman-cizgisi-dugme--ikincil:hover { border-color: var(--mx-site-primary, #2563eb); }
+  .f0000-alt-zaman-cizgisi-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .f0000-alt-zaman-cizgisi-bag { color: inherit; text-decoration: none; transition: color 0.2s ease; }
+  .f0000-alt-zaman-cizgisi-bag:hover { color: color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318)); text-decoration: underline; text-underline-offset: 4px; }
+  .f0000-alt-zaman-cizgisi-bag[aria-current="page"] { color: color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318)); font-weight: 700; }
+  .f0000-alt-zaman-cizgisi-logo { display: inline-flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; }
+  .f0000-alt-zaman-cizgisi-logo img { width: auto; max-height: 48px; }
+  .f0000-alt-zaman-cizgisi-ad { font-family: var(--mx-font-heading, inherit); font-size: 1.4rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
+  .f0000-alt-zaman-cizgisi-bbaslik { margin-block-end: 14px; color: color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318)); font-size: 0.8rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+  .f0000-alt-zaman-cizgisi-sayfalar, .f0000-alt-zaman-cizgisi-baglantilar, .f0000-alt-zaman-cizgisi-iletisim, .f0000-alt-zaman-cizgisi-yasal { display: grid; gap: 9px; }
+  .f0000-alt-zaman-cizgisi-il { display: flex; align-items: flex-start; gap: 10px; }
+  .f0000-alt-zaman-cizgisi-il-ic { display: grid; gap: 2px; }
+  .f0000-alt-zaman-cizgisi-il-etiket { color: color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9)); font-size: 0.8rem; }
+  .f0000-alt-zaman-cizgisi-il-ikon { flex: none; color: color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318)); font-size: 20px; }
+  .f0000-alt-zaman-cizgisi-saatler { display: grid; gap: 6px; }
+  .f0000-alt-zaman-cizgisi-saat { display: flex; justify-content: space-between; gap: 16px; }
+  .f0000-alt-zaman-cizgisi-saat dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .f0000-alt-zaman-cizgisi-sosyal { display: flex; flex-wrap: wrap; gap: 10px; }
+  .f0000-alt-zaman-cizgisi-sosyal-a { display: inline-grid; place-items: center; width: 42px; height: 42px; border: 1px solid color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent); border-radius: 50%; color: inherit; font-size: 18px; transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease; }
+  .f0000-alt-zaman-cizgisi-sosyal-a:hover { border-color: var(--mx-site-primary, #2563eb); background: var(--mx-site-primary, #2563eb); color: var(--mx-site-primary-contrast, #ffffff); transform: translateY(-2px); }
+  .f0000-alt-zaman-cizgisi-hakkinda { max-width: 46ch; color: color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9)); }
+  .f0000-alt-zaman-cizgisi-telif { display: flex; flex-wrap: wrap; gap: 4px 14px; color: color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9)); font-size: 0.9rem; }
+  .f0000-alt-zaman-cizgisi-dil:empty { display: none; }
+  .f0000-alt-zaman-cizgisi-yukari { display: inline-grid; place-items: center; flex: none; width: 46px; height: 46px; border-radius: 50%; background: var(--mx-site-primary, #2563eb); color: var(--mx-site-primary-contrast, #ffffff); text-decoration: none; transition: transform 0.25s ease; }
+  .f0000-alt-zaman-cizgisi-yukari:hover { transform: translateY(-3px); }
+  .f0000-alt-zaman-cizgisi-bulten { display: grid; gap: 8px; }
+  .f0000-alt-zaman-cizgisi-nl-etiket { font-size: 0.9rem; font-weight: 700; }
+  .f0000-alt-zaman-cizgisi-nl-satir { display: flex; flex-wrap: wrap; gap: 8px; }
+  .f0000-alt-zaman-cizgisi-nl-girdi { flex: 1 1 200px; min-width: 0; min-height: 48px; padding: 10px 18px; border: 1px solid color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent); border-radius: 999px; background: var(--mx-site-surface, #f6f7f9); color: var(--mx-site-text, #111318); font: inherit; }
+  .f0000-alt-zaman-cizgisi-nl-dugme { display: inline-flex; align-items: center; gap: 6px; min-height: 48px; padding: 10px 22px; border: 0; border-radius: 999px; background: var(--mx-site-primary, #2563eb); color: var(--mx-site-primary-contrast, #ffffff); font: inherit; font-weight: 700; transition: transform 0.2s ease; }
+  .f0000-alt-zaman-cizgisi-nl-dugme:hover { transform: translateY(-2px); }
+  .f0000-alt-zaman-cizgisi-nl-dugme .material-symbols-outlined { font-size: 18px; }
+  .f0000-alt-zaman-cizgisi-nl-durum:empty { display: none; }
+  .f0000-alt-zaman-cizgisi-nl-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.4rem, 2.6vw, 2rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+  .f0000-alt-zaman-cizgisi-nl-metin { color: color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9)); }
+
+  .f0000-alt-zaman-cizgisi-zc-yolculuk { display: grid; gap: 26px; padding-block-end: clamp(32px, 5vw, 56px); margin-block-end: clamp(32px, 5vw, 56px); border-block-end: 1px solid color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent); }
+  .f0000-alt-zaman-cizgisi-zc-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 800; letter-spacing: -0.02em; }
+  .f0000-alt-zaman-cizgisi-zc-adimlar { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 20px; }
+  .f0000-alt-zaman-cizgisi-zc-adim { position: relative; display: grid; align-content: start; gap: 10px; padding-block-start: 66px; }
+  .f0000-alt-zaman-cizgisi-zc-adim::before { content: ""; position: absolute; inset-block-start: 23px; inset-inline: 0 -20px; height: 2px; background: color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent); }
+  .f0000-alt-zaman-cizgisi-zc-adim:last-child::before { inset-inline-end: 0; }
+  .f0000-alt-zaman-cizgisi-zc-nokta { position: absolute; inset-block-start: 0; inset-inline-start: 0; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background: var(--mx-site-primary, #2563eb); color: var(--mx-site-primary-contrast, #ffffff); box-shadow: 0 0 0 6px var(--mx-site-surface, #f6f7f9); transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) calc(var(--i, 0) * 120ms); }
+  .f0000-alt-zaman-cizgisi-zc-nokta .material-symbols-outlined { font-size: 22px; }
+  .f0000-alt-zaman-cizgisi--hazir:not(.f0000-alt-zaman-cizgisi--gor) .f0000-alt-zaman-cizgisi-zc-nokta { transform: scale(0.2); }
+  .f0000-alt-zaman-cizgisi-zc-adim:hover .f0000-alt-zaman-cizgisi-zc-nokta { transform: scale(1.08); }
+  .f0000-alt-zaman-cizgisi-zc-ad { color: color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9)); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+  .f0000-alt-zaman-cizgisi-zc-ic { display: grid; gap: 8px; font-weight: 600; overflow-wrap: anywhere; }
+  .f0000-alt-zaman-cizgisi-zc-yol { display: inline-flex; align-items: center; gap: 6px; color: color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318)); font-size: 0.9rem; font-weight: 700; text-decoration: none; }
+  .f0000-alt-zaman-cizgisi-zc-yol .material-symbols-outlined { font-size: 18px; transition: transform 0.25s ease; }
+  .f0000-alt-zaman-cizgisi-zc-yol:hover .material-symbols-outlined { transform: scale(1.2); }
+  .f0000-alt-zaman-cizgisi-zc-saat { display: grid; gap: 4px; font-weight: 400; }
+  .f0000-alt-zaman-cizgisi-zc-alt { display: grid; grid-template-columns: minmax(0, 1.6fr) repeat(2, minmax(0, 1fr)); gap: 32px; }
+  .f0000-alt-zaman-cizgisi-zc-marka { display: grid; align-content: start; gap: 14px; }
+  .f0000-alt-zaman-cizgisi-zc-son { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 26px; margin-block-start: 40px; }
+  .f0000-alt-zaman-cizgisi-zc-son .f0000-alt-zaman-cizgisi-telif { margin-inline-end: auto; }
+  .f0000-alt-zaman-cizgisi-zc-yasal { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 0.9rem; }
+  @media (max-width: 1024px) {
+    .f0000-alt-zaman-cizgisi-zc-adimlar { grid-auto-flow: row; grid-auto-columns: auto; gap: 0; }
+    .f0000-alt-zaman-cizgisi-zc-adim { min-height: 76px; padding-block: 4px 28px; padding-inline-start: 68px; }
+    .f0000-alt-zaman-cizgisi-zc-adim::before { inset-block: 48px 0; inset-inline: 23px auto; width: 2px; height: auto; }
+    .f0000-alt-zaman-cizgisi-zc-adim:last-child::before { display: none; }
+    .f0000-alt-zaman-cizgisi-zc-alt { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+    .f0000-alt-zaman-cizgisi-zc-marka { grid-column: 1 / -1; }
+  }
+  @media (max-width: 768px) {
+    .f0000-alt-zaman-cizgisi-zc-alt { grid-template-columns: minmax(0, 1fr); }
+  }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .f0000-alt-zaman-cizgisi :is(.f0000-alt-zaman-cizgisi-baslik, .f0000-alt-zaman-cizgisi-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .f0000-alt-zaman-cizgisi-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .f0000-alt-zaman-cizgisi { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .f0000-alt-zaman-cizgisi *, .f0000-alt-zaman-cizgisi *::before, .f0000-alt-zaman-cizgisi *::after { animation: none !important; transition: none !important; }
+  }
+
+
+  
+  .f0001-dk {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding-block: 14px;
+    padding-inline: 16px;
+    background: var(--mx-site-surface-2, #f1f1ee);
+    color: var(--mx-site-text, #1b1b1b);
+    border-block-start: 1px solid color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent);
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+  }
+  .f0001-dk-text { margin: 0; max-width: 100%; overflow-wrap: anywhere; }
+  .f0001-dk-brand { font-weight: 700; unicode-bidi: isolate; direction: ltr; display: inline-block; }
+  .f0001-dk-cta {
+    display: inline-flex; align-items: center; gap: 4px;
+    color: var(--mx-site-primary, #2563eb); font-weight: 600; text-decoration: underline; text-underline-offset: 3px;
+    transition: gap .2s ease, opacity .2s ease;
+  }
+  .f0001-dk-cta:hover { gap: 8px; opacity: .85; }
+  .f0001-dk-cta:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; border-radius: 2px; }
+  .f0001-dk-arrow { font-size: 16px; }
+  @media (max-width: 480px) { .f0001-dk { font-size: 13px; } }
+  @media (prefers-reduced-motion: reduce) { .f0001-dk-cta { transition: none; } .f0001-dk-cta:hover { gap: 4px; } }
+
+#header>header[class*="-m10"]:not([class*="-akista"]){top:var(--mx-demo-bandi-h,0px)}

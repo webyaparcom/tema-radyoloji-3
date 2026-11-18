@@ -3,17 +3,23 @@
   "name": {
     "tr": "Misyon",
     "en": "Mission",
-    "ar": "المهمة"
+    "ar": "المهمة",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "description": {
     "tr": "Misyonumuz",
     "en": "Our mission",
-    "ar": "مهمتنا"
+    "ar": "مهمتنا",
+    "de": "Unsere Mission",
+    "ru": "Наша миссия"
   },
   "keyword": {
     "tr": "Misyon",
     "en": "mission, our mission, corporate responsibility",
-    "ar": "الرسالة, رسالتنا, المسؤولية المؤسسية"
+    "ar": "الرسالة, رسالتنا, المسؤولية المؤسسية",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "path": "misyon",
   "icon": "flag",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Misyonumuz</h2>\n<p>Görüntüleme sürecinin her adımını ölçmek ve bu ölçüleri hastalarla açıkça paylaşmak.</p>",
     "en": "<h2>Our mission</h2>\n<p>To measure every step of the imaging process and share those figures openly with patients.</p>",
-    "ar": "<h2>مهمتنا</h2>\n<p>قياس كل خطوة من خطوات التصوير ومشاركة هذه الأرقام بوضوح مع المرضى.</p>"
+    "ar": "<h2>مهمتنا</h2>\n<p>قياس كل خطوة من خطوات التصوير ومشاركة هذه الأرقام بوضوح مع المرضى.</p>",
+    "de": "<h2>Unsere Mission</h2>\n<p>Jeden Schritt des Bildgebungsprozesses zu messen und diese Kennzahlen offen mit den Patienten zu teilen.</p>",
+    "ru": "<h2>Наша миссия</h2>\n<p>Измерять каждый этап процесса визуализации и открыто делиться этими показателями с пациентами.</p>"
   },
   "title": {
     "tr": "Misyon",
     "en": "Mission",
-    "ar": "المهمة"
+    "ar": "المهمة",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "date": "2026-11-16T20:27:31.682Z",
   "update": "2026-11-16T20:31:12.802Z",

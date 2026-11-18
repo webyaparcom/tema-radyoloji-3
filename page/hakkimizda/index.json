@@ -2,7 +2,9 @@
   "name": {
     "tr": "Merkez",
     "en": "Centre",
-    "ar": "المركز"
+    "ar": "المركز",
+    "de": "Zentrum",
+    "ru": "Центр"
   },
   "status": "play",
   "category": "",
@@ -24,7 +26,9 @@
   "description": {
     "tr": "Sayılar, hekim kadrosu ve tetkik günü (kurgusal).",
     "en": "Figures, the medical team and the scan day (fictional).",
-    "ar": "الأرقام والفريق الطبي ويوم الفحص (افتراضي)."
+    "ar": "الأرقام والفريق الطبي ويوم الفحص (افتراضي).",
+    "de": "Zahlen, ärztliches Personal und Untersuchungstag (fiktiv).",
+    "ru": "Цифры, медицинский персонал и день обследования (вымышленные)."
   },
   "spot": {
     "tr": "",
@@ -35,12 +39,16 @@
   "title": {
     "tr": "Merkez",
     "en": "Centre",
-    "ar": "المركز"
+    "ar": "المركز",
+    "de": "Zentrum",
+    "ru": "Центр"
   },
   "keyword": {
     "tr": "hakkımızda",
     "en": "about",
-    "ar": "من نحن"
+    "ar": "من نحن",
+    "de": "Über uns",
+    "ru": "О нас"
   },
   "text": {},
   "update": "2026-11-16T20:31:12.790Z",

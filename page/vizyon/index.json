@@ -3,17 +3,23 @@
   "name": {
     "tr": "Vizyon",
     "en": "Vision",
-    "ar": "الرؤية"
+    "ar": "الرؤية",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "description": {
     "tr": "Vizyonumuz",
     "en": "Our vision",
-    "ar": "رؤيتنا"
+    "ar": "رؤيتنا",
+    "de": "Unsere Vision",
+    "ru": "Наше видение"
   },
   "keyword": {
     "tr": "Vizyon",
     "en": "vision, our vision, goals",
-    "ar": "الرؤية, رؤيتنا, الأهداف"
+    "ar": "الرؤية, رؤيتنا, الأهداف",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "path": "vizyon",
   "icon": "visibility",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Vizyonumuz</h2>\n<p>Ankara’da rapor süresini ve bekleme süresini düzenli yayımlayan bir görüntüleme merkezi olmak.</p>",
     "en": "<h2>Our vision</h2>\n<p>To be an imaging centre in Ankara that regularly publishes its report and waiting times.</p>",
-    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون مركز تصوير في أنقرة ينشر بانتظام مدة التقارير وأوقات الانتظار.</p>"
+    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون مركز تصوير في أنقرة ينشر بانتظام مدة التقارير وأوقات الانتظار.</p>",
+    "de": "<h2>Unsere Vision</h2>\n<p>Ein Bildgebungszentrum in Ankara zu sein, das Befundzeiten und Wartezeiten regelmäßig veröffentlicht.</p>",
+    "ru": "<h2>Наше видение</h2>\n<p>Быть центром визуализации в Анкаре, который регулярно публикует сроки заключений и время ожидания.</p>"
   },
   "title": {
     "tr": "Vizyon",
     "en": "Vision",
-    "ar": "الرؤية"
+    "ar": "الرؤية",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "date": "2026-11-16T20:27:31.682Z",
   "update": "2026-11-16T20:31:12.804Z",
