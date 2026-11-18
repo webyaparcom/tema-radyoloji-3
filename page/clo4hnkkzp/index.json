@@ -3,17 +3,23 @@
   "name": {
     "tr": "Randevu",
     "en": "Booking",
-    "ar": "الحجز"
+    "ar": "الحجز",
+    "de": "Termin",
+    "ru": "Запись"
   },
   "description": {
     "tr": "Hekim takvimiyle tetkik randevusu talebi (demo).",
     "en": "Scan booking request with the doctors’ calendar (demo).",
-    "ar": "طلب موعد فحص عبر تقويم الأطباء (تجريبي)."
+    "ar": "طلب موعد فحص عبر تقويم الأطباء (تجريبي).",
+    "de": "Anfrage für einen Scan-Termin mit dem Arztkalender (Demo).",
+    "ru": "Запрос записи на сканирование по календарю врача (демо)."
   },
   "keyword": {
     "tr": "randevu",
     "en": "appointment",
-    "ar": "موعد"
+    "ar": "موعد",
+    "de": "Termin",
+    "ru": "запись"
   },
   "path": "teklif-al",
   "icon": "event",
@@ -32,7 +38,9 @@
   "title": {
     "tr": "Randevu",
     "en": "Booking",
-    "ar": "الحجز"
+    "ar": "الحجز",
+    "de": "Termin",
+    "ru": "Запись"
   },
   "date": "2026-11-16T20:27:31.852Z",
   "update": "2026-11-16T20:31:12.794Z"

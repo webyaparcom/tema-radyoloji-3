@@ -3,17 +3,23 @@
   "name": {
     "tr": "Kalite Politikamız",
     "en": "Quality Policy",
-    "ar": "سياسة الجودة"
+    "ar": "سياسة الجودة",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "description": {
     "tr": "Kalite politikamız",
     "en": "Our quality policy",
-    "ar": "سياسة الجودة لدينا"
+    "ar": "سياسة الجودة لدينا",
+    "de": "Unsere Qualitätspolitik",
+    "ru": "Наша политика качества"
   },
   "keyword": {
     "tr": "Kalite Politikamız",
     "en": "quality policy, quality, continuous improvement",
-    "ar": "سياسة الجودة, الجودة, التحسين المستمر"
+    "ar": "سياسة الجودة, الجودة, التحسين المستمر",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "path": "kalitepolitikamiz",
   "icon": "verified",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Kalite Politikamız</h2>\n<p>Her sabah cihaz kalite kontrolü, mamografide çift okuma, yazılı hazırlık notu ve raporun sevk eden hekime iletilmesi.</p>",
     "en": "<h2>Our quality policy</h2>\n<p>A device quality check every morning, double reading in mammography, a written preparation note and the report sent to the referring doctor.</p>",
-    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>فحص جودة للأجهزة كل صباح، وقراءة مزدوجة في الماموغرام، وملاحظة تحضير مكتوبة، وإرسال التقرير إلى الطبيب المُحيل.</p>"
+    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>فحص جودة للأجهزة كل صباح، وقراءة مزدوجة في الماموغرام، وملاحظة تحضير مكتوبة، وإرسال التقرير إلى الطبيب المُحيل.</p>",
+    "de": "<h2>Unsere Qualitätsrichtlinie</h2>\n<p>Jeden Morgen Geräte-Qualitätskontrolle, doppelte Auswertung bei der Mammographie, schriftlicher Vorbereitungsvermerk und Übermittlung des Berichts an den überweisenden Arzt.</p>",
+    "ru": "<h2>Наша политика качества</h2>\n<p>Ежедневная проверка качества оборудования, двойное чтение при маммографии, письменное примечание о подготовке и передача отчета лечащему врачу.</p>"
   },
   "title": {
     "tr": "Kalite Politikamız",
     "en": "Quality Policy",
-    "ar": "سياسة الجودة"
+    "ar": "سياسة الجودة",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "date": "2026-11-16T20:27:31.682Z",
   "update": "2026-11-16T20:31:12.806Z",

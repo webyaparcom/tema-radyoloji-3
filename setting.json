@@ -4,12 +4,16 @@
   "description": {
     "tr": "Lumen Radyoloji: Ankara Çankaya’da MR, tomografi, röntgen, ultrason, mamografi ve kemik yoğunluğu; rapor süresi, bekleme ve kalite kontrol sayılarını açıkça paylaşan görüntüleme merkezi. Demo site; içerik kurgusaldır.",
     "en": "Lumen Radiology: MRI, CT, X-ray, ultrasound, mammography and bone density in Cankaya, Ankara; an imaging centre that openly shares its report times, waiting times and quality-control figures. Demo site; content is fictional.",
-    "ar": "لومن للأشعة: رنين مغناطيسي وأشعة مقطعية وسينية وموجات فوق صوتية وماموغرام وكثافة العظام في تشانكايا بأنقرة؛ مركز تصوير يشارك علنًا أرقام مدة التقارير والانتظار وضبط الجودة. موقع تجريبي؛ المحتوى افتراضي."
+    "ar": "لومن للأشعة: رنين مغناطيسي وأشعة مقطعية وسينية وموجات فوق صوتية وماموغرام وكثافة العظام في تشانكايا بأنقرة؛ مركز تصوير يشارك علنًا أرقام مدة التقارير والانتظار وضبط الجودة. موقع تجريبي؛ المحتوى افتراضي.",
+    "de": "Lumen Radiologie: MRT, CT, Röntgen, Ultraschall, Mammographie und Knochendichte in Çankaya, Ankara; ein Bildgebungszentrum, das Berichtszeiten, Wartezeiten und Qualitätskontrollzahlen offenlegt. Demo-Seite; Inhalte sind fiktiv.",
+    "ru": "Lumen Radiology: МРТ, КТ, рентген, УЗИ, маммография и денситометрия в Чанкае, Анкара; центр визуализации, который открыто делится сроками выдачи отчётов, временем ожидания и показателями контроля качества. Демо-сайт; контент вымышленный."
   },
   "keyword": {
     "tr": "radyoloji, MR, tomografi, röntgen, ultrason, mamografi, kemik yoğunluğu, Çankaya, Ankara",
     "en": "radiology, MRI, CT, X-ray, ultrasound, mammography, bone density, Cankaya, Ankara",
-    "ar": "أشعة، رنين مغناطيسي، أشعة مقطعية، أشعة سينية، موجات فوق صوتية، ماموغرام، كثافة العظام، أنقرة"
+    "ar": "أشعة، رنين مغناطيسي، أشعة مقطعية، أشعة سينية، موجات فوق صوتية، ماموغرام، كثافة العظام، أنقرة",
+    "de": "Radiologie, MRT, Tomografie, Röntgen, Ultraschall, Mammografie, Knochendichte, Çankaya, Ankara",
+    "ru": "радиология, МРТ, томография, рентген, УЗИ, маммография, денситометрия, Чанкая, Анкара"
   },
   "category": "Kurumsal",
   "name": "Lumen Radyoloji",
@@ -18,15 +22,27 @@
     "tr": true,
     "en": true,
     "ar": true,
-    "de": false,
-    "ru": false,
+    "de": true,
+    "ru": true,
     "es": false,
     "fr": false,
     "it": false,
     "ja": false,
     "zh": false,
     "ko": false,
-    "pt": false
+    "pt": false,
+    "fa": false,
+    "he": false,
+    "ur": false,
+    "nl": false,
+    "pl": false,
+    "uk": false,
+    "az": false,
+    "ka": false,
+    "el": false,
+    "bg": false,
+    "ro": false,
+    "hi": false
   },
   "logo": "logo.png",
   "multi": false,

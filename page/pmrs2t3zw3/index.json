@@ -3,17 +3,23 @@
   "name": {
     "tr": "Tetkikler",
     "en": "Scans",
-    "ar": "الفحوص"
+    "ar": "الفحوص",
+    "de": "Untersuchungen",
+    "ru": "Обследования"
   },
   "description": {
     "tr": "Bölüme göre tetkikler, hazırlık maddeleri ve kısa sorular.",
     "en": "Scans by section, preparation points and short answers.",
-    "ar": "الفحوص حسب القسم وبنود التحضير وإجابات قصيرة."
+    "ar": "الفحوص حسب القسم وبنود التحضير وإجابات قصيرة.",
+    "de": "Untersuchungen nach Fachbereich, Vorbereitungshinweise und kurze Fragen.",
+    "ru": "Обследования по отделениям, пункты подготовки и короткие вопросы."
   },
   "keyword": {
     "tr": "tetkik, hazırlık",
     "en": "scan, preparation",
-    "ar": "فحص، تحضير"
+    "ar": "فحص، تحضير",
+    "de": "Untersuchung, Vorbereitung",
+    "ru": "исследование, подготовка"
   },
   "path": "hizmetler",
   "icon": "radiology",
@@ -34,7 +40,9 @@
   "title": {
     "tr": "Tetkikler",
     "en": "Scans",
-    "ar": "الفحوص"
+    "ar": "الفحوص",
+    "de": "Untersuchungen",
+    "ru": "Обследования"
   },
   "date": "2026-11-16T20:27:31.842Z",
   "update": "2026-11-16T20:31:12.785Z"
